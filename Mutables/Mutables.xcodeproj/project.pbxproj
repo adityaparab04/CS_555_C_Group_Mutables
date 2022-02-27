@@ -10,7 +10,7 @@
 		46D651FFD235B04596DB0C36 /* Pods_Mutables.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7357B9FC4EF93D7A88FF56 /* Pods_Mutables.framework */; };
 		B79C15F427B83CC7000153DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C15F327B83CC7000153DB /* AppDelegate.swift */; };
 		B79C15F627B83CC7000153DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C15F527B83CC7000153DB /* SceneDelegate.swift */; };
-		B79C15F827B83CC7000153DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C15F727B83CC7000153DB /* ViewController.swift */; };
+		B79C15F827B83CC7000153DB /* LaunchScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C15F727B83CC7000153DB /* LaunchScreenVC.swift */; };
 		B79C15FB27B83CC7000153DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B79C15F927B83CC7000153DB /* Main.storyboard */; };
 		B79C15FD27B83CC9000153DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B79C15FC27B83CC9000153DB /* Assets.xcassets */; };
 		B79C160027B83CC9000153DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B79C15FE27B83CC9000153DB /* LaunchScreen.storyboard */; };
@@ -18,6 +18,7 @@
 		B79D4AE827CB11D100AFA341 /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79D4AE727CB11D100AFA341 /* Lobster-Regular.ttf */; };
 		B79D4AEB27CB123900AFA341 /* LobsterTwo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79D4AE927CB123900AFA341 /* LobsterTwo-Regular.ttf */; };
 		B79D4AEC27CB123900AFA341 /* LobsterTwo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79D4AEA27CB123900AFA341 /* LobsterTwo-Bold.ttf */; };
+		B79D4AEF27CB254600AFA341 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79D4AEE27CB254500AFA341 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,7 @@
 		B79C15F027B83CC7000153DB /* Mutables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mutables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B79C15F327B83CC7000153DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B79C15F527B83CC7000153DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B79C15F727B83CC7000153DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B79C15F727B83CC7000153DB /* LaunchScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenVC.swift; sourceTree = "<group>"; };
 		B79C15FA27B83CC7000153DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B79C15FC27B83CC9000153DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B79C15FF27B83CC9000153DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +37,7 @@
 		B79D4AE727CB11D100AFA341 /* Lobster-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lobster-Regular.ttf"; sourceTree = "<group>"; };
 		B79D4AE927CB123900AFA341 /* LobsterTwo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LobsterTwo-Regular.ttf"; sourceTree = "<group>"; };
 		B79D4AEA27CB123900AFA341 /* LobsterTwo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LobsterTwo-Bold.ttf"; sourceTree = "<group>"; };
+		B79D4AEE27CB254500AFA341 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +93,7 @@
 				B79D4AE627CB11AE00AFA341 /* Fonts */,
 				B79C15F327B83CC7000153DB /* AppDelegate.swift */,
 				B79C15F527B83CC7000153DB /* SceneDelegate.swift */,
-				B79C15F727B83CC7000153DB /* ViewController.swift */,
+				B79D4AED27CB253600AFA341 /* VCs */,
 				B79C15F927B83CC7000153DB /* Main.storyboard */,
 				B79C15FC27B83CC9000153DB /* Assets.xcassets */,
 				B79C15FE27B83CC9000153DB /* LaunchScreen.storyboard */,
@@ -110,6 +112,15 @@
 			);
 			name = Fonts;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		B79D4AED27CB253600AFA341 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				B79C15F727B83CC7000153DB /* LaunchScreenVC.swift */,
+				B79D4AEE27CB254500AFA341 /* LoginVC.swift */,
+			);
+			path = VCs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +242,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B79C15F827B83CC7000153DB /* ViewController.swift in Sources */,
+				B79C15F827B83CC7000153DB /* LaunchScreenVC.swift in Sources */,
+				B79D4AEF27CB254600AFA341 /* LoginVC.swift in Sources */,
 				B79C15F427B83CC7000153DB /* AppDelegate.swift in Sources */,
 				B79C15F627B83CC7000153DB /* SceneDelegate.swift in Sources */,
 			);
