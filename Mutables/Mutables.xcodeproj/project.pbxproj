@@ -15,6 +15,9 @@
 		B79C15FD27B83CC9000153DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B79C15FC27B83CC9000153DB /* Assets.xcassets */; };
 		B79C160027B83CC9000153DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B79C15FE27B83CC9000153DB /* LaunchScreen.storyboard */; };
 		B79C160827B83DE6000153DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B79C160727B83DE6000153DB /* GoogleService-Info.plist */; };
+		B79D4AE827CB11D100AFA341 /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79D4AE727CB11D100AFA341 /* Lobster-Regular.ttf */; };
+		B79D4AEB27CB123900AFA341 /* LobsterTwo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79D4AE927CB123900AFA341 /* LobsterTwo-Regular.ttf */; };
+		B79D4AEC27CB123900AFA341 /* LobsterTwo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79D4AEA27CB123900AFA341 /* LobsterTwo-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		B79C15FF27B83CC9000153DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B79C160127B83CC9000153DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B79C160727B83DE6000153DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B79D4AE727CB11D100AFA341 /* Lobster-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lobster-Regular.ttf"; sourceTree = "<group>"; };
+		B79D4AE927CB123900AFA341 /* LobsterTwo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LobsterTwo-Regular.ttf"; sourceTree = "<group>"; };
+		B79D4AEA27CB123900AFA341 /* LobsterTwo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LobsterTwo-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +56,6 @@
 				5E79081EDF0FD23B99D8552C /* Pods-Mutables.debug.xcconfig */,
 				2DFFE3830007A51D6038252B /* Pods-Mutables.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,6 +88,7 @@
 		B79C15F227B83CC7000153DB /* Mutables */ = {
 			isa = PBXGroup;
 			children = (
+				B79D4AE627CB11AE00AFA341 /* Fonts */,
 				B79C15F327B83CC7000153DB /* AppDelegate.swift */,
 				B79C15F527B83CC7000153DB /* SceneDelegate.swift */,
 				B79C15F727B83CC7000153DB /* ViewController.swift */,
@@ -93,6 +99,17 @@
 				B79C160727B83DE6000153DB /* GoogleService-Info.plist */,
 			);
 			path = Mutables;
+			sourceTree = "<group>";
+		};
+		B79D4AE627CB11AE00AFA341 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B79D4AE727CB11D100AFA341 /* Lobster-Regular.ttf */,
+				B79D4AEA27CB123900AFA341 /* LobsterTwo-Bold.ttf */,
+				B79D4AE927CB123900AFA341 /* LobsterTwo-Regular.ttf */,
+			);
+			name = Fonts;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +172,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B79D4AEB27CB123900AFA341 /* LobsterTwo-Regular.ttf in Resources */,
+				B79D4AE827CB11D100AFA341 /* Lobster-Regular.ttf in Resources */,
 				B79C160027B83CC9000153DB /* LaunchScreen.storyboard in Resources */,
+				B79D4AEC27CB123900AFA341 /* LobsterTwo-Bold.ttf in Resources */,
 				B79C15FD27B83CC9000153DB /* Assets.xcassets in Resources */,
 				B79C160827B83DE6000153DB /* GoogleService-Info.plist in Resources */,
 				B79C15FB27B83CC7000153DB /* Main.storyboard in Resources */,
