@@ -15,6 +15,7 @@
 		B79C15FD27B83CC9000153DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B79C15FC27B83CC9000153DB /* Assets.xcassets */; };
 		B79C160027B83CC9000153DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B79C15FE27B83CC9000153DB /* LaunchScreen.storyboard */; };
 		B79C160827B83DE6000153DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B79C160727B83DE6000153DB /* GoogleService-Info.plist */; };
+		B79C5E1127CC395900AF562B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C5E1027CC395900AF562B /* HomeVC.swift */; };
 		B79D4AE827CB11D100AFA341 /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79D4AE727CB11D100AFA341 /* Lobster-Regular.ttf */; };
 		B79D4AEB27CB123900AFA341 /* LobsterTwo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79D4AE927CB123900AFA341 /* LobsterTwo-Regular.ttf */; };
 		B79D4AEC27CB123900AFA341 /* LobsterTwo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79D4AEA27CB123900AFA341 /* LobsterTwo-Bold.ttf */; };
@@ -34,6 +35,8 @@
 		B79C15FF27B83CC9000153DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B79C160127B83CC9000153DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B79C160727B83DE6000153DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B79C5E0F27CC346D00AF562B /* Mutables.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mutables.entitlements; sourceTree = "<group>"; };
+		B79C5E1027CC395900AF562B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		B79D4AE727CB11D100AFA341 /* Lobster-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lobster-Regular.ttf"; sourceTree = "<group>"; };
 		B79D4AE927CB123900AFA341 /* LobsterTwo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LobsterTwo-Regular.ttf"; sourceTree = "<group>"; };
 		B79D4AEA27CB123900AFA341 /* LobsterTwo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LobsterTwo-Bold.ttf"; sourceTree = "<group>"; };
@@ -90,6 +93,7 @@
 		B79C15F227B83CC7000153DB /* Mutables */ = {
 			isa = PBXGroup;
 			children = (
+				B79C5E0F27CC346D00AF562B /* Mutables.entitlements */,
 				B79D4AE627CB11AE00AFA341 /* Fonts */,
 				B79C15F327B83CC7000153DB /* AppDelegate.swift */,
 				B79C15F527B83CC7000153DB /* SceneDelegate.swift */,
@@ -119,6 +123,7 @@
 			children = (
 				B79C15F727B83CC7000153DB /* LaunchScreenVC.swift */,
 				B79D4AEE27CB254500AFA341 /* LoginVC.swift */,
+				B79C5E1027CC395900AF562B /* HomeVC.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B79C15F827B83CC7000153DB /* LaunchScreenVC.swift in Sources */,
+				B79C5E1127CC395900AF562B /* HomeVC.swift in Sources */,
 				B79D4AEF27CB254600AFA341 /* LoginVC.swift in Sources */,
 				B79C15F427B83CC7000153DB /* AppDelegate.swift in Sources */,
 				B79C15F627B83CC7000153DB /* SceneDelegate.swift in Sources */,
@@ -393,6 +399,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mutables/Mutables.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P7M46C5472;
@@ -422,6 +429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mutables/Mutables.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P7M46C5472;
