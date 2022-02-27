@@ -15,6 +15,7 @@ class LoginVC: UIViewController {
 
     @IBOutlet weak var appleSignInBtn: UIButton!
     @IBOutlet weak var signUpBtnPressed: UIButton!
+    @IBOutlet weak var googleSignInBtn: UIButton!
     
     let userDefault = UserDefaults.standard
     
@@ -38,6 +39,8 @@ class LoginVC: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = false
     }
+    
+    //MARK:- Google sign in method
     
     @IBAction func appleSignInBtnPressed(_ sender: UIButton) {
         startSignInWithAppleFlow()
@@ -103,6 +106,31 @@ class LoginVC: UIViewController {
      // authorizationController.presentationContextProvider = self
       authorizationController.performRequests()
     }
+    
+    
+    //MARK:- Google Sign in method
+    
+    @IBAction func googleSignInBtnPressed(_ sender: UIButton) {
+        let signInConfig = GIDConfiguration.init(clientID: "560954900840-et36blb7001q5kq4i8rtsbsjkr1b7krp.apps.googleusercontent.com")
+        GIDSignIn.sharedInstance.signIn(with: signInConfig, presenting: self) { user, error in
+            if error != nil{
+                let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction.init(title: "Okay", style: .default, handler: nil))
+                
+                self.present(alert, animated: true, completion: nil)
+            } else{
+                print("Success in google signin")
+                self.performSegue(withIdentifier: "goToHomeVC", sender: self)
+                self.userDefault.set(true, forKey:"userSignedIn")
+                self.userDefault.synchronize()
+                
+            }
+        }
+    }
+    
+    
+    
+    
 }
 
 @available(iOS 13.0, *)

@@ -189,6 +189,9 @@
                                         <rect key="frame" x="74" y="0.0" width="74" height="64"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="googleSignInBtn"/>
+                                        <connections>
+                                            <action selector="googleSignInBtnPressed:" destination="8np-Mb-gKW" eventType="touchUpInside" id="2Jj-Le-q9q"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -220,6 +223,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="appleSignInBtn" destination="GYU-oO-dDm" id="GDz-4r-Y56"/>
+                        <outlet property="googleSignInBtn" destination="Wbu-aO-1a8" id="3ts-EP-ekv"/>
                         <outlet property="signUpBtnPressed" destination="FiD-x3-Djg" id="cWk-tQ-XZQ"/>
                         <segue destination="Vpm-GE-ZcY" kind="show" identifier="goToHomeVC" id="5WR-n2-Fqw"/>
                     </connections>
