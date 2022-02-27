@@ -143,6 +143,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="signUpBtn"/>
+                                <connections>
+                                    <segue destination="jHj-Nl-IXR" kind="show" id="1B8-6p-oeG"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="inZ-nK-Fvp">
                                 <rect key="frame" x="69.5" y="281" width="275" height="50"/>
@@ -232,6 +235,69 @@
             </objects>
             <point key="canvasLocation" x="1998.5507246376812" y="126.5625"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="fll-hd-njt">
+            <objects>
+                <viewController id="jHj-Nl-IXR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Kz-5p-bHQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signUpBg" translatesAutoresizingMaskIntoConstraints="NO" id="WcK-HW-Mev">
+                                <rect key="frame" x="0.0" y="216.5" width="414" height="463"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaa-iC-FGe">
+                                <rect key="frame" x="25" y="128" width="120" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="15N-m8-wPU"/>
+                                    <constraint firstAttribute="height" constant="65" id="VoD-Gd-eDz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="50"/>
+                                <color key="textColor" name="GreenC"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Yz-Rh-pXh">
+                                <rect key="frame" x="57" y="263" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="8Mb-UA-gSH"/>
+                                    <constraint firstAttribute="height" constant="50" id="d3p-Wv-Qqv"/>
+                                </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7G-Eh-ysc">
+                                <rect key="frame" x="160" y="373" width="94" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="DvQ-B3-MB1"/>
+                                    <constraint firstAttribute="height" constant="84" id="bqj-1B-aCD"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ArrowBtn"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QHc-Gs-FlT"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8Yz-Rh-pXh" firstAttribute="top" secondItem="zaa-iC-FGe" secondAttribute="bottom" constant="70" id="N1e-Fp-aDV"/>
+                            <constraint firstItem="zaa-iC-FGe" firstAttribute="leading" secondItem="QHc-Gs-FlT" secondAttribute="leading" constant="25" id="NCD-4o-w1a"/>
+                            <constraint firstItem="zaa-iC-FGe" firstAttribute="top" secondItem="QHc-Gs-FlT" secondAttribute="top" constant="40" id="OAe-p1-QZ3"/>
+                            <constraint firstItem="b7G-Eh-ysc" firstAttribute="top" secondItem="8Yz-Rh-pXh" secondAttribute="bottom" constant="60" id="Prm-GE-Q3R"/>
+                            <constraint firstItem="WcK-HW-Mev" firstAttribute="centerY" secondItem="7Kz-5p-bHQ" secondAttribute="centerY" id="W1I-i8-0uF"/>
+                            <constraint firstItem="WcK-HW-Mev" firstAttribute="centerX" secondItem="7Kz-5p-bHQ" secondAttribute="centerX" id="fLW-sx-Euw"/>
+                            <constraint firstItem="8Yz-Rh-pXh" firstAttribute="centerX" secondItem="7Kz-5p-bHQ" secondAttribute="centerX" id="rYp-W4-5mI"/>
+                            <constraint firstItem="WcK-HW-Mev" firstAttribute="width" secondItem="7Kz-5p-bHQ" secondAttribute="width" id="snR-78-kmQ"/>
+                            <constraint firstItem="WcK-HW-Mev" firstAttribute="height" secondItem="7Kz-5p-bHQ" secondAttribute="height" multiplier="0.516741" id="sw1-f8-oYs"/>
+                            <constraint firstItem="b7G-Eh-ysc" firstAttribute="centerX" secondItem="7Kz-5p-bHQ" secondAttribute="centerX" id="vRk-IG-uNT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NTK-q1-2fS"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UwI-td-eTt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1843" y="855"/>
+        </scene>
         <!--HomeVC-->
         <scene sceneID="UZh-TZ-GQo">
             <objects>
@@ -268,12 +334,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ArrowBtn" width="70" height="70"/>
         <image name="Login_bg" width="390" height="561"/>
         <image name="appleSignIn" width="50" height="50"/>
         <image name="googleSignInBtn" width="50" height="50"/>
         <image name="homePgBg" width="390" height="844"/>
         <image name="logo" width="148" height="185"/>
         <image name="orTxt" width="363.5" height="30"/>
+        <image name="signUpBg" width="390" height="693"/>
         <image name="signUpBtn" width="147" height="52"/>
         <namedColor name="GreenC">
             <color red="0.396078431372549" green="0.75686274509803919" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
