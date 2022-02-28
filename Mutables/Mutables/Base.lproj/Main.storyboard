@@ -615,7 +615,7 @@
                                 <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" smartDashesType="no" smartInsertDeleteType="yes" smartQuotesType="no" textContentType="email"/>
                                 <connections>
-                                    <outlet property="delegate" destination="t8d-SJ-Qlh" id="MHF-p4-XWR"/>
+                                    <outlet property="delegate" destination="qBv-ho-PkP" id="Xrb-2p-Rnz"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your email to to get the password reset link." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2k-sl-2II">
@@ -635,6 +635,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="ArrowBtn"/>
+                                <connections>
+                                    <action selector="arrowBtnPressed:" destination="qBv-ho-PkP" eventType="touchUpInside" id="sGw-jB-hhF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YTK-mQ-o65"/>
@@ -653,6 +656,9 @@
                             <constraint firstItem="KI3-wc-ln8" firstAttribute="centerX" secondItem="pPB-xD-vWC" secondAttribute="centerX" id="yHS-gS-qQ4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTF" destination="QZE-Sw-2wY" id="fE1-Xf-O3T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aht-N2-duA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
