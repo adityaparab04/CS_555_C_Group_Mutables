@@ -17,6 +17,9 @@
 		B79C160827B83DE6000153DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B79C160727B83DE6000153DB /* GoogleService-Info.plist */; };
 		B79C5E1127CC395900AF562B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C5E1027CC395900AF562B /* HomeVC.swift */; };
 		B79C5E1327CC3E5700AF562B /* SignUpEmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C5E1227CC3E5700AF562B /* SignUpEmailVC.swift */; };
+		B79C5E1627CC426900AF562B /* HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C5E1527CC426900AF562B /* HideKeyboard.swift */; };
+		B79C5E1827CC44CB00AF562B /* SignUpPassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C5E1727CC44CB00AF562B /* SignUpPassVC.swift */; };
+		B79C5E1A27CC47F600AF562B /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C5E1927CC47F600AF562B /* SignInVC.swift */; };
 		B79D4AE827CB11D100AFA341 /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79D4AE727CB11D100AFA341 /* Lobster-Regular.ttf */; };
 		B79D4AEB27CB123900AFA341 /* LobsterTwo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79D4AE927CB123900AFA341 /* LobsterTwo-Regular.ttf */; };
 		B79D4AEC27CB123900AFA341 /* LobsterTwo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B79D4AEA27CB123900AFA341 /* LobsterTwo-Bold.ttf */; };
@@ -39,6 +42,9 @@
 		B79C5E0F27CC346D00AF562B /* Mutables.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mutables.entitlements; sourceTree = "<group>"; };
 		B79C5E1027CC395900AF562B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		B79C5E1227CC3E5700AF562B /* SignUpEmailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmailVC.swift; sourceTree = "<group>"; };
+		B79C5E1527CC426900AF562B /* HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboard.swift; sourceTree = "<group>"; };
+		B79C5E1727CC44CB00AF562B /* SignUpPassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPassVC.swift; sourceTree = "<group>"; };
+		B79C5E1927CC47F600AF562B /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		B79D4AE727CB11D100AFA341 /* Lobster-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lobster-Regular.ttf"; sourceTree = "<group>"; };
 		B79D4AE927CB123900AFA341 /* LobsterTwo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LobsterTwo-Regular.ttf"; sourceTree = "<group>"; };
 		B79D4AEA27CB123900AFA341 /* LobsterTwo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LobsterTwo-Bold.ttf"; sourceTree = "<group>"; };
@@ -95,6 +101,7 @@
 		B79C15F227B83CC7000153DB /* Mutables */ = {
 			isa = PBXGroup;
 			children = (
+				B79C5E1427CC424800AF562B /* Extensions */,
 				B79C5E0F27CC346D00AF562B /* Mutables.entitlements */,
 				B79D4AE627CB11AE00AFA341 /* Fonts */,
 				B79C15F327B83CC7000153DB /* AppDelegate.swift */,
@@ -107,6 +114,14 @@
 				B79C160727B83DE6000153DB /* GoogleService-Info.plist */,
 			);
 			path = Mutables;
+			sourceTree = "<group>";
+		};
+		B79C5E1427CC424800AF562B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B79C5E1527CC426900AF562B /* HideKeyboard.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B79D4AE627CB11AE00AFA341 /* Fonts */ = {
@@ -127,6 +142,8 @@
 				B79D4AEE27CB254500AFA341 /* LoginVC.swift */,
 				B79C5E1027CC395900AF562B /* HomeVC.swift */,
 				B79C5E1227CC3E5700AF562B /* SignUpEmailVC.swift */,
+				B79C5E1727CC44CB00AF562B /* SignUpPassVC.swift */,
+				B79C5E1927CC47F600AF562B /* SignInVC.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -252,7 +269,10 @@
 			files = (
 				B79C15F827B83CC7000153DB /* LaunchScreenVC.swift in Sources */,
 				B79C5E1127CC395900AF562B /* HomeVC.swift in Sources */,
+				B79C5E1A27CC47F600AF562B /* SignInVC.swift in Sources */,
 				B79D4AEF27CB254600AFA341 /* LoginVC.swift in Sources */,
+				B79C5E1827CC44CB00AF562B /* SignUpPassVC.swift in Sources */,
+				B79C5E1627CC426900AF562B /* HideKeyboard.swift in Sources */,
 				B79C15F427B83CC7000153DB /* AppDelegate.swift in Sources */,
 				B79C15F627B83CC7000153DB /* SceneDelegate.swift in Sources */,
 				B79C5E1327CC3E5700AF562B /* SignUpEmailVC.swift in Sources */,
