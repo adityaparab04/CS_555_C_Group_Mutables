@@ -6,24 +6,46 @@
 //
 
 import UIKit
+import FirebaseAuth
 
-class SignInVC: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+class SignInVC: UIViewController, UITextFieldDelegate {
+    @IBOutlet weak var emailTF: UITextField!
+    @IBOutlet weak var passwordTF: UITextField!
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == emailTF {
+            passwordTF.becomeFirstResponder()
+        } else{
+            passwordTF.resignFirstResponder()
+        }
+        
+        return true
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        emailTF.becomeFirstResponder()
+        
+        textFieldDesign(textfield: emailTF, placeholderText: "you@lorem.com")
+        textFieldDesign(textfield: passwordTF, placeholderText: "Password")
     }
-    */
+    
+    
+    
+    func textFieldDesign(textfield: UITextField, placeholderText: String){
+        textfield.layer.cornerRadius = 20.0
+        textfield.clipsToBounds = true
+        textfield.layer.borderWidth = 1.0
+        textfield.layer.borderColor = UIColor.black.cgColor
+        
+        
+        textfield.attributedPlaceholder = NSAttributedString(
+            string: placeholderText,
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray]
+        )
+
+    }
 
 }

@@ -66,7 +66,7 @@ class SignUpPassVC: UIViewController, UITextFieldDelegate {
                     print("Success Signed up")
                     let alert = UIAlertController(title: "Welcome to Mutable", message: "Your account created successfully", preferredStyle: .alert)
                     alert.addAction(UIAlertAction.init(title: "Great!", style: .default, handler: { action in
-                        self.performSegue(withIdentifier: "goToSignInVC", sender: self)
+                        self.performSegue(withIdentifier: "goToHomeVC", sender: self)
                     }))
                     self.present(alert, animated: true, completion: nil)
                 }else{

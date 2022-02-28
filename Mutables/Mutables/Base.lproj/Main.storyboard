@@ -62,13 +62,13 @@
                                         <rect key="frame" x="137.5" y="807.5" width="139" height="58.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqD-na-50C">
-                                                <rect key="frame" x="49.5" y="0.0" width="40" height="25"/>
+                                                <rect key="frame" x="46.5" y="0.0" width="46.5" height="27"/>
                                                 <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Mutables" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOi-fl-MdK">
-                                                <rect key="frame" x="0.0" y="27" width="139" height="31.5"/>
+                                                <rect key="frame" x="0.0" y="29" width="139" height="29.5"/>
                                                 <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -163,6 +163,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Sign In">
                                             <fontDescription key="titleFontDescription" name="LobsterTwo" family="Lobster Two" pointSize="22"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="t8d-SJ-Qlh" kind="show" id="NRO-Fb-5wr"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -459,7 +462,7 @@
                         <outlet property="arrowBtn" destination="Byh-3G-uFU" id="yAv-Wr-3Dc"/>
                         <outlet property="confPassTF" destination="oYZ-gZ-U2v" id="Vfa-e3-6Qr"/>
                         <outlet property="passTF" destination="6HC-Tf-55G" id="2ge-0Y-pTY"/>
-                        <segue destination="t8d-SJ-Qlh" kind="show" identifier="goToSignInVC" id="WNv-2o-Z5p"/>
+                        <segue destination="Vpm-GE-ZcY" kind="show" identifier="goToHomeVC" id="Inu-lw-Zd9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wwh-ne-ahc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -473,10 +476,107 @@
                     <view key="view" contentMode="scaleToFill" id="nmh-gX-hDz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signUpBg" translatesAutoresizingMaskIntoConstraints="NO" id="kvI-Z7-nde">
+                                <rect key="frame" x="0.0" y="216.5" width="414" height="463"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZe-HV-2AU">
+                                <rect key="frame" x="122" y="94" width="170" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="Ynz-QX-YCN"/>
+                                    <constraint firstAttribute="height" constant="70" id="f2v-pX-bIc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="50"/>
+                                <color key="textColor" name="GreenC"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XEJ-JK-aif">
+                                <rect key="frame" x="57" y="229" width="300" height="183"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="V1F-WM-Qym">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="131"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lBd-HC-ZSt">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="hIo-md-ihz"/>
+                                                    <constraint firstAttribute="height" constant="50" id="k8Z-HY-rcp"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="t8d-SJ-Qlh" id="yNM-4J-Og0"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xZV-C0-Zyu">
+                                                <rect key="frame" x="0.0" y="81" width="300" height="50"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Bon-8Q-qws"/>
+                                                    <constraint firstAttribute="width" constant="300" id="nWS-Or-WGN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="t8d-SJ-Qlh" id="2FZ-Tg-f89"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jvf-2e-DIL">
+                                        <rect key="frame" x="130" y="141" width="170" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="170" id="3fn-5M-6Ff"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Forgot Password?" subtitle="">
+                                            <fontDescription key="titleFontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="V1F-WM-Qym" firstAttribute="centerX" secondItem="XEJ-JK-aif" secondAttribute="centerX" id="U5k-8e-cIK"/>
+                                    <constraint firstItem="Jvf-2e-DIL" firstAttribute="top" secondItem="V1F-WM-Qym" secondAttribute="bottom" constant="10" id="caB-7c-eyy"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jvf-2e-DIL" secondAttribute="trailing" id="ksP-yq-29g"/>
+                                    <constraint firstItem="V1F-WM-Qym" firstAttribute="top" secondItem="XEJ-JK-aif" secondAttribute="top" id="qyp-tO-Q1Z"/>
+                                    <constraint firstAttribute="width" constant="300" id="siB-4v-hmK"/>
+                                    <constraint firstAttribute="height" constant="183" id="voz-Ym-Vka"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiQ-ib-hOS">
+                                <rect key="frame" x="160" y="427" width="94" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="3DO-JA-Arb"/>
+                                    <constraint firstAttribute="width" constant="94" id="6bH-G4-b6O"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ArrowBtn"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="kSR-Wh-KtS"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aZe-HV-2AU" firstAttribute="centerX" secondItem="nmh-gX-hDz" secondAttribute="centerX" id="1aW-ZC-HX4"/>
+                            <constraint firstItem="aiQ-ib-hOS" firstAttribute="centerX" secondItem="nmh-gX-hDz" secondAttribute="centerX" id="7SQ-NI-e6s"/>
+                            <constraint firstItem="kvI-Z7-nde" firstAttribute="height" secondItem="nmh-gX-hDz" secondAttribute="height" multiplier="0.516741" id="B5f-wh-kaH"/>
+                            <constraint firstItem="kvI-Z7-nde" firstAttribute="centerY" secondItem="nmh-gX-hDz" secondAttribute="centerY" id="OIK-Bl-EyI"/>
+                            <constraint firstItem="XEJ-JK-aif" firstAttribute="top" secondItem="aZe-HV-2AU" secondAttribute="bottom" constant="65" id="ORu-Nb-2gz"/>
+                            <constraint firstItem="aiQ-ib-hOS" firstAttribute="top" secondItem="XEJ-JK-aif" secondAttribute="bottom" constant="15" id="OmS-pu-WFq"/>
+                            <constraint firstItem="XEJ-JK-aif" firstAttribute="centerX" secondItem="nmh-gX-hDz" secondAttribute="centerX" id="PRq-tu-541"/>
+                            <constraint firstItem="aZe-HV-2AU" firstAttribute="top" secondItem="nmh-gX-hDz" secondAttribute="top" constant="94" id="RjF-da-N3G"/>
+                            <constraint firstItem="kvI-Z7-nde" firstAttribute="width" secondItem="nmh-gX-hDz" secondAttribute="width" id="SSQ-mu-6yC"/>
+                            <constraint firstItem="kvI-Z7-nde" firstAttribute="centerX" secondItem="nmh-gX-hDz" secondAttribute="centerX" id="ibZ-Jb-eVR"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Mei-wU-GOf"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="emailTF" destination="lBd-HC-ZSt" id="AlH-pc-2Bf"/>
+                        <outlet property="passwordTF" destination="xZV-C0-Zyu" id="OMU-0Q-C7n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KdG-Fr-xJX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -490,9 +590,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="iZZ-eh-G6H"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="KCt-CV-Cvz"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZqI-OV-DFr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -518,6 +619,9 @@
             <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Inu-lw-Zd9"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="ArrowBtn" width="70" height="70"/>
         <image name="Login_bg" width="390" height="561"/>
