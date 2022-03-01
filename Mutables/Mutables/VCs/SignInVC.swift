@@ -13,6 +13,8 @@ class SignInVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
+    let validation = Validation()
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == emailTF {
             passwordTF.becomeFirstResponder()
@@ -51,13 +53,8 @@ class SignInVC: UIViewController, UITextFieldDelegate {
     @IBAction func arrowBtnPressed(_ sender: UIButton) {
         guard let email = emailTF.text, let password = passwordTF.text else {return}
         
-        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         
-        let passwordRegEx = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$"
-        
-        let passwordPred = NSPredicate(format: "SELF MATCHES %@", passwordRegEx)
-        if emailPred.evaluate(with: email) == true && passwordPred.evaluate(with: password) == true {
+        if validation.emailValidationa(email: email) == true && validation.passwordValidation(password: password) == true {
             Auth.auth().signIn(withEmail: email, password: password) { result, err in
                 if err != nil {
                     let alert = UIAlertController(title: "Error Sign-in", message: err?.localizedDescription, preferredStyle: .alert)

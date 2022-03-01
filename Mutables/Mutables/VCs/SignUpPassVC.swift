@@ -16,6 +16,8 @@ class SignUpPassVC: UIViewController, UITextFieldDelegate {
     
     let userDefaults = UserDefaults.standard
     
+    let validation = Validation()
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == passTF{
             confPassTF.becomeFirstResponder()
@@ -56,11 +58,11 @@ class SignUpPassVC: UIViewController, UITextFieldDelegate {
         
         let email = userDefaults.object(forKey: "signUpEmail") as! String
         
-        let passwordRegEx = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$"
+//        let passwordRegEx = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$"
+//
+//        let passwordPred = NSPredicate(format: "SELF MATCHES %@", passwordRegEx)
         
-        let passwordPred = NSPredicate(format: "SELF MATCHES %@", passwordRegEx)
-        
-        if password == confirmPass && passwordPred.evaluate(with: confirmPass) == true{
+        if password == confirmPass && validation.passwordValidation(password: password) == true{
             Auth.auth().createUser(withEmail: email, password: confirmPass) { result, err in
                 if err == nil {
                     print("Success Signed up")
