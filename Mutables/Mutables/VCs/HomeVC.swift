@@ -23,4 +23,7 @@ class HomeVC: UIViewController {
         navigationController?.navigationBar.isHidden = false
     }
   
+    @IBAction func audioBtnPressed(_ sender: UIButton) {
+        print("1")
+    }
 }
