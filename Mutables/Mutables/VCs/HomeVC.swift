@@ -15,15 +15,16 @@ class HomeVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    override func viewWillAppear(_ animated: Bool) {
-        navigationController?.navigationBar.isHidden = true
-        self.navigationItem.setHidesBackButton(true, animated: true)
-    }
-    override func viewDidDisappear(_ animated: Bool) {
-        navigationController?.navigationBar.isHidden = false
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        navigationController?.navigationBar.isHidden = true
+//        self.navigationItem.setHidesBackButton(true, animated: true)
+//    }
+//    override func viewDidDisappear(_ animated: Bool) {
+//        navigationController?.navigationBar.isHidden = false
+//    }
   
-    @IBAction func audioBtnPressed(_ sender: UIButton) {
-        print("1")
+    @IBAction func audioBtnPressed(_ sender: UIBarButtonItem) {
+        print("Audio Btn pressed")
     }
+    
 }

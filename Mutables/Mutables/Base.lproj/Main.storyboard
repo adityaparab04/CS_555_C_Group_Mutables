@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mTl-yo-ldZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vpm-GE-ZcY">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -627,7 +627,7 @@
                                 <rect key="frame" x="0.0" y="189.5" width="414" height="463"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QZE-Sw-2wY">
-                                <rect key="frame" x="57" y="211" width="300" height="50"/>
+                                <rect key="frame" x="57" y="255" width="300" height="50"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="slK-cQ-rPX"/>
@@ -641,7 +641,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your email to to get the password reset link." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2k-sl-2II">
-                                <rect key="frame" x="33" y="100" width="348" height="96"/>
+                                <rect key="frame" x="33" y="144" width="348" height="96"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="96" id="Hto-Nk-3s4"/>
                                 </constraints>
@@ -650,7 +650,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KI3-wc-ln8">
-                                <rect key="frame" x="160" y="311" width="94" height="84"/>
+                                <rect key="frame" x="160" y="355" width="94" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="XVj-ZU-96K"/>
                                     <constraint firstAttribute="width" constant="94" id="ahp-63-JKe"/>
@@ -708,17 +708,8 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="playBtn"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btY-GZ-Q3o">
-                                <rect key="frame" x="334" y="64" width="60" height="46"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="Ptd-ps-XiC"/>
-                                    <constraint firstAttribute="height" constant="46" id="gqF-OU-Cqc"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="audioBtn"/>
                                 <connections>
-                                    <action selector="audioBtnPressed:" destination="Vpm-GE-ZcY" eventType="touchUpInside" id="o9i-we-Ls2"/>
+                                    <segue destination="cru-Rs-84y" kind="show" id="KQe-Pt-Ucp"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mutables" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8g-9r-Lu6">
@@ -737,10 +728,8 @@
                         <constraints>
                             <constraint firstItem="yCI-uj-JuE" firstAttribute="centerX" secondItem="BR1-Ry-GFJ" secondAttribute="centerX" id="0Tw-Fw-AaS"/>
                             <constraint firstItem="gaN-Xk-DDF" firstAttribute="leading" secondItem="iZZ-eh-G6H" secondAttribute="leading" id="0wV-cH-22m"/>
-                            <constraint firstItem="btY-GZ-Q3o" firstAttribute="top" secondItem="BR1-Ry-GFJ" secondAttribute="top" constant="64" id="44j-2o-xic"/>
                             <constraint firstItem="gaN-Xk-DDF" firstAttribute="top" secondItem="BR1-Ry-GFJ" secondAttribute="top" id="8hG-B1-lYy"/>
                             <constraint firstItem="9Ur-yU-MjR" firstAttribute="centerX" secondItem="BR1-Ry-GFJ" secondAttribute="centerX" id="Ldi-O0-xOu"/>
-                            <constraint firstItem="iZZ-eh-G6H" firstAttribute="trailing" secondItem="btY-GZ-Q3o" secondAttribute="trailing" constant="20" id="c3X-fj-RpS"/>
                             <constraint firstItem="s8g-9r-Lu6" firstAttribute="centerX" secondItem="BR1-Ry-GFJ" secondAttribute="centerX" id="hLc-Eu-lRk"/>
                             <constraint firstItem="yCI-uj-JuE" firstAttribute="top" secondItem="9Ur-yU-MjR" secondAttribute="bottom" constant="30" id="ixg-rM-MSS"/>
                             <constraint firstItem="9Ur-yU-MjR" firstAttribute="centerY" secondItem="BR1-Ry-GFJ" secondAttribute="centerY" id="kK8-qE-bem"/>
@@ -751,12 +740,130 @@
                             <constraint firstItem="9Ur-yU-MjR" firstAttribute="top" secondItem="s8g-9r-Lu6" secondAttribute="bottom" id="yLb-E8-3Iq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="KCt-CV-Cvz"/>
-                    <nil key="simulatedTopBarMetrics"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="KCt-CV-Cvz">
+                        <barButtonItem key="rightBarButtonItem" image="audioBtn" id="Xby-6g-6xs">
+                            <connections>
+                                <action selector="audioBtnPressed:" destination="Vpm-GE-ZcY" id="yoZ-mH-70p"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZqI-OV-DFr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4653.623188405797" y="-200.22321428571428"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Udd-Ck-ffC">
+            <objects>
+                <viewController id="cru-Rs-84y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5pL-iE-NpY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kingdom" translatesAutoresizingMaskIntoConstraints="NO" id="Bnc-Af-1BQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blur_imgae" translatesAutoresizingMaskIntoConstraints="NO" id="75I-dP-2Jg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Rz-jX-As9">
+                                <rect key="frame" x="126" y="677" width="164" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="nextBtn"/>
+                                <connections>
+                                    <segue destination="hoR-hf-TjH" kind="show" id="dmH-As-IBu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eO9-oE-sJC">
+                                <rect key="frame" x="38" y="262.5" width="338" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="MtK-Gg-KST"/>
+                                    <constraint firstAttribute="width" constant="338" id="pzt-1v-V8f"/>
+                                </constraints>
+                                <string key="text">There is a kingdom named land of serenity; it is known for its peace and amity. It had never seen an act of violence or crime. The king has an only son who is the prince of the kingdom.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HTi-mF-uX0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="75I-dP-2Jg" firstAttribute="top" secondItem="5pL-iE-NpY" secondAttribute="top" id="3lJ-8i-VHr"/>
+                            <constraint firstAttribute="bottom" secondItem="Bnc-Af-1BQ" secondAttribute="bottom" id="7m5-iI-lEB"/>
+                            <constraint firstItem="75I-dP-2Jg" firstAttribute="trailing" secondItem="HTi-mF-uX0" secondAttribute="trailing" id="Bld-9Q-4De"/>
+                            <constraint firstItem="eO9-oE-sJC" firstAttribute="centerX" secondItem="5pL-iE-NpY" secondAttribute="centerX" id="HJ1-Cj-k1x"/>
+                            <constraint firstItem="Bnc-Af-1BQ" firstAttribute="leading" secondItem="HTi-mF-uX0" secondAttribute="leading" id="ZbW-nj-IHP"/>
+                            <constraint firstItem="75I-dP-2Jg" firstAttribute="leading" secondItem="HTi-mF-uX0" secondAttribute="leading" id="bhW-oR-GVm"/>
+                            <constraint firstAttribute="bottom" secondItem="75I-dP-2Jg" secondAttribute="bottom" id="gJ1-Km-cHi"/>
+                            <constraint firstItem="eO9-oE-sJC" firstAttribute="centerY" secondItem="5pL-iE-NpY" secondAttribute="centerY" constant="-100" id="k8X-ap-75e"/>
+                            <constraint firstItem="Bnc-Af-1BQ" firstAttribute="trailing" secondItem="HTi-mF-uX0" secondAttribute="trailing" id="mdy-h0-UAL"/>
+                            <constraint firstItem="Bnc-Af-1BQ" firstAttribute="top" secondItem="5pL-iE-NpY" secondAttribute="top" id="qxo-fv-XKy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Zfl-jQ-qLt"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t6f-3I-qmD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5837.68115942029" y="-244.41964285714283"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nzY-M4-RfL">
+            <objects>
+                <viewController id="hoR-hf-TjH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xjz-8A-eD0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Old_king_image" translatesAutoresizingMaskIntoConstraints="NO" id="Jeh-nT-uSt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blur_imgae" translatesAutoresizingMaskIntoConstraints="NO" id="JOi-yK-zHp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1MO-GL-Cpq">
+                                <rect key="frame" x="38" y="262.5" width="338" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="338" id="ezC-n1-GWK"/>
+                                    <constraint firstAttribute="height" constant="171" id="yQp-Nq-2VX"/>
+                                </constraints>
+                                <string key="text">The king, however, is getting older and his concern is whether the prince would be able to continue his legacy of maintaining peace and harmony. Therefore, he decides to test his son.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9e-Cd-USM">
+                                <rect key="frame" x="125" y="679" width="164" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="nextBtn"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tYR-TX-KJ7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Jeh-nT-uSt" secondAttribute="bottom" id="4xK-mx-ffE"/>
+                            <constraint firstItem="JOi-yK-zHp" firstAttribute="trailing" secondItem="tYR-TX-KJ7" secondAttribute="trailing" id="H0W-BG-NJo"/>
+                            <constraint firstItem="1MO-GL-Cpq" firstAttribute="centerY" secondItem="xjz-8A-eD0" secondAttribute="centerY" constant="-100" id="ILx-WS-hSJ"/>
+                            <constraint firstItem="JOi-yK-zHp" firstAttribute="top" secondItem="xjz-8A-eD0" secondAttribute="top" id="Iey-oQ-Igi"/>
+                            <constraint firstItem="Jeh-nT-uSt" firstAttribute="top" secondItem="xjz-8A-eD0" secondAttribute="top" id="JXC-EF-f7P"/>
+                            <constraint firstItem="Jeh-nT-uSt" firstAttribute="trailing" secondItem="tYR-TX-KJ7" secondAttribute="trailing" id="QyN-tB-v3P"/>
+                            <constraint firstItem="JOi-yK-zHp" firstAttribute="leading" secondItem="tYR-TX-KJ7" secondAttribute="leading" id="Tpd-gM-c55"/>
+                            <constraint firstItem="1MO-GL-Cpq" firstAttribute="centerX" secondItem="xjz-8A-eD0" secondAttribute="centerX" id="WIs-PQ-v64"/>
+                            <constraint firstAttribute="bottom" secondItem="JOi-yK-zHp" secondAttribute="bottom" id="td1-zf-FxN"/>
+                            <constraint firstItem="Jeh-nT-uSt" firstAttribute="leading" secondItem="tYR-TX-KJ7" secondAttribute="leading" id="yRv-t1-6Vd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6z5-1s-CHb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZcU-M7-uYR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6656.521739130435" y="-248.4375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QH8-F7-8lg">
@@ -783,13 +890,17 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="ArrowBtn" width="70" height="70"/>
+        <image name="Blur_imgae" width="390" height="844"/>
         <image name="Login_bg" width="390" height="561"/>
+        <image name="Old_king_image" width="752" height="978"/>
         <image name="appleSignIn" width="50" height="50"/>
         <image name="audioBtn" width="36" height="32"/>
         <image name="googleSignInBtn" width="50" height="50"/>
         <image name="homePageBG" width="293" height="434"/>
         <image name="homePgBg" width="390" height="844"/>
+        <image name="kingdom" width="3277" height="4096"/>
         <image name="logo" width="148" height="185"/>
+        <image name="nextBtn" width="140" height="57"/>
         <image name="orTxt" width="363.5" height="30"/>
         <image name="playBtn" width="102" height="105"/>
         <image name="signUpBg" width="390" height="693"/>
