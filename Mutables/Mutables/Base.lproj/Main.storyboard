@@ -937,6 +937,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UBO-b9-xbm"/>
+                    <connections>
+                        <outlet property="optionsStackView" destination="xUi-sh-tTO" id="02I-aL-Ob8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ro6-RW-gbh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,6 +8,8 @@
 import UIKit
 
 class YouLostAlertVC: UIViewController {
+    
+    let thridScreen = ThirdScreenVC()
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -10,6 +10,7 @@ import UIKit
 
 class ThirdScreenVC: UIViewController {
     
+    @IBOutlet weak var optionsStackView: UIStackView!
     let music = Music()
 
     override func viewDidLoad() {
@@ -29,5 +30,6 @@ class ThirdScreenVC: UIViewController {
             print("You lost")
             self.music.startMusic(fileName: "lost", format: "wav", volume: 1.0, loop: 0)
         }
+        optionsStackView.alpha = 0
     }
 }
