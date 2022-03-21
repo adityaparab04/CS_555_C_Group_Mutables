@@ -7,24 +7,19 @@
 
 import UIKit
 
+
 class ThirdScreenVC: UIViewController {
+    
+    let music = Music()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        music.startMusic(fileName: "forest", format: "mp3", volume: 0.3, loop: -1)
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     @IBAction func youRefustedPressed(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -32,6 +27,7 @@ class ThirdScreenVC: UIViewController {
         alert.modalPresentationStyle = .overCurrentContext
         present(alert, animated: true) {
             print("You lost")
+            self.music.startMusic(fileName: "lost", format: "wav", volume: 1.0, loop: 0)
         }
     }
 }

@@ -6,8 +6,16 @@
 //
 
 import UIKit
+import AVFoundation
+
+
 
 class CustomAlertVC: UIViewController {
+    
+    var player: AVAudioPlayer?
+    
+    let music = Music()
+    
 
     @IBOutlet weak var alertImageView: UIImageView!
     @IBOutlet weak var alertTitle: UILabel!
@@ -16,13 +24,16 @@ class CustomAlertVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+       
+       
     }
 
 
     @IBAction func alertBtnPressed(_ sender: UIButton) {
+        player?.stop()
         dismiss(animated: true)
     }
     
-
+    
 }

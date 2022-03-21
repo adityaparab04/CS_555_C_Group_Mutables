@@ -7,12 +7,17 @@
 
 import UIKit
 
+
+
 class FirstScreenVC: UIViewController {
+    
+    let music  = Music()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        music.startMusic(fileName: "background", format: "mp3", volume: 0.3, loop: -1)
     }
     
 

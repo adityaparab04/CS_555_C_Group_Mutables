@@ -13,6 +13,11 @@
 		B7172FDF27E7E46A009DFA6B /* ThirdScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7172FDE27E7E46A009DFA6B /* ThirdScreenVC.swift */; };
 		B7172FE227E7E5AE009DFA6B /* MystertyForestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7172FE127E7E5AE009DFA6B /* MystertyForestVC.swift */; };
 		B7172FE427E7EDF4009DFA6B /* YouLostAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7172FE327E7EDF4009DFA6B /* YouLostAlertVC.swift */; };
+		B7172FE727E802AB009DFA6B /* victory.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B7172FE627E802AB009DFA6B /* victory.mp3 */; };
+		B7172FE927E8044C009DFA6B /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7172FE827E8044C009DFA6B /* Music.swift */; };
+		B7172FEB27E80807009DFA6B /* lost.wav in Resources */ = {isa = PBXBuildFile; fileRef = B7172FEA27E80807009DFA6B /* lost.wav */; };
+		B7172FED27E8245C009DFA6B /* forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B7172FEC27E8245C009DFA6B /* forest.mp3 */; };
+		B7172FEF27E825CF009DFA6B /* background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B7172FEE27E825CF009DFA6B /* background.mp3 */; };
 		B74832FA27E6C3870039A5E8 /* CustomAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74832F827E6C3870039A5E8 /* CustomAlertVC.swift */; };
 		B793660527CD6C15006BE71D /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B793660427CD6C15006BE71D /* ForgotPasswordVC.swift */; };
 		B79C15F427B83CC7000153DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C15F327B83CC7000153DB /* AppDelegate.swift */; };
@@ -54,6 +59,11 @@
 		B7172FDE27E7E46A009DFA6B /* ThirdScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreenVC.swift; sourceTree = "<group>"; };
 		B7172FE127E7E5AE009DFA6B /* MystertyForestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MystertyForestVC.swift; sourceTree = "<group>"; };
 		B7172FE327E7EDF4009DFA6B /* YouLostAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouLostAlertVC.swift; sourceTree = "<group>"; };
+		B7172FE627E802AB009DFA6B /* victory.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = victory.mp3; sourceTree = "<group>"; };
+		B7172FE827E8044C009DFA6B /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		B7172FEA27E80807009DFA6B /* lost.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lost.wav; sourceTree = "<group>"; };
+		B7172FEC27E8245C009DFA6B /* forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = forest.mp3; sourceTree = "<group>"; };
+		B7172FEE27E825CF009DFA6B /* background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = background.mp3; sourceTree = "<group>"; };
 		B74832F827E6C3870039A5E8 /* CustomAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertVC.swift; sourceTree = "<group>"; };
 		B793660427CD6C15006BE71D /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		B79C15F027B83CC7000153DB /* Mutables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mutables.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +157,18 @@
 			path = "Login VCs";
 			sourceTree = "<group>";
 		};
+		B7172FE527E8029A009DFA6B /* Musics */ = {
+			isa = PBXGroup;
+			children = (
+				B7172FE627E802AB009DFA6B /* victory.mp3 */,
+				B7172FEA27E80807009DFA6B /* lost.wav */,
+				B7172FEE27E825CF009DFA6B /* background.mp3 */,
+				B7172FEC27E8245C009DFA6B /* forest.mp3 */,
+				B7172FE827E8044C009DFA6B /* Music.swift */,
+			);
+			path = Musics;
+			sourceTree = "<group>";
+		};
 		B74832F727E6C34E0039A5E8 /* Alerts */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +201,7 @@
 		B79C15F227B83CC7000153DB /* Mutables */ = {
 			isa = PBXGroup;
 			children = (
+				B7172FE527E8029A009DFA6B /* Musics */,
 				B74832F727E6C34E0039A5E8 /* Alerts */,
 				B7AB060E27CE924900C73802 /* Validations */,
 				B79C5E1427CC424800AF562B /* Extensions */,
@@ -326,12 +349,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B79D4AEB27CB123900AFA341 /* LobsterTwo-Regular.ttf in Resources */,
+				B7172FE727E802AB009DFA6B /* victory.mp3 in Resources */,
 				B79D4AE827CB11D100AFA341 /* Lobster-Regular.ttf in Resources */,
 				B79C160027B83CC9000153DB /* LaunchScreen.storyboard in Resources */,
 				B79D4AEC27CB123900AFA341 /* LobsterTwo-Bold.ttf in Resources */,
+				B7172FEB27E80807009DFA6B /* lost.wav in Resources */,
 				B79C15FD27B83CC9000153DB /* Assets.xcassets in Resources */,
 				B79C160827B83DE6000153DB /* GoogleService-Info.plist in Resources */,
+				B7172FEF27E825CF009DFA6B /* background.mp3 in Resources */,
 				B79C15FB27B83CC7000153DB /* Main.storyboard in Resources */,
+				B7172FED27E8245C009DFA6B /* forest.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +423,7 @@
 				B7172FDF27E7E46A009DFA6B /* ThirdScreenVC.swift in Sources */,
 				B79C5E1127CC395900AF562B /* HomeVC.swift in Sources */,
 				B74832FA27E6C3870039A5E8 /* CustomAlertVC.swift in Sources */,
+				B7172FE927E8044C009DFA6B /* Music.swift in Sources */,
 				B7AB061027CE925A00C73802 /* Validation.swift in Sources */,
 				B79C5E1A27CC47F600AF562B /* SignInVC.swift in Sources */,
 				B7172FE427E7EDF4009DFA6B /* YouLostAlertVC.swift in Sources */,
