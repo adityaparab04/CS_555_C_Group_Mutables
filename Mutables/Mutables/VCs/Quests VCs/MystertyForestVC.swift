@@ -16,7 +16,7 @@ class MystertyForestVC: UIViewController {
     @IBOutlet weak var swordImage: UIImageView!
     
     var player : AVAudioPlayer?
-    
+    let customAlert = CustomAlertVC()
     let music = Music()
     
     override func viewDidLoad() {
@@ -27,7 +27,15 @@ class MystertyForestVC: UIViewController {
  
 
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = true
+        navigationController?.hidesBarsOnSwipe = true
+        self.navigationItem.setHidesBackButton(true, animated: true)
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = false
+        navigationController?.hidesBarsOnSwipe = false
+    }
 
   
     @IBAction func swordLongPressed(_ sender: UILongPressGestureRecognizer) {
@@ -41,12 +49,12 @@ class MystertyForestVC: UIViewController {
         
         self.present(alert, animated: true) {
             self.music.startMusic(fileName: "victory", format: "mp3", volume: 1.0, loop: 0)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                self.performSegue(withIdentifier: "goToFifthScreenVC", sender: self)
+            }
         }
         
     }
     
-    @IBAction func swordImagedLongTapped(_ sender: UITapGestureRecognizer) {
-      
-        
-    }
+   
 }

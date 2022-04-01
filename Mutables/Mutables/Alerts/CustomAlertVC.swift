@@ -20,20 +20,18 @@ class CustomAlertVC: UIViewController {
     @IBOutlet weak var alertImageView: UIImageView!
     @IBOutlet weak var alertTitle: UILabel!
     @IBOutlet weak var alertBodyLabel: UILabel!
-    @IBOutlet weak var alertBtn: UIButton!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.8) {
+            self.dismiss(animated: true, completion: nil)
+        }
        
        
     }
 
 
-    @IBAction func alertBtnPressed(_ sender: UIButton) {
-        player?.stop()
-        dismiss(animated: true)
-    }
     
     
 }

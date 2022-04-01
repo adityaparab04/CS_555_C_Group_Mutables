@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lrE-vt-qqt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mTl-yo-ldZ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -741,13 +741,7 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="KCt-CV-Cvz">
-                        <barButtonItem key="rightBarButtonItem" image="audioBtn" id="Xby-6g-6xs">
-                            <connections>
-                                <action selector="audioBtnPressed:" destination="Vpm-GE-ZcY" id="yoZ-mH-70p"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="KCt-CV-Cvz"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -769,9 +763,12 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blur_imgae" translatesAutoresizingMaskIntoConstraints="NO" id="75I-dP-2Jg">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Rz-jX-As9">
-                                <rect key="frame" x="126" y="677" width="164" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Rz-jX-As9">
+                                <rect key="frame" x="125" y="682" width="164" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="8ke-gb-4VJ"/>
+                                    <constraint firstAttribute="width" constant="164" id="E2t-IL-S3M"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="nextBtn"/>
                                 <connections>
@@ -797,6 +794,8 @@
                             <constraint firstAttribute="bottom" secondItem="Bnc-Af-1BQ" secondAttribute="bottom" id="7m5-iI-lEB"/>
                             <constraint firstItem="75I-dP-2Jg" firstAttribute="trailing" secondItem="HTi-mF-uX0" secondAttribute="trailing" id="Bld-9Q-4De"/>
                             <constraint firstItem="eO9-oE-sJC" firstAttribute="centerX" secondItem="5pL-iE-NpY" secondAttribute="centerX" id="HJ1-Cj-k1x"/>
+                            <constraint firstItem="6Rz-jX-As9" firstAttribute="centerX" secondItem="5pL-iE-NpY" secondAttribute="centerX" id="HoD-XU-KP6"/>
+                            <constraint firstItem="HTi-mF-uX0" firstAttribute="bottom" secondItem="6Rz-jX-As9" secondAttribute="bottom" constant="60" id="Q1k-hl-ndC"/>
                             <constraint firstItem="Bnc-Af-1BQ" firstAttribute="leading" secondItem="HTi-mF-uX0" secondAttribute="leading" id="ZbW-nj-IHP"/>
                             <constraint firstItem="75I-dP-2Jg" firstAttribute="leading" secondItem="HTi-mF-uX0" secondAttribute="leading" id="bhW-oR-GVm"/>
                             <constraint firstAttribute="bottom" secondItem="75I-dP-2Jg" secondAttribute="bottom" id="gJ1-Km-cHi"/>
@@ -837,9 +836,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9e-Cd-USM">
-                                <rect key="frame" x="125" y="679" width="164" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9e-Cd-USM">
+                                <rect key="frame" x="125" y="682" width="164" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="Tu5-fk-CCX"/>
+                                    <constraint firstAttribute="height" constant="71" id="bDh-mc-fe4"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="nextBtn"/>
                                 <connections>
@@ -850,11 +852,13 @@
                         <viewLayoutGuide key="safeArea" id="tYR-TX-KJ7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="u9e-Cd-USM" firstAttribute="centerX" secondItem="xjz-8A-eD0" secondAttribute="centerX" id="2xy-Xl-6ZD"/>
                             <constraint firstAttribute="bottom" secondItem="Jeh-nT-uSt" secondAttribute="bottom" id="4xK-mx-ffE"/>
                             <constraint firstItem="JOi-yK-zHp" firstAttribute="trailing" secondItem="tYR-TX-KJ7" secondAttribute="trailing" id="H0W-BG-NJo"/>
                             <constraint firstItem="1MO-GL-Cpq" firstAttribute="centerY" secondItem="xjz-8A-eD0" secondAttribute="centerY" constant="-100" id="ILx-WS-hSJ"/>
                             <constraint firstItem="JOi-yK-zHp" firstAttribute="top" secondItem="xjz-8A-eD0" secondAttribute="top" id="Iey-oQ-Igi"/>
                             <constraint firstItem="Jeh-nT-uSt" firstAttribute="top" secondItem="xjz-8A-eD0" secondAttribute="top" id="JXC-EF-f7P"/>
+                            <constraint firstItem="tYR-TX-KJ7" firstAttribute="bottom" secondItem="u9e-Cd-USM" secondAttribute="bottom" constant="60" id="PmM-MI-0ef"/>
                             <constraint firstItem="Jeh-nT-uSt" firstAttribute="trailing" secondItem="tYR-TX-KJ7" secondAttribute="trailing" id="QyN-tB-v3P"/>
                             <constraint firstItem="JOi-yK-zHp" firstAttribute="leading" secondItem="tYR-TX-KJ7" secondAttribute="leading" id="Tpd-gM-c55"/>
                             <constraint firstItem="1MO-GL-Cpq" firstAttribute="centerX" secondItem="xjz-8A-eD0" secondAttribute="centerX" id="WIs-PQ-v64"/>
@@ -901,7 +905,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="youDecideToFindHerbBtn"/>
                                         <connections>
-                                            <segue destination="rDx-8l-0NO" kind="show" id="ahK-bN-T2T"/>
+                                            <segue destination="KoB-Un-J3V" kind="show" id="3zZ-yJ-eJy"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTK-iz-bSS">
@@ -945,10 +949,71 @@
             </objects>
             <point key="canvasLocation" x="7628.985507246377" y="-242.41071428571428"/>
         </scene>
+        <!--Fourth ScreenVC-->
+        <scene sceneID="fES-ie-XzE">
+            <objects>
+                <viewController storyboardIdentifier="FourthScreenVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KoB-Un-J3V" customClass="FourthScreenVC" customModule="Mutables" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gVG-Yj-c6H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snowy_forest" translatesAutoresizingMaskIntoConstraints="NO" id="cCM-k5-dRe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blur_imgae" translatesAutoresizingMaskIntoConstraints="NO" id="sZm-Ab-ra7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JN8-dL-gEm">
+                                <rect key="frame" x="38" y="262.5" width="338" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="08M-Zc-sh0"/>
+                                    <constraint firstAttribute="width" constant="338" id="yuM-ah-i3R"/>
+                                </constraints>
+                                <string key="text">On the way to the mystery forest you go through violent seas, severe snow storms and harsh terrain for weeks. Finally he arrives near the mystery forest.</string>
+                                <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bzf-07-fSh">
+                                <rect key="frame" x="125" y="642" width="164" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="YWA-Ak-wpM"/>
+                                    <constraint firstAttribute="height" constant="71" id="jSr-FF-FDD"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="nextBtn"/>
+                                <connections>
+                                    <segue destination="rDx-8l-0NO" kind="show" id="BQo-D9-hfe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="69D-IM-NW8"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JN8-dL-gEm" firstAttribute="centerY" secondItem="gVG-Yj-c6H" secondAttribute="centerY" constant="-100" id="BF0-eG-a8l"/>
+                            <constraint firstAttribute="bottom" secondItem="sZm-Ab-ra7" secondAttribute="bottom" id="E5L-0x-VZD"/>
+                            <constraint firstItem="sZm-Ab-ra7" firstAttribute="top" secondItem="gVG-Yj-c6H" secondAttribute="top" id="Gn8-QP-NwU"/>
+                            <constraint firstItem="cCM-k5-dRe" firstAttribute="leading" secondItem="69D-IM-NW8" secondAttribute="leading" id="H4P-Fd-7Ge"/>
+                            <constraint firstItem="Bzf-07-fSh" firstAttribute="centerX" secondItem="gVG-Yj-c6H" secondAttribute="centerX" id="HOk-u2-p19"/>
+                            <constraint firstAttribute="bottom" secondItem="cCM-k5-dRe" secondAttribute="bottom" id="Lg1-Jc-TPR"/>
+                            <constraint firstItem="69D-IM-NW8" firstAttribute="bottom" secondItem="Bzf-07-fSh" secondAttribute="bottom" constant="100" id="USn-w8-ILq"/>
+                            <constraint firstItem="cCM-k5-dRe" firstAttribute="trailing" secondItem="69D-IM-NW8" secondAttribute="trailing" id="Y9G-hv-sD9"/>
+                            <constraint firstItem="sZm-Ab-ra7" firstAttribute="trailing" secondItem="69D-IM-NW8" secondAttribute="trailing" id="emQ-bH-0lJ"/>
+                            <constraint firstItem="sZm-Ab-ra7" firstAttribute="leading" secondItem="69D-IM-NW8" secondAttribute="leading" id="gwq-6o-6A3"/>
+                            <constraint firstItem="cCM-k5-dRe" firstAttribute="top" secondItem="gVG-Yj-c6H" secondAttribute="top" id="nI3-F5-LGA"/>
+                            <constraint firstItem="JN8-dL-gEm" firstAttribute="centerX" secondItem="gVG-Yj-c6H" secondAttribute="centerX" id="uoj-zk-2Jx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="j7P-X0-Xvn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1np-9h-94d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8671" y="-242"/>
+        </scene>
         <!--Mysterty ForestVC-->
         <scene sceneID="cW4-m8-vEu">
             <objects>
-                <viewController storyboardIdentifier="MystertyForestVC" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rDx-8l-0NO" customClass="MystertyForestVC" customModule="Mutables" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MystertyForestVC" modalPresentationStyle="fullScreen" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rDx-8l-0NO" customClass="MystertyForestVC" customModule="Mutables" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F5P-5R-DBI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1033,9 +1098,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Mq7-V2-33g"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="questTitle" destination="dTf-r4-a9F" id="dfU-i4-MPM"/>
                         <outlet property="swordImage" destination="opD-WH-OP7" id="dMk-Uw-VLg"/>
+                        <segue destination="OfS-o8-2hY" kind="show" id="bh7-yA-sNt"/>
+                        <segue destination="lQX-kW-hCZ" kind="show" identifier="goToFifthScreenVC" id="2a6-HU-7nY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SQa-Np-bj3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1045,7 +1114,64 @@
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="8585.507246376812" y="-223.66071428571428"/>
+            <point key="canvasLocation" x="9693" y="-242"/>
+        </scene>
+        <!--Fifth ScreenVC-->
+        <scene sceneID="6Rv-VQ-Ubn">
+            <objects>
+                <viewController storyboardIdentifier="FifthScreenVC" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lQX-kW-hCZ" customClass="FifthScreenVC" customModule="Mutables" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="45L-Kf-fHa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mystery forest 1" translatesAutoresizingMaskIntoConstraints="NO" id="Qqf-5s-j1h">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blur_imgae" translatesAutoresizingMaskIntoConstraints="NO" id="T80-ob-diw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The voice said, &quot;Welcome to the mystery forest dear brave boy, what name should I address you as?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejP-Ms-fCc">
+                                <rect key="frame" x="38" y="262.5" width="338" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="FWB-Rx-BnD"/>
+                                    <constraint firstAttribute="width" constant="338" id="Oko-cm-Tfc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiX-jf-EiS">
+                                <rect key="frame" x="82.5" y="664" width="249" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="2hg-lw-MPf"/>
+                                    <constraint firstAttribute="width" constant="249" id="3ou-ON-kgM"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="selectNameBtn"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TW9-zI-auO"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="T80-ob-diw" firstAttribute="leading" secondItem="TW9-zI-auO" secondAttribute="leading" id="0sw-ic-MoY"/>
+                            <constraint firstItem="Qqf-5s-j1h" firstAttribute="trailing" secondItem="TW9-zI-auO" secondAttribute="trailing" id="3jc-bx-ty5"/>
+                            <constraint firstItem="HiX-jf-EiS" firstAttribute="centerX" secondItem="45L-Kf-fHa" secondAttribute="centerX" id="6hy-eE-cPa"/>
+                            <constraint firstItem="ejP-Ms-fCc" firstAttribute="centerY" secondItem="45L-Kf-fHa" secondAttribute="centerY" constant="-100" id="Prd-8K-czd"/>
+                            <constraint firstItem="T80-ob-diw" firstAttribute="top" secondItem="45L-Kf-fHa" secondAttribute="top" id="VH7-b6-Gf1"/>
+                            <constraint firstAttribute="bottom" secondItem="T80-ob-diw" secondAttribute="bottom" id="WC2-S9-1uJ"/>
+                            <constraint firstItem="Qqf-5s-j1h" firstAttribute="leading" secondItem="TW9-zI-auO" secondAttribute="leading" id="ebB-Fc-zHp"/>
+                            <constraint firstItem="TW9-zI-auO" firstAttribute="bottom" secondItem="HiX-jf-EiS" secondAttribute="bottom" constant="100" id="hgR-xB-GgH"/>
+                            <constraint firstAttribute="bottom" secondItem="Qqf-5s-j1h" secondAttribute="bottom" id="lty-Ts-7HM"/>
+                            <constraint firstItem="T80-ob-diw" firstAttribute="trailing" secondItem="TW9-zI-auO" secondAttribute="trailing" id="m46-zZ-CNp"/>
+                            <constraint firstItem="Qqf-5s-j1h" firstAttribute="top" secondItem="45L-Kf-fHa" secondAttribute="top" id="tjm-T9-nAD"/>
+                            <constraint firstItem="ejP-Ms-fCc" firstAttribute="centerX" secondItem="45L-Kf-fHa" secondAttribute="centerX" id="tq3-Eo-ZlV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lJY-Dh-H76"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G32-dh-XKx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10798.550724637682" y="-327.45535714285711"/>
         </scene>
         <!--You Lost AlertVC-->
         <scene sceneID="FDd-pg-oaQ">
@@ -1115,7 +1241,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You lost!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l46-RA-jRb">
-                                        <rect key="frame" x="170" y="100" width="194" height="32"/>
+                                        <rect key="frame" x="170" y="100" width="194" height="31.5"/>
                                         <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1234,38 +1360,21 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sword Found!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFf-KM-9ps">
-                                        <rect key="frame" x="170" y="100" width="194" height="32"/>
+                                        <rect key="frame" x="170" y="100" width="194" height="31.5"/>
                                         <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="25"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAb-Go-Yur">
-                                        <rect key="frame" x="137" y="250" width="100" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="n6R-tF-u0m"/>
-                                            <constraint firstAttribute="width" constant="100" id="oQq-rb-fPv"/>
-                                        </constraints>
-                                        <color key="tintColor" name="GreenC"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Let's Go!">
-                                            <fontDescription key="titleFontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="alertBtnPressed:" destination="OfS-o8-2hY" eventType="touchUpInside" id="s7T-co-uLS"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="lXa-F7-SVv" firstAttribute="leading" secondItem="lVd-vT-pDv" secondAttribute="leading" constant="10" id="2wh-0a-3Tt"/>
                                     <constraint firstItem="hFf-KM-9ps" firstAttribute="leading" secondItem="lXa-F7-SVv" secondAttribute="trailing" constant="10" id="BJa-mr-uIj"/>
                                     <constraint firstAttribute="bottom" secondItem="fsc-xU-47n" secondAttribute="bottom" id="FjI-3g-9kF"/>
-                                    <constraint firstAttribute="bottom" secondItem="oAb-Go-Yur" secondAttribute="bottom" id="FvO-vG-stP"/>
                                     <constraint firstItem="hFf-KM-9ps" firstAttribute="top" secondItem="lVd-vT-pDv" secondAttribute="top" constant="100" id="O0E-g4-kXZ"/>
                                     <constraint firstAttribute="height" constant="290" id="O34-Mf-T9N"/>
                                     <constraint firstItem="fsc-xU-47n" firstAttribute="leading" secondItem="lVd-vT-pDv" secondAttribute="leading" id="Pkf-zY-hnh"/>
                                     <constraint firstItem="lXa-F7-SVv" firstAttribute="top" secondItem="lVd-vT-pDv" secondAttribute="top" constant="20" id="SZ8-qh-3eo"/>
-                                    <constraint firstItem="oAb-Go-Yur" firstAttribute="centerX" secondItem="lVd-vT-pDv" secondAttribute="centerX" id="oZc-lC-MGY"/>
                                     <constraint firstAttribute="trailing" secondItem="hFf-KM-9ps" secondAttribute="trailing" constant="10" id="qsU-wj-qsE"/>
                                     <constraint firstAttribute="trailing" secondItem="fsc-xU-47n" secondAttribute="trailing" id="zYh-hE-mhR"/>
                                 </constraints>
@@ -1280,16 +1389,16 @@
                             <constraint firstItem="lVd-vT-pDv" firstAttribute="leading" secondItem="xrh-YK-CvN" secondAttribute="leading" constant="20" id="uLX-PX-gu2"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="DVg-A7-dQ0"/>
                     <connections>
                         <outlet property="alertBodyLabel" destination="xD4-w4-TDe" id="ImJ-8I-6CQ"/>
-                        <outlet property="alertBtn" destination="oAb-Go-Yur" id="Ew6-B9-keJ"/>
                         <outlet property="alertImageView" destination="9Sp-wG-Q5m" id="AW9-Ao-tEd"/>
                         <outlet property="alertTitle" destination="hFf-KM-9ps" id="blk-1O-Ll7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="55W-Md-sLG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8566.6666666666679" y="435.9375"/>
+            <point key="canvasLocation" x="9631.8840579710159" y="517.63392857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QH8-F7-8lg">
@@ -1323,20 +1432,22 @@
         <image name="alertCircle" width="357" height="303"/>
         <image name="alertRect" width="862" height="327"/>
         <image name="appleSignIn" width="50" height="50"/>
-        <image name="audioBtn" width="36" height="32"/>
         <image name="findSowrdBg" width="1661" height="1188"/>
         <image name="googleSignInBtn" width="50" height="50"/>
         <image name="homePageBG" width="293" height="434"/>
         <image name="homePgBg" width="390" height="844"/>
         <image name="kingdom" width="3277" height="4096"/>
         <image name="logo" width="148" height="185"/>
+        <image name="mystery forest 1" width="390" height="844"/>
         <image name="nextBtn" width="140" height="57"/>
         <image name="orTxt" width="363.5" height="30"/>
         <image name="playBtn" width="102" height="105"/>
         <image name="questTitleBlur" width="390" height="844"/>
         <image name="refuseBtn" width="216" height="54"/>
+        <image name="selectNameBtn" width="225" height="84"/>
         <image name="signUpBg" width="390" height="693"/>
         <image name="signUpBtn" width="147" height="52"/>
+        <image name="snowy_forest" width="390" height="844"/>
         <image name="sovaCry" width="246" height="262"/>
         <image name="stoneImg" width="400" height="220"/>
         <image name="swordImg" width="290" height="253"/>

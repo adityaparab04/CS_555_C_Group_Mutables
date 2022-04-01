@@ -10,18 +10,20 @@ import FirebaseAuth
 
 class HomeVC: UIViewController {
 
+    @IBOutlet weak var volumeBtn: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
     }
-//    override func viewWillAppear(_ animated: Bool) {
-//        navigationController?.navigationBar.isHidden = true
-//        self.navigationItem.setHidesBackButton(true, animated: true)
-//    }
-//    override func viewDidDisappear(_ animated: Bool) {
-//        navigationController?.navigationBar.isHidden = false
-//    }
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = true
+        self.navigationItem.setHidesBackButton(true, animated: true)
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = false
+    }
   
     @IBAction func audioBtnPressed(_ sender: UIBarButtonItem) {
         print("Audio Btn pressed")

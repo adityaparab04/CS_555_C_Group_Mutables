@@ -38,6 +38,8 @@
 		B79D4AEF27CB254600AFA341 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79D4AEE27CB254500AFA341 /* LoginVC.swift */; };
 		B7AB061027CE925A00C73802 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AB060F27CE925A00C73802 /* Validation.swift */; };
 		B7AB061A27CEE14B00C73802 /* MutablesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AB061927CEE14B00C73802 /* MutablesTests.swift */; };
+		B7C917CB27F7899600371D1E /* FourthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C917CA27F7899600371D1E /* FourthScreenVC.swift */; };
+		B7C917CD27F78B1B00371D1E /* FifthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C917CC27F78B1B00371D1E /* FifthScreenVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		B7AB060F27CE925A00C73802 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		B7AB061727CEE14B00C73802 /* MutablesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MutablesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7AB061927CEE14B00C73802 /* MutablesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutablesTests.swift; sourceTree = "<group>"; };
+		B7C917CA27F7899600371D1E /* FourthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthScreenVC.swift; sourceTree = "<group>"; };
+		B7C917CC27F78B1B00371D1E /* FifthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthScreenVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,8 @@
 				B7172FDA27E7E44B009DFA6B /* FirstScreenVC.swift */,
 				B7172FDC27E7E45C009DFA6B /* SecondScreenVC.swift */,
 				B7172FDE27E7E46A009DFA6B /* ThirdScreenVC.swift */,
+				B7C917CA27F7899600371D1E /* FourthScreenVC.swift */,
+				B7C917CC27F78B1B00371D1E /* FifthScreenVC.swift */,
 			);
 			name = "Story VCs";
 			sourceTree = "<group>";
@@ -431,8 +437,10 @@
 				B793660527CD6C15006BE71D /* ForgotPasswordVC.swift in Sources */,
 				B79C5E1827CC44CB00AF562B /* SignUpPassVC.swift in Sources */,
 				B79C5E1627CC426900AF562B /* HideKeyboard.swift in Sources */,
+				B7C917CB27F7899600371D1E /* FourthScreenVC.swift in Sources */,
 				B79C15F427B83CC7000153DB /* AppDelegate.swift in Sources */,
 				B7172FDB27E7E44B009DFA6B /* FirstScreenVC.swift in Sources */,
+				B7C917CD27F78B1B00371D1E /* FifthScreenVC.swift in Sources */,
 				B79C15F627B83CC7000153DB /* SceneDelegate.swift in Sources */,
 				B7172FE227E7E5AE009DFA6B /* MystertyForestVC.swift in Sources */,
 				B79C5E1327CC3E5700AF562B /* SignUpEmailVC.swift in Sources */,
