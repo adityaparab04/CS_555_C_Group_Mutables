@@ -1,13 +1,13 @@
 //
-//  FourthScreenVC.swift
+//  SixthScreenVC.swift
 //  Mutables
 //
-//  Created by Rahul Pawar on 4/1/22.
+//  Created by Rahul Pawar on 4/3/22.
 //
 
 import UIKit
 
-class FourthScreenVC: UIViewController {
+class SixthScreenVC: UIViewController {
     
     let music = Music()
 
@@ -18,7 +18,6 @@ class FourthScreenVC: UIViewController {
         music.startMusic(fileName: "background", format: "mp3", volume: 0.3, loop: -1)
     }
     
-
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = true
         self.navigationItem.setHidesBackButton(true, animated: true)

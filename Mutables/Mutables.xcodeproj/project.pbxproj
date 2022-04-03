@@ -19,6 +19,11 @@
 		B7172FED27E8245C009DFA6B /* forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B7172FEC27E8245C009DFA6B /* forest.mp3 */; };
 		B7172FEF27E825CF009DFA6B /* background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B7172FEE27E825CF009DFA6B /* background.mp3 */; };
 		B74832FA27E6C3870039A5E8 /* CustomAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74832F827E6C3870039A5E8 /* CustomAlertVC.swift */; };
+		B7493CF727FA658700A9C95D /* SixthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7493CF627FA658700A9C95D /* SixthScreenVC.swift */; };
+		B7493CF927FA659500A9C95D /* SeventhScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7493CF827FA659500A9C95D /* SeventhScreenVC.swift */; };
+		B7493CFB27FA65BC00A9C95D /* EighthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7493CFA27FA65BC00A9C95D /* EighthScreenVC.swift */; };
+		B7493CFD27FA65CE00A9C95D /* NinthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7493CFC27FA65CE00A9C95D /* NinthScreenVC.swift */; };
+		B7493CFF27FA660D00A9C95D /* TenthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7493CFE27FA660D00A9C95D /* TenthScreenVC.swift */; };
 		B793660527CD6C15006BE71D /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B793660427CD6C15006BE71D /* ForgotPasswordVC.swift */; };
 		B79C15F427B83CC7000153DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C15F327B83CC7000153DB /* AppDelegate.swift */; };
 		B79C15F627B83CC7000153DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C15F527B83CC7000153DB /* SceneDelegate.swift */; };
@@ -67,6 +72,11 @@
 		B7172FEC27E8245C009DFA6B /* forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = forest.mp3; sourceTree = "<group>"; };
 		B7172FEE27E825CF009DFA6B /* background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = background.mp3; sourceTree = "<group>"; };
 		B74832F827E6C3870039A5E8 /* CustomAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertVC.swift; sourceTree = "<group>"; };
+		B7493CF627FA658700A9C95D /* SixthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthScreenVC.swift; sourceTree = "<group>"; };
+		B7493CF827FA659500A9C95D /* SeventhScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeventhScreenVC.swift; sourceTree = "<group>"; };
+		B7493CFA27FA65BC00A9C95D /* EighthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighthScreenVC.swift; sourceTree = "<group>"; };
+		B7493CFC27FA65CE00A9C95D /* NinthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinthScreenVC.swift; sourceTree = "<group>"; };
+		B7493CFE27FA660D00A9C95D /* TenthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenthScreenVC.swift; sourceTree = "<group>"; };
 		B793660427CD6C15006BE71D /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		B79C15F027B83CC7000153DB /* Mutables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mutables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B79C15F327B83CC7000153DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +156,11 @@
 				B7172FDE27E7E46A009DFA6B /* ThirdScreenVC.swift */,
 				B7C917CA27F7899600371D1E /* FourthScreenVC.swift */,
 				B7C917CC27F78B1B00371D1E /* FifthScreenVC.swift */,
+				B7493CF627FA658700A9C95D /* SixthScreenVC.swift */,
+				B7493CF827FA659500A9C95D /* SeventhScreenVC.swift */,
+				B7493CFA27FA65BC00A9C95D /* EighthScreenVC.swift */,
+				B7493CFC27FA65CE00A9C95D /* NinthScreenVC.swift */,
+				B7493CFE27FA660D00A9C95D /* TenthScreenVC.swift */,
 			);
 			name = "Story VCs";
 			sourceTree = "<group>";
@@ -432,10 +447,15 @@
 				B7172FE927E8044C009DFA6B /* Music.swift in Sources */,
 				B7AB061027CE925A00C73802 /* Validation.swift in Sources */,
 				B79C5E1A27CC47F600AF562B /* SignInVC.swift in Sources */,
+				B7493CFD27FA65CE00A9C95D /* NinthScreenVC.swift in Sources */,
 				B7172FE427E7EDF4009DFA6B /* YouLostAlertVC.swift in Sources */,
 				B79D4AEF27CB254600AFA341 /* LoginVC.swift in Sources */,
+				B7493CF727FA658700A9C95D /* SixthScreenVC.swift in Sources */,
 				B793660527CD6C15006BE71D /* ForgotPasswordVC.swift in Sources */,
+				B7493CF927FA659500A9C95D /* SeventhScreenVC.swift in Sources */,
 				B79C5E1827CC44CB00AF562B /* SignUpPassVC.swift in Sources */,
+				B7493CFB27FA65BC00A9C95D /* EighthScreenVC.swift in Sources */,
+				B7493CFF27FA660D00A9C95D /* TenthScreenVC.swift in Sources */,
 				B79C5E1627CC426900AF562B /* HideKeyboard.swift in Sources */,
 				B7C917CB27F7899600371D1E /* FourthScreenVC.swift in Sources */,
 				B79C15F427B83CC7000153DB /* AppDelegate.swift in Sources */,
