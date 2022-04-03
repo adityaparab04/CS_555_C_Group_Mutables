@@ -1209,6 +1209,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="goToCottageBtn"/>
+                                <connections>
+                                    <segue destination="4jZ-Vk-Cs0" kind="show" id="syV-5e-mST"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="G4a-mH-8HL"/>
@@ -1233,6 +1236,125 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1wf-h6-Z59" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="11892.753623188406" y="-327.45535714285711"/>
+        </scene>
+        <!--Seventh ScreenVC-->
+        <scene sceneID="lKn-1j-oRp">
+            <objects>
+                <viewController storyboardIdentifier="SeventhScreenVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4jZ-Vk-Cs0" customClass="SeventhScreenVC" customModule="Mutables" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Ny-GO-pgj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mystery-shack" translatesAutoresizingMaskIntoConstraints="NO" id="liU-W6-vGm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blur_imgae" translatesAutoresizingMaskIntoConstraints="NO" id="L6G-JV-rFq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajd-zQ-z91">
+                                <rect key="frame" x="38" y="262.5" width="338" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="ENW-wR-vH0"/>
+                                    <constraint firstAttribute="width" constant="338" id="HCz-9L-vPg"/>
+                                </constraints>
+                                <string key="text">Voice: “Very well done, my brave young boy. I am sure you must be tired by now and you must rest your bones before moving ahead. There's a magical cottage half a mile away, it must be good to spend the night there.”</string>
+                                <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ak-UN-ujp">
+                                <rect key="frame" x="90.5" y="682" width="233" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="233" id="BzG-QW-8dJ"/>
+                                    <constraint firstAttribute="height" constant="80" id="fkY-Io-gdO"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="take5DeepBreathsBtn"/>
+                                <connections>
+                                    <segue destination="qwg-xx-1Py" kind="show" id="1wE-78-x3A"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OwZ-aW-AUX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="L6G-JV-rFq" firstAttribute="top" secondItem="5Ny-GO-pgj" secondAttribute="top" id="1sy-HE-iux"/>
+                            <constraint firstItem="liU-W6-vGm" firstAttribute="top" secondItem="5Ny-GO-pgj" secondAttribute="top" id="1y6-Gl-TZ9"/>
+                            <constraint firstItem="liU-W6-vGm" firstAttribute="trailing" secondItem="OwZ-aW-AUX" secondAttribute="trailing" id="4S2-ll-Re4"/>
+                            <constraint firstItem="ajd-zQ-z91" firstAttribute="centerX" secondItem="5Ny-GO-pgj" secondAttribute="centerX" id="5QO-rx-4jn"/>
+                            <constraint firstItem="L6G-JV-rFq" firstAttribute="leading" secondItem="OwZ-aW-AUX" secondAttribute="leading" id="6nl-bZ-6ml"/>
+                            <constraint firstItem="3ak-UN-ujp" firstAttribute="centerX" secondItem="5Ny-GO-pgj" secondAttribute="centerX" id="EeU-3H-Zbb"/>
+                            <constraint firstItem="liU-W6-vGm" firstAttribute="leading" secondItem="OwZ-aW-AUX" secondAttribute="leading" id="H0t-MH-8qg"/>
+                            <constraint firstItem="OwZ-aW-AUX" firstAttribute="bottom" secondItem="3ak-UN-ujp" secondAttribute="bottom" constant="100" id="IXS-MU-Psp"/>
+                            <constraint firstAttribute="bottom" secondItem="L6G-JV-rFq" secondAttribute="bottom" id="SLI-hC-OOM"/>
+                            <constraint firstAttribute="bottom" secondItem="liU-W6-vGm" secondAttribute="bottom" id="X3N-a2-88q"/>
+                            <constraint firstItem="ajd-zQ-z91" firstAttribute="centerY" secondItem="5Ny-GO-pgj" secondAttribute="centerY" constant="-100" id="aJX-ke-L1b"/>
+                            <constraint firstItem="L6G-JV-rFq" firstAttribute="trailing" secondItem="OwZ-aW-AUX" secondAttribute="trailing" id="tM4-Y4-TnD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fLk-sJ-Qet"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TOZ-gl-weB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12905.797101449276" y="-327.45535714285711"/>
+        </scene>
+        <!--Eighth ScreenVC-->
+        <scene sceneID="MVT-wW-fYr">
+            <objects>
+                <viewController storyboardIdentifier="EighthScreenVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qwg-xx-1Py" customClass="EighthScreenVC" customModule="Mutables" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LDy-Kg-3lK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sinister-shack" translatesAutoresizingMaskIntoConstraints="NO" id="2Bx-Vt-poP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blur_imgae" translatesAutoresizingMaskIntoConstraints="NO" id="A8v-41-LaU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hO-Dk-JpK">
+                                <rect key="frame" x="38" y="262.5" width="338" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="9Ye-wZ-N1K"/>
+                                    <constraint firstAttribute="width" constant="338" id="LeX-zx-YIs"/>
+                                </constraints>
+                                <string key="text">Voice: “Very well done, my brave young boy. I am sure you must be tired by now and you must rest your bones before moving ahead. There's a magical cottage half a mile away, it must be good to spend the night there.”</string>
+                                <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iG2-D2-CUz">
+                                <rect key="frame" x="98.5" y="674" width="217" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="217" id="8e8-3V-BBo"/>
+                                    <constraint firstAttribute="height" constant="88" id="OnQ-jZ-K3s"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="startJourneyBtn"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="J5h-Hw-xm3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="A8v-41-LaU" secondAttribute="bottom" id="4OM-9H-y2D"/>
+                            <constraint firstItem="4hO-Dk-JpK" firstAttribute="centerY" secondItem="LDy-Kg-3lK" secondAttribute="centerY" constant="-100" id="4lh-2Q-lrq"/>
+                            <constraint firstItem="iG2-D2-CUz" firstAttribute="centerX" secondItem="LDy-Kg-3lK" secondAttribute="centerX" id="Gdj-ov-wy5"/>
+                            <constraint firstItem="2Bx-Vt-poP" firstAttribute="top" secondItem="LDy-Kg-3lK" secondAttribute="top" id="HCd-Rp-xHf"/>
+                            <constraint firstItem="A8v-41-LaU" firstAttribute="trailing" secondItem="J5h-Hw-xm3" secondAttribute="trailing" id="MjQ-3b-EZ9"/>
+                            <constraint firstItem="A8v-41-LaU" firstAttribute="leading" secondItem="J5h-Hw-xm3" secondAttribute="leading" id="NsO-hu-2FB"/>
+                            <constraint firstItem="A8v-41-LaU" firstAttribute="top" secondItem="LDy-Kg-3lK" secondAttribute="top" id="Yvh-y2-98E"/>
+                            <constraint firstItem="2Bx-Vt-poP" firstAttribute="trailing" secondItem="J5h-Hw-xm3" secondAttribute="trailing" id="cUA-4y-H3Q"/>
+                            <constraint firstItem="4hO-Dk-JpK" firstAttribute="centerX" secondItem="LDy-Kg-3lK" secondAttribute="centerX" id="fBw-zv-SOT"/>
+                            <constraint firstAttribute="bottom" secondItem="2Bx-Vt-poP" secondAttribute="bottom" id="gvx-0u-wFi"/>
+                            <constraint firstItem="J5h-Hw-xm3" firstAttribute="bottom" secondItem="iG2-D2-CUz" secondAttribute="bottom" constant="100" id="l7H-qJ-giB"/>
+                            <constraint firstItem="2Bx-Vt-poP" firstAttribute="leading" secondItem="J5h-Hw-xm3" secondAttribute="leading" id="lbe-uD-bXK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wUS-S2-Fte"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pob-yD-aPt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13860.869565217392" y="-335.49107142857139"/>
         </scene>
         <!--You Lost AlertVC-->
         <scene sceneID="FDd-pg-oaQ">
@@ -1501,6 +1623,7 @@
         <image name="kingdom" width="3277" height="4096"/>
         <image name="logo" width="148" height="185"/>
         <image name="mystery forest 1" width="390" height="844"/>
+        <image name="mystery-shack" width="390" height="844"/>
         <image name="nextBtn" width="140" height="57"/>
         <image name="orTxt" width="363.5" height="30"/>
         <image name="playBtn" width="102" height="105"/>
@@ -1510,10 +1633,13 @@
         <image name="selectNameBtn" width="225" height="84"/>
         <image name="signUpBg" width="390" height="693"/>
         <image name="signUpBtn" width="147" height="52"/>
+        <image name="sinister-shack" width="390" height="844"/>
         <image name="snowy_forest" width="390" height="844"/>
         <image name="sovaCry" width="246" height="262"/>
+        <image name="startJourneyBtn" width="193" height="74"/>
         <image name="stoneImg" width="400" height="220"/>
         <image name="swordImg" width="290" height="253"/>
+        <image name="take5DeepBreathsBtn" width="209" height="90"/>
         <image name="youDecideToFindHerbBtn" width="253" height="79"/>
         <namedColor name="GreenC">
             <color red="0.396078431372549" green="0.75686274509803919" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
