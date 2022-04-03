@@ -1331,6 +1331,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="startJourneyBtn"/>
+                                <connections>
+                                    <segue destination="dTb-Si-faG" kind="show" id="wnj-aR-GIj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="J5h-Hw-xm3"/>
@@ -1355,6 +1358,125 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pob-yD-aPt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="13860.869565217392" y="-335.49107142857139"/>
+        </scene>
+        <!--Ninth ScreenVC-->
+        <scene sceneID="hqP-SW-Fuf">
+            <objects>
+                <viewController storyboardIdentifier="NinthScreenVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dTb-Si-faG" customClass="NinthScreenVC" customModule="Mutables" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZUp-1x-nkK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="village_in_forest" translatesAutoresizingMaskIntoConstraints="NO" id="vW6-ll-Eew">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blur_imgae" translatesAutoresizingMaskIntoConstraints="NO" id="cQF-3h-jkT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0R-9w-2g5">
+                                <rect key="frame" x="38" y="262.5" width="338" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="338" id="bDG-KG-Ljr"/>
+                                    <constraint firstAttribute="height" constant="171" id="wKU-6y-PlG"/>
+                                </constraints>
+                                <string key="text">Voice: “Very well done, my brave young boy. I am sure you must be tired by now and you must rest your bones before moving ahead. There's a magical cottage half a mile away, it must be good to spend the night there.”</string>
+                                <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpd-gx-KWs">
+                                <rect key="frame" x="125" y="691" width="164" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="UJe-nR-GGL"/>
+                                    <constraint firstAttribute="height" constant="71" id="wni-NF-w0s"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="nextBtn"/>
+                                <connections>
+                                    <segue destination="PGy-iJ-aKN" kind="show" id="8Fr-At-bff"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="n2n-3c-Ke6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cQF-3h-jkT" firstAttribute="trailing" secondItem="n2n-3c-Ke6" secondAttribute="trailing" id="1EP-AS-5Vn"/>
+                            <constraint firstItem="cQF-3h-jkT" firstAttribute="top" secondItem="ZUp-1x-nkK" secondAttribute="top" id="6w6-SY-BM2"/>
+                            <constraint firstItem="d0R-9w-2g5" firstAttribute="centerY" secondItem="ZUp-1x-nkK" secondAttribute="centerY" constant="-100" id="8tm-xH-2W7"/>
+                            <constraint firstItem="vW6-ll-Eew" firstAttribute="leading" secondItem="n2n-3c-Ke6" secondAttribute="leading" id="KGI-Ca-Lvw"/>
+                            <constraint firstAttribute="bottom" secondItem="cQF-3h-jkT" secondAttribute="bottom" id="N29-j6-uO3"/>
+                            <constraint firstItem="vW6-ll-Eew" firstAttribute="trailing" secondItem="n2n-3c-Ke6" secondAttribute="trailing" id="SgH-0L-cro"/>
+                            <constraint firstAttribute="bottom" secondItem="vW6-ll-Eew" secondAttribute="bottom" id="Zxf-FA-08U"/>
+                            <constraint firstItem="d0R-9w-2g5" firstAttribute="centerX" secondItem="ZUp-1x-nkK" secondAttribute="centerX" id="fcJ-0E-4RK"/>
+                            <constraint firstItem="vW6-ll-Eew" firstAttribute="top" secondItem="ZUp-1x-nkK" secondAttribute="top" id="gfY-SX-KRE"/>
+                            <constraint firstItem="xpd-gx-KWs" firstAttribute="centerX" secondItem="ZUp-1x-nkK" secondAttribute="centerX" id="i09-sc-Dtr"/>
+                            <constraint firstItem="n2n-3c-Ke6" firstAttribute="bottom" secondItem="xpd-gx-KWs" secondAttribute="bottom" constant="100" id="pN9-9I-sq8"/>
+                            <constraint firstItem="cQF-3h-jkT" firstAttribute="leading" secondItem="n2n-3c-Ke6" secondAttribute="leading" id="pfS-cW-Djt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8uC-be-cWl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sfo-FO-uG0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14836.231884057972" y="-359.59821428571428"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="r9l-fE-1dr">
+            <objects>
+                <viewController id="PGy-iJ-aKN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xO6-I2-FUS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="old_women" translatesAutoresizingMaskIntoConstraints="NO" id="M8l-wK-slw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blur_imgae" translatesAutoresizingMaskIntoConstraints="NO" id="iuM-5W-iO9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0FI-Au-K5R">
+                                <rect key="frame" x="38" y="262.5" width="338" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="338" id="7Ip-Vr-hgs"/>
+                                    <constraint firstAttribute="height" constant="171" id="SMN-4y-FkO"/>
+                                </constraints>
+                                <string key="text">Lady: thanks for saving us, and in return of this favor you can rest at my house and I will direct you ahead once you're rested enough..</string>
+                                <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGf-yt-KJS">
+                                <rect key="frame" x="90.5" y="658" width="233" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="25x-pH-Zw0"/>
+                                    <constraint firstAttribute="width" constant="233" id="ATp-ER-neo"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="take8_10DeepBreathBtn"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XPj-pa-R7o"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="M8l-wK-slw" firstAttribute="top" secondItem="xO6-I2-FUS" secondAttribute="top" id="43F-Ny-mDk"/>
+                            <constraint firstItem="XPj-pa-R7o" firstAttribute="bottom" secondItem="UGf-yt-KJS" secondAttribute="bottom" constant="100" id="7fg-ms-MXX"/>
+                            <constraint firstItem="iuM-5W-iO9" firstAttribute="trailing" secondItem="XPj-pa-R7o" secondAttribute="trailing" id="IkJ-4H-5Dy"/>
+                            <constraint firstItem="UGf-yt-KJS" firstAttribute="centerX" secondItem="xO6-I2-FUS" secondAttribute="centerX" id="KYr-7H-fxw"/>
+                            <constraint firstItem="M8l-wK-slw" firstAttribute="leading" secondItem="XPj-pa-R7o" secondAttribute="leading" id="Kud-Xm-O1K"/>
+                            <constraint firstItem="iuM-5W-iO9" firstAttribute="leading" secondItem="XPj-pa-R7o" secondAttribute="leading" id="dgt-OP-tkM"/>
+                            <constraint firstItem="iuM-5W-iO9" firstAttribute="top" secondItem="xO6-I2-FUS" secondAttribute="top" id="doB-6n-mUp"/>
+                            <constraint firstItem="0FI-Au-K5R" firstAttribute="centerY" secondItem="xO6-I2-FUS" secondAttribute="centerY" constant="-100" id="dpe-OU-UJ1"/>
+                            <constraint firstAttribute="bottom" secondItem="iuM-5W-iO9" secondAttribute="bottom" id="oML-ed-f01"/>
+                            <constraint firstItem="0FI-Au-K5R" firstAttribute="centerX" secondItem="xO6-I2-FUS" secondAttribute="centerX" id="tSM-ur-Hry"/>
+                            <constraint firstAttribute="bottom" secondItem="M8l-wK-slw" secondAttribute="bottom" id="vAB-po-fRz"/>
+                            <constraint firstItem="M8l-wK-slw" firstAttribute="trailing" secondItem="XPj-pa-R7o" secondAttribute="trailing" id="ysL-Az-JU4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fIa-BZ-797"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6CD-HI-lsz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15811.594202898552" y="-343.52678571428572"/>
         </scene>
         <!--You Lost AlertVC-->
         <scene sceneID="FDd-pg-oaQ">
@@ -1625,6 +1747,7 @@
         <image name="mystery forest 1" width="390" height="844"/>
         <image name="mystery-shack" width="390" height="844"/>
         <image name="nextBtn" width="140" height="57"/>
+        <image name="old_women" width="390" height="844"/>
         <image name="orTxt" width="363.5" height="30"/>
         <image name="playBtn" width="102" height="105"/>
         <image name="questTitleBlur" width="390" height="844"/>
@@ -1640,6 +1763,8 @@
         <image name="stoneImg" width="400" height="220"/>
         <image name="swordImg" width="290" height="253"/>
         <image name="take5DeepBreathsBtn" width="209" height="90"/>
+        <image name="take8_10DeepBreathBtn" width="209" height="90"/>
+        <image name="village_in_forest" width="390" height="844"/>
         <image name="youDecideToFindHerbBtn" width="253" height="79"/>
         <namedColor name="GreenC">
             <color red="0.396078431372549" green="0.75686274509803919" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
