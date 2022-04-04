@@ -1332,7 +1332,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="startJourneyBtn"/>
                                 <connections>
-                                    <segue destination="dTb-Si-faG" kind="show" id="wnj-aR-GIj"/>
+                                    <segue destination="Pzw-mZ-TYq" kind="show" id="1k8-Zl-4k4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1358,6 +1358,110 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pob-yD-aPt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="13860.869565217392" y="-335.49107142857139"/>
+        </scene>
+        <!--Find Old LadyVC-->
+        <scene sceneID="Vao-0c-kp2">
+            <objects>
+                <viewController id="Pzw-mZ-TYq" customClass="FindOldLadyVC" customModule="Mutables" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y8z-ce-m0s">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uik-Wb-Rru">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQP-wv-JCO">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="findOldLadyBg" translatesAutoresizingMaskIntoConstraints="NO" id="omy-z3-o8e">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oldLady" translatesAutoresizingMaskIntoConstraints="NO" id="vbW-HQ-Vc1">
+                                                <rect key="frame" x="155" y="284" width="105" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="a2z-VB-9AQ"/>
+                                                    <constraint firstAttribute="width" constant="105" id="yqc-6i-Uey"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="VaQ-QC-s4D" appends="YES" id="eRX-G4-LYP"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zebra" translatesAutoresizingMaskIntoConstraints="NO" id="x6V-sI-c51">
+                                                <rect key="frame" x="-60" y="389" width="534" height="357"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="357" id="H3B-Yb-aaZ"/>
+                                                    <constraint firstAttribute="width" constant="534" id="TNH-29-TgJ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questTitleBlur" translatesAutoresizingMaskIntoConstraints="NO" id="CCB-3H-Hp3">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="454"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="454" id="fPv-FF-zdY"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find Old Lady..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVQ-it-hUv">
+                                                <rect key="frame" x="87" y="70" width="240" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="bL5-4F-5BN"/>
+                                                    <constraint firstAttribute="height" constant="50" id="d1K-2f-gSk"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="35"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="CCB-3H-Hp3" firstAttribute="leading" secondItem="JQP-wv-JCO" secondAttribute="leading" id="8ZY-Lt-rru"/>
+                                            <constraint firstItem="OVQ-it-hUv" firstAttribute="centerX" secondItem="JQP-wv-JCO" secondAttribute="centerX" id="8gC-Oi-FaH"/>
+                                            <constraint firstAttribute="trailing" secondItem="CCB-3H-Hp3" secondAttribute="trailing" id="9cj-z8-JXe"/>
+                                            <constraint firstItem="OVQ-it-hUv" firstAttribute="top" secondItem="JQP-wv-JCO" secondAttribute="top" constant="70" id="9vP-Ts-Gem"/>
+                                            <constraint firstAttribute="trailing" secondItem="omy-z3-o8e" secondAttribute="trailing" id="R3F-bf-1oe"/>
+                                            <constraint firstItem="omy-z3-o8e" firstAttribute="top" secondItem="JQP-wv-JCO" secondAttribute="top" id="XWo-wj-bTe"/>
+                                            <constraint firstItem="x6V-sI-c51" firstAttribute="centerX" secondItem="JQP-wv-JCO" secondAttribute="centerX" id="Y6z-DR-Ceh"/>
+                                            <constraint firstItem="vbW-HQ-Vc1" firstAttribute="top" secondItem="JQP-wv-JCO" secondAttribute="top" constant="284" id="YLK-7M-HnR"/>
+                                            <constraint firstItem="omy-z3-o8e" firstAttribute="leading" secondItem="JQP-wv-JCO" secondAttribute="leading" id="bWB-yR-ymO"/>
+                                            <constraint firstAttribute="bottom" secondItem="omy-z3-o8e" secondAttribute="bottom" id="nWo-SA-5MG"/>
+                                            <constraint firstItem="vbW-HQ-Vc1" firstAttribute="leading" secondItem="JQP-wv-JCO" secondAttribute="leading" constant="155" id="ovv-2X-vMl"/>
+                                            <constraint firstItem="CCB-3H-Hp3" firstAttribute="top" secondItem="JQP-wv-JCO" secondAttribute="top" id="qbb-D4-odz"/>
+                                            <constraint firstAttribute="bottom" secondItem="x6V-sI-c51" secondAttribute="bottom" constant="150" id="y6q-gj-5Rv"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="JQP-wv-JCO" firstAttribute="top" secondItem="uik-Wb-Rru" secondAttribute="top" id="KXt-xG-o04"/>
+                                    <constraint firstItem="JQP-wv-JCO" firstAttribute="height" secondItem="uik-Wb-Rru" secondAttribute="height" id="VQc-ny-q0f"/>
+                                    <constraint firstItem="JQP-wv-JCO" firstAttribute="leading" secondItem="uik-Wb-Rru" secondAttribute="leading" id="eWx-Jw-GwS"/>
+                                    <constraint firstAttribute="bottom" secondItem="JQP-wv-JCO" secondAttribute="bottom" id="oAS-0e-dgV"/>
+                                    <constraint firstAttribute="trailing" secondItem="JQP-wv-JCO" secondAttribute="trailing" id="zjq-Zc-IDq"/>
+                                    <constraint firstItem="JQP-wv-JCO" firstAttribute="width" secondItem="uik-Wb-Rru" secondAttribute="width" id="zkS-2f-HVx"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3h1-A8-l6C"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uik-Wb-Rru" secondAttribute="trailing" id="Jkt-1J-3Ux"/>
+                            <constraint firstAttribute="bottom" secondItem="uik-Wb-Rru" secondAttribute="bottom" id="SIe-WU-hvg"/>
+                            <constraint firstItem="uik-Wb-Rru" firstAttribute="top" secondItem="y8z-ce-m0s" secondAttribute="top" id="jHh-76-EaV"/>
+                            <constraint firstItem="uik-Wb-Rru" firstAttribute="leading" secondItem="y8z-ce-m0s" secondAttribute="leading" id="lXe-mi-N6Z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Okr-EO-7U3"/>
+                    <connections>
+                        <outlet property="findOldLadyTitle" destination="OVQ-it-hUv" id="ymo-vw-ho3"/>
+                        <outlet property="oldLadyImage" destination="vbW-HQ-Vc1" id="5zx-bw-Gb5"/>
+                        <segue destination="dTb-Si-faG" kind="show" identifier="goToNinthScreenVC" id="e57-oD-gdE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kqa-qT-PdY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="VaQ-QC-s4D">
+                    <connections>
+                        <action selector="oldLadyFoundTapped:" destination="Pzw-mZ-TYq" id="b0A-kE-XD6"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="13840.579710144928" y="501.5625"/>
         </scene>
         <!--Ninth ScreenVC-->
         <scene sceneID="hqP-SW-Fuf">
@@ -1724,9 +1828,114 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
         </scene>
+        <!--Find Old Lady AlertVC-->
+        <scene sceneID="zrr-Q0-cmg">
+            <objects>
+                <viewController storyboardIdentifier="FindOldLadyAlertVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="idJ-aZ-u9a" customClass="FindOldLadyAlertVC" customModule="Mutables" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TGw-JC-feK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mQH-BK-wRx">
+                                <rect key="frame" x="20" y="303" width="374" height="290"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIQ-pu-3Ya">
+                                        <rect key="frame" x="0.0" y="90" width="374" height="200"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alertRect" translatesAutoresizingMaskIntoConstraints="NO" id="GXM-5x-NFg">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="200"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lets talk with the old lady and get insights of this mystery forest." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjh-hr-ngv">
+                                                <rect key="frame" x="10" y="85" width="354" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="U9e-1C-iJc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="qjh-hr-ngv" firstAttribute="centerY" secondItem="LIQ-pu-3Ya" secondAttribute="centerY" constant="25" id="4YF-Na-PpY"/>
+                                            <constraint firstAttribute="trailing" secondItem="GXM-5x-NFg" secondAttribute="trailing" id="Flj-QT-Jyr"/>
+                                            <constraint firstAttribute="width" constant="374" id="Hzi-LO-ZnH"/>
+                                            <constraint firstItem="GXM-5x-NFg" firstAttribute="leading" secondItem="LIQ-pu-3Ya" secondAttribute="leading" id="Rhf-dM-pbi"/>
+                                            <constraint firstItem="GXM-5x-NFg" firstAttribute="top" secondItem="LIQ-pu-3Ya" secondAttribute="top" id="buF-75-mQw"/>
+                                            <constraint firstAttribute="trailing" secondItem="qjh-hr-ngv" secondAttribute="trailing" constant="10" id="gzP-oc-fQD"/>
+                                            <constraint firstAttribute="height" constant="200" id="h4b-TF-5bs"/>
+                                            <constraint firstAttribute="bottom" secondItem="GXM-5x-NFg" secondAttribute="bottom" id="hPC-UQ-uJc"/>
+                                            <constraint firstItem="qjh-hr-ngv" firstAttribute="centerX" secondItem="LIQ-pu-3Ya" secondAttribute="centerX" id="uWz-WU-aQY"/>
+                                            <constraint firstItem="qjh-hr-ngv" firstAttribute="leading" secondItem="LIQ-pu-3Ya" secondAttribute="leading" constant="10" id="wDS-kE-5MK"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Clt-hB-65e">
+                                        <rect key="frame" x="10" y="20" width="150" height="150"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alertCircle" translatesAutoresizingMaskIntoConstraints="NO" id="lI4-Ul-gs9">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oldLady" translatesAutoresizingMaskIntoConstraints="NO" id="yPd-9M-xV5">
+                                                <rect key="frame" x="30" y="30" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="90" id="P1V-bY-aRs"/>
+                                                    <constraint firstAttribute="height" constant="90" id="dfC-Go-uTN"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="lI4-Ul-gs9" secondAttribute="trailing" id="9qa-Z1-mzX"/>
+                                            <constraint firstItem="lI4-Ul-gs9" firstAttribute="leading" secondItem="Clt-hB-65e" secondAttribute="leading" id="AwF-qc-KXv"/>
+                                            <constraint firstAttribute="bottom" secondItem="lI4-Ul-gs9" secondAttribute="bottom" id="DGs-WC-aXK"/>
+                                            <constraint firstItem="yPd-9M-xV5" firstAttribute="centerX" secondItem="Clt-hB-65e" secondAttribute="centerX" id="IfX-BJ-B2Z"/>
+                                            <constraint firstItem="yPd-9M-xV5" firstAttribute="centerY" secondItem="Clt-hB-65e" secondAttribute="centerY" id="M17-cI-2lN"/>
+                                            <constraint firstItem="lI4-Ul-gs9" firstAttribute="top" secondItem="Clt-hB-65e" secondAttribute="top" id="PX4-TX-LWe"/>
+                                            <constraint firstAttribute="height" constant="150" id="bAF-gw-thv"/>
+                                            <constraint firstAttribute="width" constant="150" id="fDG-Kq-Ktz"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Talk to the old lady" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pES-Pu-ITR">
+                                        <rect key="frame" x="170" y="100" width="171" height="57.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="171" id="XX0-fN-4cw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="23"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Clt-hB-65e" firstAttribute="leading" secondItem="mQH-BK-wRx" secondAttribute="leading" constant="10" id="5Xm-ci-wZv"/>
+                                    <constraint firstAttribute="trailing" secondItem="LIQ-pu-3Ya" secondAttribute="trailing" id="Dq2-e6-oof"/>
+                                    <constraint firstItem="pES-Pu-ITR" firstAttribute="leading" secondItem="Clt-hB-65e" secondAttribute="trailing" constant="10" id="N5z-KM-3n7"/>
+                                    <constraint firstItem="Clt-hB-65e" firstAttribute="top" secondItem="mQH-BK-wRx" secondAttribute="top" constant="20" id="NOH-58-q3q"/>
+                                    <constraint firstItem="LIQ-pu-3Ya" firstAttribute="leading" secondItem="mQH-BK-wRx" secondAttribute="leading" id="RDR-18-e1l"/>
+                                    <constraint firstItem="pES-Pu-ITR" firstAttribute="top" secondItem="mQH-BK-wRx" secondAttribute="top" constant="100" id="TFm-7H-JOa"/>
+                                    <constraint firstAttribute="height" constant="290" id="V8s-p5-Dmm"/>
+                                    <constraint firstAttribute="bottom" secondItem="LIQ-pu-3Ya" secondAttribute="bottom" id="hZu-la-XQk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3H6-wW-RaN"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3H6-wW-RaN" firstAttribute="trailing" secondItem="mQH-BK-wRx" secondAttribute="trailing" constant="20" id="Fm9-5u-KVT"/>
+                            <constraint firstItem="mQH-BK-wRx" firstAttribute="centerY" secondItem="TGw-JC-feK" secondAttribute="centerY" id="TMx-68-Ipb"/>
+                            <constraint firstItem="mQH-BK-wRx" firstAttribute="leading" secondItem="3H6-wW-RaN" secondAttribute="leading" constant="20" id="UVH-4Z-LIx"/>
+                            <constraint firstItem="mQH-BK-wRx" firstAttribute="centerX" secondItem="TGw-JC-feK" secondAttribute="centerX" id="v8G-Xp-6X4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0eb-tw-J0n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mW1-yf-OXf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13860.869565217392" y="1189.9553571428571"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="h6F-Y5-Lit"/>
+        <segue reference="qnW-y2-Q9X"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="ArrowBtn" width="70" height="70"/>
@@ -1737,6 +1946,7 @@
         <image name="alertCircle" width="357" height="303"/>
         <image name="alertRect" width="862" height="327"/>
         <image name="appleSignIn" width="50" height="50"/>
+        <image name="findOldLadyBg" width="390" height="844"/>
         <image name="findSowrdBg" width="1661" height="1188"/>
         <image name="goToCottageBtn" width="178" height="79"/>
         <image name="googleSignInBtn" width="50" height="50"/>
@@ -1747,6 +1957,7 @@
         <image name="mystery forest 1" width="390" height="844"/>
         <image name="mystery-shack" width="390" height="844"/>
         <image name="nextBtn" width="140" height="57"/>
+        <image name="oldLady" width="84" height="118"/>
         <image name="old_women" width="390" height="844"/>
         <image name="orTxt" width="363.5" height="30"/>
         <image name="playBtn" width="102" height="105"/>
@@ -1766,6 +1977,7 @@
         <image name="take8_10DeepBreathBtn" width="209" height="90"/>
         <image name="village_in_forest" width="390" height="844"/>
         <image name="youDecideToFindHerbBtn" width="253" height="79"/>
+        <image name="zebra" width="377" height="444"/>
         <namedColor name="GreenC">
             <color red="0.396078431372549" green="0.75686274509803919" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

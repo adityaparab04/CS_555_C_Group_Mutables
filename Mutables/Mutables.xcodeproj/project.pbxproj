@@ -24,6 +24,8 @@
 		B7493CFB27FA65BC00A9C95D /* EighthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7493CFA27FA65BC00A9C95D /* EighthScreenVC.swift */; };
 		B7493CFD27FA65CE00A9C95D /* NinthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7493CFC27FA65CE00A9C95D /* NinthScreenVC.swift */; };
 		B7493CFF27FA660D00A9C95D /* TenthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7493CFE27FA660D00A9C95D /* TenthScreenVC.swift */; };
+		B78826F127FBA24D00616524 /* FindOldLadyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78826F027FBA24D00616524 /* FindOldLadyVC.swift */; };
+		B78826F327FBA94400616524 /* FindOldLadyAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78826F227FBA94400616524 /* FindOldLadyAlertVC.swift */; };
 		B793660527CD6C15006BE71D /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B793660427CD6C15006BE71D /* ForgotPasswordVC.swift */; };
 		B79C15F427B83CC7000153DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C15F327B83CC7000153DB /* AppDelegate.swift */; };
 		B79C15F627B83CC7000153DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C15F527B83CC7000153DB /* SceneDelegate.swift */; };
@@ -77,6 +79,8 @@
 		B7493CFA27FA65BC00A9C95D /* EighthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighthScreenVC.swift; sourceTree = "<group>"; };
 		B7493CFC27FA65CE00A9C95D /* NinthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinthScreenVC.swift; sourceTree = "<group>"; };
 		B7493CFE27FA660D00A9C95D /* TenthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenthScreenVC.swift; sourceTree = "<group>"; };
+		B78826F027FBA24D00616524 /* FindOldLadyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindOldLadyVC.swift; sourceTree = "<group>"; };
+		B78826F227FBA94400616524 /* FindOldLadyAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindOldLadyAlertVC.swift; sourceTree = "<group>"; };
 		B793660427CD6C15006BE71D /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		B79C15F027B83CC7000153DB /* Mutables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mutables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B79C15F327B83CC7000153DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				B7172FE127E7E5AE009DFA6B /* MystertyForestVC.swift */,
+				B78826F027FBA24D00616524 /* FindOldLadyVC.swift */,
 			);
 			path = "Quests VCs";
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 			children = (
 				B74832F827E6C3870039A5E8 /* CustomAlertVC.swift */,
 				B7172FE327E7EDF4009DFA6B /* YouLostAlertVC.swift */,
+				B78826F227FBA94400616524 /* FindOldLadyAlertVC.swift */,
 			);
 			path = Alerts;
 			sourceTree = "<group>";
@@ -442,6 +448,7 @@
 				B79C15F827B83CC7000153DB /* LaunchScreenVC.swift in Sources */,
 				B7172FDD27E7E45C009DFA6B /* SecondScreenVC.swift in Sources */,
 				B7172FDF27E7E46A009DFA6B /* ThirdScreenVC.swift in Sources */,
+				B78826F127FBA24D00616524 /* FindOldLadyVC.swift in Sources */,
 				B79C5E1127CC395900AF562B /* HomeVC.swift in Sources */,
 				B74832FA27E6C3870039A5E8 /* CustomAlertVC.swift in Sources */,
 				B7172FE927E8044C009DFA6B /* Music.swift in Sources */,
@@ -453,6 +460,7 @@
 				B7493CF727FA658700A9C95D /* SixthScreenVC.swift in Sources */,
 				B793660527CD6C15006BE71D /* ForgotPasswordVC.swift in Sources */,
 				B7493CF927FA659500A9C95D /* SeventhScreenVC.swift in Sources */,
+				B78826F327FBA94400616524 /* FindOldLadyAlertVC.swift in Sources */,
 				B79C5E1827CC44CB00AF562B /* SignUpPassVC.swift in Sources */,
 				B7493CFB27FA65BC00A9C95D /* EighthScreenVC.swift in Sources */,
 				B7493CFF27FA660D00A9C95D /* TenthScreenVC.swift in Sources */,

@@ -25,10 +25,7 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-//        if self.userDefault.bool(forKey: "userSignedIn") {
-//            self.performSegue(withIdentifier: "goToHomeVC", sender: self)
-//        }
+
         
     }
     
