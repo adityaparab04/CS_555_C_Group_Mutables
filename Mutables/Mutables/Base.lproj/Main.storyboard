@@ -1669,10 +1669,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0o-yV-AXU">
-                                <rect key="frame" x="173.5" y="691" width="67" height="71"/>
+                                <rect key="frame" x="123.5" y="691" width="167" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="igv-yz-DSW"/>
-                                    <constraint firstAttribute="width" constant="67" id="y0v-Zh-2Wb"/>
+                                    <constraint firstAttribute="width" constant="167" id="y0v-Zh-2Wb"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="nextBtn"/>
@@ -1724,7 +1724,10 @@
                                     <constraint firstAttribute="height" constant="171" id="FC3-hG-rr7"/>
                                     <constraint firstAttribute="width" constant="338" id="ssX-fv-ikQ"/>
                                 </constraints>
-                                <string key="text">Lady: “Hope your mind finds itself in as strong a state as you are because the obstacle that lies ahead is no task of cowardice but only the bravest of all can conquer it. Once and if, you win, only then you'll find the heart of the forest open up beholding the herb”</string>
+                                <string key="text">You approach the forest, which should have been covered with trees but instead was nothing but a barren dessert. You’re shocked and think whether it’s a mirage.
+
+For breaking the mirage effect you need to find the real oasis.
+</string>
                                 <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1772,14 +1775,57 @@
                     <view key="view" contentMode="scaleToFill" id="0nl-rt-oQ4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screen14Bg" translatesAutoresizingMaskIntoConstraints="NO" id="oZp-Pq-tAd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blur_imgae" translatesAutoresizingMaskIntoConstraints="NO" id="hxt-9E-5yZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFA-vH-ITQ">
+                                <rect key="frame" x="38" y="262.5" width="338" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="338" id="023-6p-rQP"/>
+                                    <constraint firstAttribute="height" constant="171" id="ROe-Tz-Ejr"/>
+                                </constraints>
+                                <string key="text">Even after completing the task the scenario doesn’t change. Suddenly you realize the old lady's instruction about mental strength and you closes yout eyes to find the herb from your mind’s eye.
+You get Confused and try to think over it</string>
+                                <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNy-v5-m4U">
+                                <rect key="frame" x="125" y="691" width="164" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="Vtx-77-rrA"/>
+                                    <constraint firstAttribute="height" constant="71" id="iKe-BX-FoR"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="nextBtn"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="4jW-Sw-7Zl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tFA-vH-ITQ" firstAttribute="centerY" secondItem="0nl-rt-oQ4" secondAttribute="centerY" constant="-100" id="1Zl-tt-ixI"/>
+                            <constraint firstItem="oZp-Pq-tAd" firstAttribute="trailing" secondItem="4jW-Sw-7Zl" secondAttribute="trailing" id="3qE-bJ-UXo"/>
+                            <constraint firstItem="tFA-vH-ITQ" firstAttribute="centerX" secondItem="0nl-rt-oQ4" secondAttribute="centerX" id="7Wh-Ic-mjv"/>
+                            <constraint firstItem="hxt-9E-5yZ" firstAttribute="leading" secondItem="4jW-Sw-7Zl" secondAttribute="leading" id="8J6-JL-iJL"/>
+                            <constraint firstItem="4jW-Sw-7Zl" firstAttribute="bottom" secondItem="VNy-v5-m4U" secondAttribute="bottom" constant="100" id="AG6-pm-hpD"/>
+                            <constraint firstItem="hxt-9E-5yZ" firstAttribute="top" secondItem="0nl-rt-oQ4" secondAttribute="top" id="Jc0-tg-ikl"/>
+                            <constraint firstAttribute="bottom" secondItem="hxt-9E-5yZ" secondAttribute="bottom" id="aKg-od-rSV"/>
+                            <constraint firstItem="oZp-Pq-tAd" firstAttribute="top" secondItem="0nl-rt-oQ4" secondAttribute="top" id="cmi-Tb-9Kx"/>
+                            <constraint firstItem="VNy-v5-m4U" firstAttribute="centerX" secondItem="0nl-rt-oQ4" secondAttribute="centerX" id="dNV-BV-T7a"/>
+                            <constraint firstItem="hxt-9E-5yZ" firstAttribute="trailing" secondItem="4jW-Sw-7Zl" secondAttribute="trailing" id="fZT-no-k6s"/>
+                            <constraint firstAttribute="bottom" secondItem="oZp-Pq-tAd" secondAttribute="bottom" id="pOf-fe-qAC"/>
+                            <constraint firstItem="oZp-Pq-tAd" firstAttribute="leading" secondItem="4jW-Sw-7Zl" secondAttribute="leading" id="yke-Uc-vK3"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9kR-Il-cZ7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7P-g2-39n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="19404" y="-365"/>
+            <point key="canvasLocation" x="19402.89855072464" y="-365.625"/>
         </scene>
         <!--Oasis QuestVC-->
         <scene sceneID="dPI-qm-Agb">
@@ -2389,6 +2435,7 @@
         <image name="screen11Bg" width="390" height="844"/>
         <image name="screen12Bg" width="390" height="844"/>
         <image name="screen13Bg" width="390" height="844"/>
+        <image name="screen14Bg" width="390" height="844"/>
         <image name="selectNameBtn" width="225" height="84"/>
         <image name="signUpBg" width="390" height="693"/>
         <image name="signUpBtn" width="147" height="52"/>
