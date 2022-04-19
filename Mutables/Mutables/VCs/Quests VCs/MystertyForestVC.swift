@@ -50,7 +50,7 @@ class MystertyForestVC: UIViewController {
         self.present(alert, animated: true) {
             self.music.startMusic(fileName: "victory", format: "mp3", volume: 1.0, loop: 0)
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                self.performSegue(withIdentifier: "goToFifthScreenVC", sender: self)
+                self.performSegue(withIdentifier: "goToSixthScreenVC", sender: self)
             }
         }
         

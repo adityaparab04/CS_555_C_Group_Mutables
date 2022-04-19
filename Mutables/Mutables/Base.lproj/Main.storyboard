@@ -62,13 +62,13 @@
                                         <rect key="frame" x="137.5" y="807.5" width="139" height="58.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqD-na-50C">
-                                                <rect key="frame" x="49.5" y="0.0" width="40" height="25"/>
+                                                <rect key="frame" x="46.5" y="0.0" width="46.5" height="27"/>
                                                 <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Mutables" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOi-fl-MdK">
-                                                <rect key="frame" x="0.0" y="27" width="139" height="31.5"/>
+                                                <rect key="frame" x="0.0" y="29" width="139" height="29.5"/>
                                                 <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -138,14 +138,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="inZ-nK-Fvp">
                                 <rect key="frame" x="69.5" y="281" width="275" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2O4-m3-n0K">
-                                        <rect key="frame" x="0.0" y="0.0" width="190" height="50"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2O4-m3-n0K">
+                                        <rect key="frame" x="0.0" y="0.0" width="192.5" height="50"/>
                                         <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phr-kQ-Tno">
-                                        <rect key="frame" x="180" y="0.0" width="95" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phr-kQ-Tno">
+                                        <rect key="frame" x="182.5" y="0.0" width="92.5" height="50"/>
                                         <color key="tintColor" name="GreenC"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Sign In">
@@ -551,7 +551,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jvf-2e-DIL">
-                                        <rect key="frame" x="130" y="141" width="170" height="39"/>
+                                        <rect key="frame" x="130" y="141" width="170" height="61"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="170" id="3fn-5M-6Ff"/>
                                         </constraints>
@@ -1104,7 +1104,7 @@
                         <outlet property="questTitle" destination="dTf-r4-a9F" id="dfU-i4-MPM"/>
                         <outlet property="swordImage" destination="opD-WH-OP7" id="dMk-Uw-VLg"/>
                         <segue destination="OfS-o8-2hY" kind="show" id="bh7-yA-sNt"/>
-                        <segue destination="lQX-kW-hCZ" kind="show" identifier="goToFifthScreenVC" id="2a6-HU-7nY"/>
+                        <segue destination="gc0-bz-m3S" kind="show" identifier="goToSixthScreenVC" id="aYD-Op-6mt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SQa-Np-bj3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1116,10 +1116,10 @@
             </objects>
             <point key="canvasLocation" x="9693" y="-242"/>
         </scene>
-        <!--Fifth ScreenVC-->
+        <!--View Controller-->
         <scene sceneID="6Rv-VQ-Ubn">
             <objects>
-                <viewController storyboardIdentifier="FifthScreenVC" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lQX-kW-hCZ" customClass="FifthScreenVC" customModule="Mutables" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FifthScreenVC" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lQX-kW-hCZ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="45L-Kf-fHa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1148,9 +1148,6 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="selectNameBtn"/>
-                                <connections>
-                                    <segue destination="gc0-bz-m3S" kind="show" id="xsP-Nt-CF7"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TW9-zI-auO"/>
@@ -1557,6 +1554,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="take8_10DeepBreathBtn"/>
+                                <connections>
+                                    <segue destination="zf2-Cp-d3V" kind="show" id="jlz-Mo-DE9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XPj-pa-R7o"/>
@@ -1581,6 +1581,125 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6CD-HI-lsz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="15811.594202898552" y="-343.52678571428572"/>
+        </scene>
+        <!--Eleventh ScreenVC-->
+        <scene sceneID="lE7-pv-iQX">
+            <objects>
+                <viewController storyboardIdentifier="EleventhScreenVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zf2-Cp-d3V" customClass="EleventhScreenVC" customModule="Mutables" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ne8-pw-WEV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screen11Bg" translatesAutoresizingMaskIntoConstraints="NO" id="f8f-Q7-7Uu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blur_imgae" translatesAutoresizingMaskIntoConstraints="NO" id="bDM-IC-n83">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Dc-tk-pAg">
+                                <rect key="frame" x="38" y="262.5" width="338" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="IVD-7E-sG8"/>
+                                    <constraint firstAttribute="width" constant="338" id="heT-1T-uEH"/>
+                                </constraints>
+                                <string key="text">Lady: “Hope your mind finds itself in as strong a state as you are because the obstacle that lies ahead is no task of cowardice but only the bravest of all can conquer it. Once and if, you win, only then you'll find the heart of the forest open up beholding the herb”</string>
+                                <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRn-IM-yZ7">
+                                <rect key="frame" x="125" y="691" width="164" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="MhD-cL-QcC"/>
+                                    <constraint firstAttribute="height" constant="71" id="w4J-6H-My4"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="nextBtn"/>
+                                <connections>
+                                    <segue destination="crq-3Y-nOw" kind="show" id="Lab-dJ-DRN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IAd-Md-GU8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Dc-tk-pAg" firstAttribute="centerY" secondItem="ne8-pw-WEV" secondAttribute="centerY" constant="-100" id="2AL-QX-FKB"/>
+                            <constraint firstItem="bDM-IC-n83" firstAttribute="trailing" secondItem="IAd-Md-GU8" secondAttribute="trailing" id="6ud-1S-VBH"/>
+                            <constraint firstItem="bDM-IC-n83" firstAttribute="leading" secondItem="IAd-Md-GU8" secondAttribute="leading" id="CjQ-dM-Umc"/>
+                            <constraint firstItem="f8f-Q7-7Uu" firstAttribute="trailing" secondItem="IAd-Md-GU8" secondAttribute="trailing" id="EnQ-RI-HwO"/>
+                            <constraint firstItem="f8f-Q7-7Uu" firstAttribute="top" secondItem="ne8-pw-WEV" secondAttribute="top" id="IEF-J2-FdI"/>
+                            <constraint firstItem="f8f-Q7-7Uu" firstAttribute="leading" secondItem="IAd-Md-GU8" secondAttribute="leading" id="Mh8-h3-i4F"/>
+                            <constraint firstItem="IAd-Md-GU8" firstAttribute="bottom" secondItem="IRn-IM-yZ7" secondAttribute="bottom" constant="100" id="U9D-pp-6iK"/>
+                            <constraint firstItem="6Dc-tk-pAg" firstAttribute="centerX" secondItem="ne8-pw-WEV" secondAttribute="centerX" id="WLh-3i-vfD"/>
+                            <constraint firstAttribute="bottom" secondItem="bDM-IC-n83" secondAttribute="bottom" id="bDg-TI-K8w"/>
+                            <constraint firstItem="bDM-IC-n83" firstAttribute="top" secondItem="ne8-pw-WEV" secondAttribute="top" id="bxt-BZ-GFD"/>
+                            <constraint firstAttribute="bottom" secondItem="f8f-Q7-7Uu" secondAttribute="bottom" id="ddH-sa-FjO"/>
+                            <constraint firstItem="IRn-IM-yZ7" firstAttribute="centerX" secondItem="ne8-pw-WEV" secondAttribute="centerX" id="j8h-Mt-NiG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dg2-kq-duR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jnl-Nr-TbM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16673.913043478264" y="-343.52678571428572"/>
+        </scene>
+        <!--Twelveth ScreenVC-->
+        <scene sceneID="DWC-9Q-lQr">
+            <objects>
+                <viewController storyboardIdentifier="TwelvethScreenVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="crq-3Y-nOw" customClass="TwelvethScreenVC" customModule="Mutables" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kQV-b9-8fL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screen12Bg" translatesAutoresizingMaskIntoConstraints="NO" id="ZJn-Pn-XEN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blur_imgae" translatesAutoresizingMaskIntoConstraints="NO" id="fkw-6Y-YH6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urj-e2-Uwz">
+                                <rect key="frame" x="38" y="262.5" width="338" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="MHL-Zi-8Uf"/>
+                                    <constraint firstAttribute="width" constant="338" id="Zuf-Ew-vcI"/>
+                                </constraints>
+                                <string key="text">Lady: “Hope your mind finds itself in as strong a state as you are because the obstacle that lies ahead is no task of cowardice but only the bravest of all can conquer it. Once and if, you win, only then you'll find the heart of the forest open up beholding the herb”</string>
+                                <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0o-yV-AXU">
+                                <rect key="frame" x="173.5" y="691" width="67" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="igv-yz-DSW"/>
+                                    <constraint firstAttribute="width" constant="67" id="y0v-Zh-2Wb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="nextBtn"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="y4s-U8-HZ1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="w0o-yV-AXU" firstAttribute="centerX" secondItem="kQV-b9-8fL" secondAttribute="centerX" id="BOp-OZ-dFK"/>
+                            <constraint firstAttribute="bottom" secondItem="fkw-6Y-YH6" secondAttribute="bottom" id="E0O-aE-sHR"/>
+                            <constraint firstItem="ZJn-Pn-XEN" firstAttribute="top" secondItem="kQV-b9-8fL" secondAttribute="top" id="GZi-BI-atF"/>
+                            <constraint firstItem="urj-e2-Uwz" firstAttribute="centerY" secondItem="kQV-b9-8fL" secondAttribute="centerY" constant="-100" id="H1a-xL-mKW"/>
+                            <constraint firstItem="urj-e2-Uwz" firstAttribute="centerX" secondItem="kQV-b9-8fL" secondAttribute="centerX" id="K59-hF-f98"/>
+                            <constraint firstItem="fkw-6Y-YH6" firstAttribute="top" secondItem="kQV-b9-8fL" secondAttribute="top" id="aRu-9m-fWD"/>
+                            <constraint firstItem="y4s-U8-HZ1" firstAttribute="bottom" secondItem="w0o-yV-AXU" secondAttribute="bottom" constant="100" id="f82-qa-pPt"/>
+                            <constraint firstItem="ZJn-Pn-XEN" firstAttribute="leading" secondItem="y4s-U8-HZ1" secondAttribute="leading" id="goE-nZ-OlB"/>
+                            <constraint firstAttribute="bottom" secondItem="ZJn-Pn-XEN" secondAttribute="bottom" id="oXt-hO-Tvc"/>
+                            <constraint firstItem="ZJn-Pn-XEN" firstAttribute="trailing" secondItem="y4s-U8-HZ1" secondAttribute="trailing" id="pmh-99-2la"/>
+                            <constraint firstItem="fkw-6Y-YH6" firstAttribute="leading" secondItem="y4s-U8-HZ1" secondAttribute="leading" id="wcD-3y-7IM"/>
+                            <constraint firstItem="fkw-6Y-YH6" firstAttribute="trailing" secondItem="y4s-U8-HZ1" secondAttribute="trailing" id="yeY-tU-3zR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="c0l-kQ-1jX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4YK-b2-e3Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="17457.971014492756" y="-362.27678571428572"/>
         </scene>
         <!--You Lost AlertVC-->
         <scene sceneID="FDd-pg-oaQ">
@@ -1650,7 +1769,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You lost!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l46-RA-jRb">
-                                        <rect key="frame" x="170" y="100" width="194" height="31.5"/>
+                                        <rect key="frame" x="170" y="100" width="194" height="29.5"/>
                                         <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1769,7 +1888,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sword Found!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFf-KM-9ps">
-                                        <rect key="frame" x="170" y="100" width="194" height="31.5"/>
+                                        <rect key="frame" x="170" y="100" width="194" height="29.5"/>
                                         <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="25"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1896,7 +2015,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Talk to the old lady" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pES-Pu-ITR">
-                                        <rect key="frame" x="170" y="100" width="171" height="57.5"/>
+                                        <rect key="frame" x="170" y="100" width="171" height="54"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="171" id="XX0-fN-4cw"/>
                                         </constraints>
@@ -1964,6 +2083,8 @@
         <image name="questTitleBlur" width="390" height="844"/>
         <image name="refuseBtn" width="216" height="54"/>
         <image name="road_to_shaft" width="390" height="844"/>
+        <image name="screen11Bg" width="390" height="844"/>
+        <image name="screen12Bg" width="390" height="844"/>
         <image name="selectNameBtn" width="225" height="84"/>
         <image name="signUpBg" width="390" height="693"/>
         <image name="signUpBtn" width="147" height="52"/>

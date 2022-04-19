@@ -1,5 +1,5 @@
 //
-//  SixthScreenVC.swift
+//  TwelvethScreenVC.swift
 //  Mutables
 //
 //  Created by Rahul Pawar on 4/18/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SixthScreenVC: UIViewController {
+class TwelvethScreenVC: UIViewController {
 
     let music = Music()
 

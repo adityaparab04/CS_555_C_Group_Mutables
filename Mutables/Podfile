@@ -19,5 +19,8 @@ target 'Mutables' do
      
     pod 'IQKeyboardManager'
     pod 'NVActivityIndicatorView'
+    pod 'MagicTimer'
+
+    pod 'lottie-ios'
 
 end

@@ -19,7 +19,6 @@
 		B7172FED27E8245C009DFA6B /* forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B7172FEC27E8245C009DFA6B /* forest.mp3 */; };
 		B7172FEF27E825CF009DFA6B /* background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B7172FEE27E825CF009DFA6B /* background.mp3 */; };
 		B74832FA27E6C3870039A5E8 /* CustomAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74832F827E6C3870039A5E8 /* CustomAlertVC.swift */; };
-		B7493CF727FA658700A9C95D /* SixthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7493CF627FA658700A9C95D /* SixthScreenVC.swift */; };
 		B7493CF927FA659500A9C95D /* SeventhScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7493CF827FA659500A9C95D /* SeventhScreenVC.swift */; };
 		B7493CFB27FA65BC00A9C95D /* EighthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7493CFA27FA65BC00A9C95D /* EighthScreenVC.swift */; };
 		B7493CFD27FA65CE00A9C95D /* NinthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7493CFC27FA65CE00A9C95D /* NinthScreenVC.swift */; };
@@ -45,6 +44,16 @@
 		B79D4AEF27CB254600AFA341 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79D4AEE27CB254500AFA341 /* LoginVC.swift */; };
 		B7AB061027CE925A00C73802 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AB060F27CE925A00C73802 /* Validation.swift */; };
 		B7AB061A27CEE14B00C73802 /* MutablesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AB061927CEE14B00C73802 /* MutablesTests.swift */; };
+		B7ABF873280E24DD002BD87F /* SixthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ABF872280E24DD002BD87F /* SixthScreenVC.swift */; };
+		B7ABF875280E25CA002BD87F /* EleventhScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ABF874280E25CA002BD87F /* EleventhScreenVC.swift */; };
+		B7ABF877280E25E3002BD87F /* TwelvethScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ABF876280E25E3002BD87F /* TwelvethScreenVC.swift */; };
+		B7ABF879280E2606002BD87F /* ThirteenthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ABF878280E2606002BD87F /* ThirteenthScreenVC.swift */; };
+		B7ABF87B280E261A002BD87F /* FourteenthSceenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ABF87A280E261A002BD87F /* FourteenthSceenVC.swift */; };
+		B7ABF87D280E262E002BD87F /* FifteenthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ABF87C280E262E002BD87F /* FifteenthScreenVC.swift */; };
+		B7ABF87F280E2645002BD87F /* SixteenthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ABF87E280E2645002BD87F /* SixteenthScreenVC.swift */; };
+		B7ABF881280E265A002BD87F /* SeventeenthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ABF880280E265A002BD87F /* SeventeenthScreenVC.swift */; };
+		B7ABF883280E267E002BD87F /* EighteenthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ABF882280E267E002BD87F /* EighteenthScreenVC.swift */; };
+		B7ABF885280E2692002BD87F /* NineteenthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ABF884280E2692002BD87F /* NineteenthScreenVC.swift */; };
 		B7C917CB27F7899600371D1E /* FourthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C917CA27F7899600371D1E /* FourthScreenVC.swift */; };
 		B7C917CD27F78B1B00371D1E /* FifthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C917CC27F78B1B00371D1E /* FifthScreenVC.swift */; };
 /* End PBXBuildFile section */
@@ -74,7 +83,6 @@
 		B7172FEC27E8245C009DFA6B /* forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = forest.mp3; sourceTree = "<group>"; };
 		B7172FEE27E825CF009DFA6B /* background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = background.mp3; sourceTree = "<group>"; };
 		B74832F827E6C3870039A5E8 /* CustomAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertVC.swift; sourceTree = "<group>"; };
-		B7493CF627FA658700A9C95D /* SixthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthScreenVC.swift; sourceTree = "<group>"; };
 		B7493CF827FA659500A9C95D /* SeventhScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeventhScreenVC.swift; sourceTree = "<group>"; };
 		B7493CFA27FA65BC00A9C95D /* EighthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighthScreenVC.swift; sourceTree = "<group>"; };
 		B7493CFC27FA65CE00A9C95D /* NinthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinthScreenVC.swift; sourceTree = "<group>"; };
@@ -104,6 +112,16 @@
 		B7AB060F27CE925A00C73802 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		B7AB061727CEE14B00C73802 /* MutablesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MutablesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7AB061927CEE14B00C73802 /* MutablesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutablesTests.swift; sourceTree = "<group>"; };
+		B7ABF872280E24DD002BD87F /* SixthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthScreenVC.swift; sourceTree = "<group>"; };
+		B7ABF874280E25CA002BD87F /* EleventhScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EleventhScreenVC.swift; sourceTree = "<group>"; };
+		B7ABF876280E25E3002BD87F /* TwelvethScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwelvethScreenVC.swift; sourceTree = "<group>"; };
+		B7ABF878280E2606002BD87F /* ThirteenthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirteenthScreenVC.swift; sourceTree = "<group>"; };
+		B7ABF87A280E261A002BD87F /* FourteenthSceenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourteenthSceenVC.swift; sourceTree = "<group>"; };
+		B7ABF87C280E262E002BD87F /* FifteenthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifteenthScreenVC.swift; sourceTree = "<group>"; };
+		B7ABF87E280E2645002BD87F /* SixteenthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixteenthScreenVC.swift; sourceTree = "<group>"; };
+		B7ABF880280E265A002BD87F /* SeventeenthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeventeenthScreenVC.swift; sourceTree = "<group>"; };
+		B7ABF882280E267E002BD87F /* EighteenthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighteenthScreenVC.swift; sourceTree = "<group>"; };
+		B7ABF884280E2692002BD87F /* NineteenthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NineteenthScreenVC.swift; sourceTree = "<group>"; };
 		B7C917CA27F7899600371D1E /* FourthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthScreenVC.swift; sourceTree = "<group>"; };
 		B7C917CC27F78B1B00371D1E /* FifthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthScreenVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,11 +179,20 @@
 				B7172FDE27E7E46A009DFA6B /* ThirdScreenVC.swift */,
 				B7C917CA27F7899600371D1E /* FourthScreenVC.swift */,
 				B7C917CC27F78B1B00371D1E /* FifthScreenVC.swift */,
-				B7493CF627FA658700A9C95D /* SixthScreenVC.swift */,
+				B7ABF872280E24DD002BD87F /* SixthScreenVC.swift */,
 				B7493CF827FA659500A9C95D /* SeventhScreenVC.swift */,
 				B7493CFA27FA65BC00A9C95D /* EighthScreenVC.swift */,
 				B7493CFC27FA65CE00A9C95D /* NinthScreenVC.swift */,
 				B7493CFE27FA660D00A9C95D /* TenthScreenVC.swift */,
+				B7ABF874280E25CA002BD87F /* EleventhScreenVC.swift */,
+				B7ABF876280E25E3002BD87F /* TwelvethScreenVC.swift */,
+				B7ABF878280E2606002BD87F /* ThirteenthScreenVC.swift */,
+				B7ABF87A280E261A002BD87F /* FourteenthSceenVC.swift */,
+				B7ABF87C280E262E002BD87F /* FifteenthScreenVC.swift */,
+				B7ABF87E280E2645002BD87F /* SixteenthScreenVC.swift */,
+				B7ABF880280E265A002BD87F /* SeventeenthScreenVC.swift */,
+				B7ABF882280E267E002BD87F /* EighteenthScreenVC.swift */,
+				B7ABF884280E2692002BD87F /* NineteenthScreenVC.swift */,
 			);
 			name = "Story VCs";
 			sourceTree = "<group>";
@@ -450,14 +477,18 @@
 				B7172FDF27E7E46A009DFA6B /* ThirdScreenVC.swift in Sources */,
 				B78826F127FBA24D00616524 /* FindOldLadyVC.swift in Sources */,
 				B79C5E1127CC395900AF562B /* HomeVC.swift in Sources */,
+				B7ABF87F280E2645002BD87F /* SixteenthScreenVC.swift in Sources */,
+				B7ABF877280E25E3002BD87F /* TwelvethScreenVC.swift in Sources */,
+				B7ABF875280E25CA002BD87F /* EleventhScreenVC.swift in Sources */,
 				B74832FA27E6C3870039A5E8 /* CustomAlertVC.swift in Sources */,
+				B7ABF87D280E262E002BD87F /* FifteenthScreenVC.swift in Sources */,
 				B7172FE927E8044C009DFA6B /* Music.swift in Sources */,
 				B7AB061027CE925A00C73802 /* Validation.swift in Sources */,
+				B7ABF87B280E261A002BD87F /* FourteenthSceenVC.swift in Sources */,
 				B79C5E1A27CC47F600AF562B /* SignInVC.swift in Sources */,
 				B7493CFD27FA65CE00A9C95D /* NinthScreenVC.swift in Sources */,
 				B7172FE427E7EDF4009DFA6B /* YouLostAlertVC.swift in Sources */,
 				B79D4AEF27CB254600AFA341 /* LoginVC.swift in Sources */,
-				B7493CF727FA658700A9C95D /* SixthScreenVC.swift in Sources */,
 				B793660527CD6C15006BE71D /* ForgotPasswordVC.swift in Sources */,
 				B7493CF927FA659500A9C95D /* SeventhScreenVC.swift in Sources */,
 				B78826F327FBA94400616524 /* FindOldLadyAlertVC.swift in Sources */,
@@ -465,12 +496,17 @@
 				B7493CFB27FA65BC00A9C95D /* EighthScreenVC.swift in Sources */,
 				B7493CFF27FA660D00A9C95D /* TenthScreenVC.swift in Sources */,
 				B79C5E1627CC426900AF562B /* HideKeyboard.swift in Sources */,
+				B7ABF881280E265A002BD87F /* SeventeenthScreenVC.swift in Sources */,
+				B7ABF879280E2606002BD87F /* ThirteenthScreenVC.swift in Sources */,
+				B7ABF873280E24DD002BD87F /* SixthScreenVC.swift in Sources */,
 				B7C917CB27F7899600371D1E /* FourthScreenVC.swift in Sources */,
+				B7ABF883280E267E002BD87F /* EighteenthScreenVC.swift in Sources */,
 				B79C15F427B83CC7000153DB /* AppDelegate.swift in Sources */,
 				B7172FDB27E7E44B009DFA6B /* FirstScreenVC.swift in Sources */,
 				B7C917CD27F78B1B00371D1E /* FifthScreenVC.swift in Sources */,
 				B79C15F627B83CC7000153DB /* SceneDelegate.swift in Sources */,
 				B7172FE227E7E5AE009DFA6B /* MystertyForestVC.swift in Sources */,
+				B7ABF885280E2692002BD87F /* NineteenthScreenVC.swift in Sources */,
 				B79C5E1327CC3E5700AF562B /* SignUpEmailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
