@@ -62,13 +62,13 @@
                                         <rect key="frame" x="137.5" y="807.5" width="139" height="58.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqD-na-50C">
-                                                <rect key="frame" x="46.5" y="0.0" width="46.5" height="27"/>
+                                                <rect key="frame" x="49.5" y="0.0" width="40" height="25"/>
                                                 <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Mutables" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOi-fl-MdK">
-                                                <rect key="frame" x="0.0" y="29" width="139" height="29.5"/>
+                                                <rect key="frame" x="0.0" y="27" width="139" height="31.5"/>
                                                 <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -138,14 +138,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="inZ-nK-Fvp">
                                 <rect key="frame" x="69.5" y="281" width="275" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2O4-m3-n0K">
-                                        <rect key="frame" x="0.0" y="0.0" width="192.5" height="50"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2O4-m3-n0K">
+                                        <rect key="frame" x="0.0" y="0.0" width="190" height="50"/>
                                         <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phr-kQ-Tno">
-                                        <rect key="frame" x="182.5" y="0.0" width="92.5" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phr-kQ-Tno">
+                                        <rect key="frame" x="180" y="0.0" width="95" height="50"/>
                                         <color key="tintColor" name="GreenC"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Sign In">
@@ -551,7 +551,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jvf-2e-DIL">
-                                        <rect key="frame" x="130" y="141" width="170" height="61"/>
+                                        <rect key="frame" x="130" y="141" width="170" height="39"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="170" id="3fn-5M-6Ff"/>
                                         </constraints>
@@ -1663,7 +1663,7 @@
                                     <constraint firstAttribute="height" constant="171" id="MHL-Zi-8Uf"/>
                                     <constraint firstAttribute="width" constant="338" id="Zuf-Ew-vcI"/>
                                 </constraints>
-                                <string key="text">Lady: “Hope your mind finds itself in as strong a state as you are because the obstacle that lies ahead is no task of cowardice but only the bravest of all can conquer it. Once and if, you win, only then you'll find the heart of the forest open up beholding the herb”</string>
+                                <string key="text">Lady: “I must not describe the obstacle as it is forbidden to. It's only you, who shall discover it on approaching the heart of the forest. But remember your mental strength would be needed much more than physical as that is the true sign of strength.”</string>
                                 <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1676,6 +1676,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="nextBtn"/>
+                                <connections>
+                                    <segue destination="OTs-I3-bAv" kind="show" id="gS9-gM-nSi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="y4s-U8-HZ1"/>
@@ -1700,6 +1703,197 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4YK-b2-e3Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="17457.971014492756" y="-362.27678571428572"/>
+        </scene>
+        <!--Thirteenth ScreenVC-->
+        <scene sceneID="2Ob-bC-7yW">
+            <objects>
+                <viewController storyboardIdentifier="ThirteenthScreenVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OTs-I3-bAv" customClass="ThirteenthScreenVC" customModule="Mutables" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="axn-At-vdT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screen13Bg" translatesAutoresizingMaskIntoConstraints="NO" id="Y8B-Ty-8qv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blur_imgae" translatesAutoresizingMaskIntoConstraints="NO" id="7de-5G-Rxk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byP-Ph-aOe">
+                                <rect key="frame" x="38" y="262.5" width="338" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="FC3-hG-rr7"/>
+                                    <constraint firstAttribute="width" constant="338" id="ssX-fv-ikQ"/>
+                                </constraints>
+                                <string key="text">Lady: “Hope your mind finds itself in as strong a state as you are because the obstacle that lies ahead is no task of cowardice but only the bravest of all can conquer it. Once and if, you win, only then you'll find the heart of the forest open up beholding the herb”</string>
+                                <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJM-yp-DBr">
+                                <rect key="frame" x="125" y="691" width="164" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="Ulf-bA-S87"/>
+                                    <constraint firstAttribute="height" constant="71" id="xtR-7z-Cwc"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="playButton"/>
+                                <connections>
+                                    <segue destination="iCv-8b-T4X" kind="show" id="Kfd-Xt-0La"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="onB-G6-RSj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="byP-Ph-aOe" firstAttribute="centerX" secondItem="axn-At-vdT" secondAttribute="centerX" id="0dz-BP-K1D"/>
+                            <constraint firstItem="Y8B-Ty-8qv" firstAttribute="top" secondItem="axn-At-vdT" secondAttribute="top" id="1TV-yl-mbe"/>
+                            <constraint firstItem="Y8B-Ty-8qv" firstAttribute="leading" secondItem="onB-G6-RSj" secondAttribute="leading" id="4HH-jM-DJQ"/>
+                            <constraint firstItem="byP-Ph-aOe" firstAttribute="centerY" secondItem="axn-At-vdT" secondAttribute="centerY" constant="-100" id="7bi-fF-X4o"/>
+                            <constraint firstItem="7de-5G-Rxk" firstAttribute="leading" secondItem="onB-G6-RSj" secondAttribute="leading" id="C3Z-WL-Q1q"/>
+                            <constraint firstItem="onB-G6-RSj" firstAttribute="bottom" secondItem="QJM-yp-DBr" secondAttribute="bottom" constant="100" id="FKK-VB-jKF"/>
+                            <constraint firstItem="7de-5G-Rxk" firstAttribute="trailing" secondItem="onB-G6-RSj" secondAttribute="trailing" id="J00-c0-pjb"/>
+                            <constraint firstAttribute="bottom" secondItem="Y8B-Ty-8qv" secondAttribute="bottom" id="LsM-ED-gz0"/>
+                            <constraint firstItem="7de-5G-Rxk" firstAttribute="top" secondItem="axn-At-vdT" secondAttribute="top" id="fcO-tC-yCy"/>
+                            <constraint firstItem="Y8B-Ty-8qv" firstAttribute="trailing" secondItem="onB-G6-RSj" secondAttribute="trailing" id="iOI-QP-Yl0"/>
+                            <constraint firstItem="QJM-yp-DBr" firstAttribute="centerX" secondItem="axn-At-vdT" secondAttribute="centerX" id="pQt-wq-XDO"/>
+                            <constraint firstAttribute="bottom" secondItem="7de-5G-Rxk" secondAttribute="bottom" id="skC-rs-Egl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hcW-ph-HEn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gP6-15-zfK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18385.507246376812" y="-357.58928571428572"/>
+        </scene>
+        <!--Fourteenth SceenVC-->
+        <scene sceneID="pEr-sb-vin">
+            <objects>
+                <viewController storyboardIdentifier="FourteenthSceenVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1km-Fc-PLH" customClass="FourteenthSceenVC" customModule="Mutables" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0nl-rt-oQ4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4jW-Sw-7Zl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9kR-Il-cZ7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h7P-g2-39n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19404" y="-365"/>
+        </scene>
+        <!--Oasis QuestVC-->
+        <scene sceneID="dPI-qm-Agb">
+            <objects>
+                <viewController storyboardIdentifier="OasisQuestVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iCv-8b-T4X" customClass="OasisQuestVC" customModule="Mutables" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ji8-r6-bKV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zv-WK-udE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tum-ox-LNb">
+                                        <rect key="frame" x="0.0" y="0.0" width="1500" height="1000"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desertBg" translatesAutoresizingMaskIntoConstraints="NO" id="5k1-hp-18Q">
+                                                <rect key="frame" x="0.0" y="0.0" width="1500" height="1000"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wrongOasis" translatesAutoresizingMaskIntoConstraints="NO" id="YmB-WB-D3Y">
+                                                <rect key="frame" x="25" y="399" width="292" height="502"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="292" id="BYs-VJ-8On"/>
+                                                    <constraint firstAttribute="height" constant="502" id="ENN-iv-0dx"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptyOasis" translatesAutoresizingMaskIntoConstraints="NO" id="ZKG-fG-ijb">
+                                                <rect key="frame" x="552" y="193" width="240" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="oRH-cD-A96"/>
+                                                    <constraint firstAttribute="width" constant="240" id="ot5-LV-TFZ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correctOasis" translatesAutoresizingMaskIntoConstraints="NO" id="PX8-eC-Tgd">
+                                                <rect key="frame" x="1227" y="291" width="265" height="145"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="145" id="j75-LJ-d74"/>
+                                                    <constraint firstAttribute="width" constant="265" id="t35-Nu-Yng"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Z2e-Sk-glr" appends="YES" id="dex-e0-qCA"/>
+                                                </connections>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="PX8-eC-Tgd" firstAttribute="top" secondItem="Tum-ox-LNb" secondAttribute="top" constant="291" id="0ai-ia-cqg"/>
+                                            <constraint firstItem="5k1-hp-18Q" firstAttribute="leading" secondItem="Tum-ox-LNb" secondAttribute="leading" id="0hM-FE-fcJ"/>
+                                            <constraint firstItem="5k1-hp-18Q" firstAttribute="top" secondItem="Tum-ox-LNb" secondAttribute="top" id="Baz-eO-8Yb"/>
+                                            <constraint firstAttribute="width" constant="1500" id="EZB-Ec-mvK"/>
+                                            <constraint firstAttribute="height" constant="1000" id="Elh-hz-nJd"/>
+                                            <constraint firstItem="ZKG-fG-ijb" firstAttribute="leading" secondItem="Tum-ox-LNb" secondAttribute="leading" constant="552" id="McL-ni-Ynb"/>
+                                            <constraint firstItem="YmB-WB-D3Y" firstAttribute="leading" secondItem="Tum-ox-LNb" secondAttribute="leading" constant="25" id="Pb3-RV-PQV"/>
+                                            <constraint firstAttribute="trailing" secondItem="PX8-eC-Tgd" secondAttribute="trailing" constant="8" id="RMY-xM-uk5"/>
+                                            <constraint firstItem="ZKG-fG-ijb" firstAttribute="top" secondItem="Tum-ox-LNb" secondAttribute="top" constant="193" id="d0z-Kb-PRA"/>
+                                            <constraint firstItem="YmB-WB-D3Y" firstAttribute="top" secondItem="Tum-ox-LNb" secondAttribute="top" constant="399" id="ggh-CL-yFa"/>
+                                            <constraint firstAttribute="bottom" secondItem="5k1-hp-18Q" secondAttribute="bottom" id="qeZ-RR-ije"/>
+                                            <constraint firstAttribute="trailing" secondItem="5k1-hp-18Q" secondAttribute="trailing" id="tZx-vu-iyG"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Tum-ox-LNb" secondAttribute="trailing" id="329-tx-pbe"/>
+                                    <constraint firstItem="Tum-ox-LNb" firstAttribute="top" secondItem="8zv-WK-udE" secondAttribute="top" id="46w-Nx-XUk"/>
+                                    <constraint firstItem="Tum-ox-LNb" firstAttribute="top" secondItem="8zv-WK-udE" secondAttribute="top" id="EcI-7j-5hC"/>
+                                    <constraint firstItem="Tum-ox-LNb" firstAttribute="leading" secondItem="8zv-WK-udE" secondAttribute="leading" id="jZ9-nU-O4d"/>
+                                    <constraint firstAttribute="bottom" secondItem="Tum-ox-LNb" secondAttribute="bottom" id="lGq-e3-7qr"/>
+                                </constraints>
+                            </scrollView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questTitleBlur" translatesAutoresizingMaskIntoConstraints="NO" id="hPj-ah-bZa">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="579"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="579" id="b3e-Yv-RUN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find the oasis with water..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i17-Pl-zJt">
+                                <rect key="frame" x="47" y="54" width="320" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="R1h-Ak-1NX"/>
+                                    <constraint firstAttribute="height" constant="50" id="qjK-E4-ogu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NE8-dg-bMm"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="i17-Pl-zJt" firstAttribute="top" secondItem="NE8-dg-bMm" secondAttribute="top" constant="10" id="05b-Wb-zvg"/>
+                            <constraint firstItem="8zv-WK-udE" firstAttribute="leading" secondItem="NE8-dg-bMm" secondAttribute="leading" id="1TN-Nc-OmQ"/>
+                            <constraint firstItem="hPj-ah-bZa" firstAttribute="leading" secondItem="NE8-dg-bMm" secondAttribute="leading" id="6Pm-co-pfP"/>
+                            <constraint firstItem="hPj-ah-bZa" firstAttribute="trailing" secondItem="NE8-dg-bMm" secondAttribute="trailing" id="9Kr-Qc-41k"/>
+                            <constraint firstItem="i17-Pl-zJt" firstAttribute="centerX" secondItem="ji8-r6-bKV" secondAttribute="centerX" id="9TD-QX-vo9"/>
+                            <constraint firstItem="hPj-ah-bZa" firstAttribute="top" secondItem="ji8-r6-bKV" secondAttribute="top" id="HHI-JE-gcZ"/>
+                            <constraint firstItem="8zv-WK-udE" firstAttribute="top" secondItem="ji8-r6-bKV" secondAttribute="top" id="ILJ-II-xSP"/>
+                            <constraint firstAttribute="bottom" secondItem="8zv-WK-udE" secondAttribute="bottom" id="S4L-Gm-7ve"/>
+                            <constraint firstItem="8zv-WK-udE" firstAttribute="trailing" secondItem="NE8-dg-bMm" secondAttribute="trailing" id="eaV-pc-KMU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="odR-Rs-qnw"/>
+                    <connections>
+                        <outlet property="correctOasisImage" destination="PX8-eC-Tgd" id="AEV-1R-eh3"/>
+                        <outlet property="findOasisTitle" destination="i17-Pl-zJt" id="yAC-4M-Xyc"/>
+                        <segue destination="1km-Fc-PLH" kind="show" identifier="goToFourteenthSceenVC" id="ByI-00-prd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g0Z-z5-X2P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Z2e-Sk-glr">
+                    <connections>
+                        <action selector="correctOasisTapped:" destination="iCv-8b-T4X" id="Sl9-TT-35v"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="18268.115942028988" y="522.99107142857144"/>
         </scene>
         <!--You Lost AlertVC-->
         <scene sceneID="FDd-pg-oaQ">
@@ -1769,7 +1963,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You lost!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l46-RA-jRb">
-                                        <rect key="frame" x="170" y="100" width="194" height="29.5"/>
+                                        <rect key="frame" x="170" y="100" width="194" height="31.5"/>
                                         <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1888,7 +2082,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sword Found!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFf-KM-9ps">
-                                        <rect key="frame" x="170" y="100" width="194" height="29.5"/>
+                                        <rect key="frame" x="170" y="100" width="194" height="31.5"/>
                                         <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="25"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -2015,7 +2209,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Talk to the old lady" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pES-Pu-ITR">
-                                        <rect key="frame" x="170" y="100" width="171" height="54"/>
+                                        <rect key="frame" x="170" y="100" width="171" height="57.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="171" id="XX0-fN-4cw"/>
                                         </constraints>
@@ -2052,6 +2246,111 @@
             </objects>
             <point key="canvasLocation" x="13860.869565217392" y="1189.9553571428571"/>
         </scene>
+        <!--Oasis AlertVC-->
+        <scene sceneID="nJT-oC-uEB">
+            <objects>
+                <viewController storyboardIdentifier="OasisAlertVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QTK-I2-8fG" customClass="OasisAlertVC" customModule="Mutables" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xfa-gk-E3E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X4j-us-GH2">
+                                <rect key="frame" x="20" y="303" width="374" height="290"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ebe-vO-9sf">
+                                        <rect key="frame" x="0.0" y="90" width="374" height="200"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alertRect" translatesAutoresizingMaskIntoConstraints="NO" id="gAg-zL-BMm">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="200"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go to the oasis and try to absorb the magical power of the oasis." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEi-mC-dic">
+                                                <rect key="frame" x="10" y="85" width="354" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="54O-5J-AQg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="gAg-zL-BMm" firstAttribute="top" secondItem="Ebe-vO-9sf" secondAttribute="top" id="69d-bB-8Su"/>
+                                            <constraint firstItem="mEi-mC-dic" firstAttribute="leading" secondItem="Ebe-vO-9sf" secondAttribute="leading" constant="10" id="BDb-4b-L2g"/>
+                                            <constraint firstAttribute="width" constant="374" id="Qiv-lB-Sme"/>
+                                            <constraint firstAttribute="trailing" secondItem="mEi-mC-dic" secondAttribute="trailing" constant="10" id="SOW-IQ-eyy"/>
+                                            <constraint firstItem="gAg-zL-BMm" firstAttribute="leading" secondItem="Ebe-vO-9sf" secondAttribute="leading" id="UK2-5w-FfN"/>
+                                            <constraint firstAttribute="bottom" secondItem="gAg-zL-BMm" secondAttribute="bottom" id="Z0T-xj-DtJ"/>
+                                            <constraint firstItem="mEi-mC-dic" firstAttribute="centerY" secondItem="Ebe-vO-9sf" secondAttribute="centerY" constant="25" id="kfx-yz-yBi"/>
+                                            <constraint firstAttribute="height" constant="200" id="kgM-25-daQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="gAg-zL-BMm" secondAttribute="trailing" id="tl6-wt-l7s"/>
+                                            <constraint firstItem="mEi-mC-dic" firstAttribute="centerX" secondItem="Ebe-vO-9sf" secondAttribute="centerX" id="uXI-hY-a3N"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DKR-Up-63d">
+                                        <rect key="frame" x="10" y="20" width="150" height="150"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alertCircle" translatesAutoresizingMaskIntoConstraints="NO" id="uAt-bD-Fgv">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correctOasis" translatesAutoresizingMaskIntoConstraints="NO" id="yBa-uy-qIV">
+                                                <rect key="frame" x="30" y="30" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="62V-so-gCL"/>
+                                                    <constraint firstAttribute="width" constant="90" id="BO4-Sn-wAX"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="uAt-bD-Fgv" firstAttribute="top" secondItem="DKR-Up-63d" secondAttribute="top" id="3Pp-DQ-hBE"/>
+                                            <constraint firstAttribute="width" constant="150" id="7vg-9l-4uP"/>
+                                            <constraint firstAttribute="height" constant="150" id="Eao-GA-Emr"/>
+                                            <constraint firstAttribute="trailing" secondItem="uAt-bD-Fgv" secondAttribute="trailing" id="Hbj-CE-FS9"/>
+                                            <constraint firstItem="yBa-uy-qIV" firstAttribute="centerY" secondItem="DKR-Up-63d" secondAttribute="centerY" id="YdI-9r-lXV"/>
+                                            <constraint firstItem="yBa-uy-qIV" firstAttribute="centerX" secondItem="DKR-Up-63d" secondAttribute="centerX" id="cEn-pc-gQy"/>
+                                            <constraint firstAttribute="bottom" secondItem="uAt-bD-Fgv" secondAttribute="bottom" id="hce-JY-S8D"/>
+                                            <constraint firstItem="uAt-bD-Fgv" firstAttribute="leading" secondItem="DKR-Up-63d" secondAttribute="leading" id="hxq-ac-Gd5"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You found the Oasis..." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J29-JO-qNY">
+                                        <rect key="frame" x="170" y="100" width="171" height="57.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="171" id="8bv-Pe-eox"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="23"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Ebe-vO-9sf" secondAttribute="trailing" id="57z-RE-eMd"/>
+                                    <constraint firstItem="J29-JO-qNY" firstAttribute="top" secondItem="X4j-us-GH2" secondAttribute="top" constant="100" id="AJv-JL-tf0"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ebe-vO-9sf" secondAttribute="bottom" id="OFR-qI-fEh"/>
+                                    <constraint firstItem="Ebe-vO-9sf" firstAttribute="leading" secondItem="X4j-us-GH2" secondAttribute="leading" id="Z4m-k5-VG9"/>
+                                    <constraint firstItem="J29-JO-qNY" firstAttribute="leading" secondItem="DKR-Up-63d" secondAttribute="trailing" constant="10" id="fUI-nO-ih2"/>
+                                    <constraint firstItem="DKR-Up-63d" firstAttribute="leading" secondItem="X4j-us-GH2" secondAttribute="leading" constant="10" id="h2v-6M-uUv"/>
+                                    <constraint firstItem="DKR-Up-63d" firstAttribute="top" secondItem="X4j-us-GH2" secondAttribute="top" constant="20" id="vLL-Xh-FTb"/>
+                                    <constraint firstAttribute="height" constant="290" id="wiP-TF-TYB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rIX-g6-O1z"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="X4j-us-GH2" firstAttribute="leading" secondItem="rIX-g6-O1z" secondAttribute="leading" constant="20" id="Mgi-qp-CM5"/>
+                            <constraint firstItem="X4j-us-GH2" firstAttribute="centerY" secondItem="Xfa-gk-E3E" secondAttribute="centerY" id="WaQ-la-gsG"/>
+                            <constraint firstItem="rIX-g6-O1z" firstAttribute="trailing" secondItem="X4j-us-GH2" secondAttribute="trailing" constant="20" id="eU8-Ii-BKT"/>
+                            <constraint firstItem="X4j-us-GH2" firstAttribute="centerX" secondItem="Xfa-gk-E3E" secondAttribute="centerX" id="xh8-2m-hv6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="342-8w-tbW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fz6-FN-nc5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18268" y="1233"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="qnW-y2-Q9X"/>
@@ -2065,6 +2364,9 @@
         <image name="alertCircle" width="357" height="303"/>
         <image name="alertRect" width="862" height="327"/>
         <image name="appleSignIn" width="50" height="50"/>
+        <image name="correctOasis" width="566" height="418"/>
+        <image name="desertBg" width="4988" height="3236"/>
+        <image name="emptyOasis" width="886" height="504"/>
         <image name="findOldLadyBg" width="390" height="844"/>
         <image name="findSowrdBg" width="1661" height="1188"/>
         <image name="goToCottageBtn" width="178" height="79"/>
@@ -2080,11 +2382,13 @@
         <image name="old_women" width="390" height="844"/>
         <image name="orTxt" width="363.5" height="30"/>
         <image name="playBtn" width="102" height="105"/>
+        <image name="playButton" width="140" height="57"/>
         <image name="questTitleBlur" width="390" height="844"/>
         <image name="refuseBtn" width="216" height="54"/>
         <image name="road_to_shaft" width="390" height="844"/>
         <image name="screen11Bg" width="390" height="844"/>
         <image name="screen12Bg" width="390" height="844"/>
+        <image name="screen13Bg" width="390" height="844"/>
         <image name="selectNameBtn" width="225" height="84"/>
         <image name="signUpBg" width="390" height="693"/>
         <image name="signUpBtn" width="147" height="52"/>
@@ -2097,6 +2401,7 @@
         <image name="take5DeepBreathsBtn" width="209" height="90"/>
         <image name="take8_10DeepBreathBtn" width="209" height="90"/>
         <image name="village_in_forest" width="390" height="844"/>
+        <image name="wrongOasis" width="1461" height="1690"/>
         <image name="youDecideToFindHerbBtn" width="253" height="79"/>
         <image name="zebra" width="377" height="444"/>
         <namedColor name="GreenC">

@@ -54,6 +54,8 @@
 		B7ABF881280E265A002BD87F /* SeventeenthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ABF880280E265A002BD87F /* SeventeenthScreenVC.swift */; };
 		B7ABF883280E267E002BD87F /* EighteenthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ABF882280E267E002BD87F /* EighteenthScreenVC.swift */; };
 		B7ABF885280E2692002BD87F /* NineteenthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ABF884280E2692002BD87F /* NineteenthScreenVC.swift */; };
+		B7B53C4F280F26C800B3AF55 /* OasisQuestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B53C4E280F26C800B3AF55 /* OasisQuestVC.swift */; };
+		B7B53C51280F29A400B3AF55 /* OasisAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B53C50280F29A400B3AF55 /* OasisAlertVC.swift */; };
 		B7C917CB27F7899600371D1E /* FourthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C917CA27F7899600371D1E /* FourthScreenVC.swift */; };
 		B7C917CD27F78B1B00371D1E /* FifthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C917CC27F78B1B00371D1E /* FifthScreenVC.swift */; };
 /* End PBXBuildFile section */
@@ -122,6 +124,8 @@
 		B7ABF880280E265A002BD87F /* SeventeenthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeventeenthScreenVC.swift; sourceTree = "<group>"; };
 		B7ABF882280E267E002BD87F /* EighteenthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighteenthScreenVC.swift; sourceTree = "<group>"; };
 		B7ABF884280E2692002BD87F /* NineteenthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NineteenthScreenVC.swift; sourceTree = "<group>"; };
+		B7B53C4E280F26C800B3AF55 /* OasisQuestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OasisQuestVC.swift; sourceTree = "<group>"; };
+		B7B53C50280F29A400B3AF55 /* OasisAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OasisAlertVC.swift; sourceTree = "<group>"; };
 		B7C917CA27F7899600371D1E /* FourthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthScreenVC.swift; sourceTree = "<group>"; };
 		B7C917CC27F78B1B00371D1E /* FifthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthScreenVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,6 +171,7 @@
 			children = (
 				B7172FE127E7E5AE009DFA6B /* MystertyForestVC.swift */,
 				B78826F027FBA24D00616524 /* FindOldLadyVC.swift */,
+				B7B53C4E280F26C800B3AF55 /* OasisQuestVC.swift */,
 			);
 			path = "Quests VCs";
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 				B74832F827E6C3870039A5E8 /* CustomAlertVC.swift */,
 				B7172FE327E7EDF4009DFA6B /* YouLostAlertVC.swift */,
 				B78826F227FBA94400616524 /* FindOldLadyAlertVC.swift */,
+				B7B53C50280F29A400B3AF55 /* OasisAlertVC.swift */,
 			);
 			path = Alerts;
 			sourceTree = "<group>";
@@ -473,6 +479,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B79C15F827B83CC7000153DB /* LaunchScreenVC.swift in Sources */,
+				B7B53C4F280F26C800B3AF55 /* OasisQuestVC.swift in Sources */,
 				B7172FDD27E7E45C009DFA6B /* SecondScreenVC.swift in Sources */,
 				B7172FDF27E7E46A009DFA6B /* ThirdScreenVC.swift in Sources */,
 				B78826F127FBA24D00616524 /* FindOldLadyVC.swift in Sources */,
@@ -490,6 +497,7 @@
 				B7172FE427E7EDF4009DFA6B /* YouLostAlertVC.swift in Sources */,
 				B79D4AEF27CB254600AFA341 /* LoginVC.swift in Sources */,
 				B793660527CD6C15006BE71D /* ForgotPasswordVC.swift in Sources */,
+				B7B53C51280F29A400B3AF55 /* OasisAlertVC.swift in Sources */,
 				B7493CF927FA659500A9C95D /* SeventhScreenVC.swift in Sources */,
 				B78826F327FBA94400616524 /* FindOldLadyAlertVC.swift in Sources */,
 				B79C5E1827CC44CB00AF562B /* SignUpPassVC.swift in Sources */,
