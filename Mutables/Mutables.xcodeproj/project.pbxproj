@@ -56,6 +56,10 @@
 		B7ABF885280E2692002BD87F /* NineteenthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ABF884280E2692002BD87F /* NineteenthScreenVC.swift */; };
 		B7B53C4F280F26C800B3AF55 /* OasisQuestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B53C4E280F26C800B3AF55 /* OasisQuestVC.swift */; };
 		B7B53C51280F29A400B3AF55 /* OasisAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B53C50280F29A400B3AF55 /* OasisAlertVC.swift */; };
+		B7B53C54280F314700B3AF55 /* meditate_man.json in Resources */ = {isa = PBXBuildFile; fileRef = B7B53C53280F314700B3AF55 /* meditate_man.json */; };
+		B7B53C56280F314E00B3AF55 /* meditating_sun.json in Resources */ = {isa = PBXBuildFile; fileRef = B7B53C55280F314E00B3AF55 /* meditating_sun.json */; };
+		B7B53C58280F31EF00B3AF55 /* MeditateQuestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B53C57280F31EF00B3AF55 /* MeditateQuestVC.swift */; };
+		B7B53C5A280F40E500B3AF55 /* birds_forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B7B53C59280F40E500B3AF55 /* birds_forest.mp3 */; };
 		B7C917CB27F7899600371D1E /* FourthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C917CA27F7899600371D1E /* FourthScreenVC.swift */; };
 		B7C917CD27F78B1B00371D1E /* FifthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C917CC27F78B1B00371D1E /* FifthScreenVC.swift */; };
 /* End PBXBuildFile section */
@@ -126,6 +130,10 @@
 		B7ABF884280E2692002BD87F /* NineteenthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NineteenthScreenVC.swift; sourceTree = "<group>"; };
 		B7B53C4E280F26C800B3AF55 /* OasisQuestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OasisQuestVC.swift; sourceTree = "<group>"; };
 		B7B53C50280F29A400B3AF55 /* OasisAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OasisAlertVC.swift; sourceTree = "<group>"; };
+		B7B53C53280F314700B3AF55 /* meditate_man.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = meditate_man.json; sourceTree = "<group>"; };
+		B7B53C55280F314E00B3AF55 /* meditating_sun.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = meditating_sun.json; sourceTree = "<group>"; };
+		B7B53C57280F31EF00B3AF55 /* MeditateQuestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditateQuestVC.swift; sourceTree = "<group>"; };
+		B7B53C59280F40E500B3AF55 /* birds_forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = birds_forest.mp3; sourceTree = "<group>"; };
 		B7C917CA27F7899600371D1E /* FourthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthScreenVC.swift; sourceTree = "<group>"; };
 		B7C917CC27F78B1B00371D1E /* FifthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthScreenVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,6 +180,7 @@
 				B7172FE127E7E5AE009DFA6B /* MystertyForestVC.swift */,
 				B78826F027FBA24D00616524 /* FindOldLadyVC.swift */,
 				B7B53C4E280F26C800B3AF55 /* OasisQuestVC.swift */,
+				B7B53C57280F31EF00B3AF55 /* MeditateQuestVC.swift */,
 			);
 			path = "Quests VCs";
 			sourceTree = "<group>";
@@ -222,6 +231,7 @@
 				B7172FEA27E80807009DFA6B /* lost.wav */,
 				B7172FEE27E825CF009DFA6B /* background.mp3 */,
 				B7172FEC27E8245C009DFA6B /* forest.mp3 */,
+				B7B53C59280F40E500B3AF55 /* birds_forest.mp3 */,
 				B7172FE827E8044C009DFA6B /* Music.swift */,
 			);
 			path = Musics;
@@ -261,6 +271,7 @@
 		B79C15F227B83CC7000153DB /* Mutables */ = {
 			isa = PBXGroup;
 			children = (
+				B7B53C52280F313500B3AF55 /* Lottie_Animations */,
 				B7172FE527E8029A009DFA6B /* Musics */,
 				B74832F727E6C34E0039A5E8 /* Alerts */,
 				B7AB060E27CE924900C73802 /* Validations */,
@@ -323,6 +334,15 @@
 				B7AB061927CEE14B00C73802 /* MutablesTests.swift */,
 			);
 			path = MutablesTests;
+			sourceTree = "<group>";
+		};
+		B7B53C52280F313500B3AF55 /* Lottie_Animations */ = {
+			isa = PBXGroup;
+			children = (
+				B7B53C55280F314E00B3AF55 /* meditating_sun.json */,
+				B7B53C53280F314700B3AF55 /* meditate_man.json */,
+			);
+			path = Lottie_Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,6 +437,9 @@
 				B79C15FD27B83CC9000153DB /* Assets.xcassets in Resources */,
 				B79C160827B83DE6000153DB /* GoogleService-Info.plist in Resources */,
 				B7172FEF27E825CF009DFA6B /* background.mp3 in Resources */,
+				B7B53C54280F314700B3AF55 /* meditate_man.json in Resources */,
+				B7B53C56280F314E00B3AF55 /* meditating_sun.json in Resources */,
+				B7B53C5A280F40E500B3AF55 /* birds_forest.mp3 in Resources */,
 				B79C15FB27B83CC7000153DB /* Main.storyboard in Resources */,
 				B7172FED27E8245C009DFA6B /* forest.mp3 in Resources */,
 			);
@@ -511,6 +534,7 @@
 				B7ABF883280E267E002BD87F /* EighteenthScreenVC.swift in Sources */,
 				B79C15F427B83CC7000153DB /* AppDelegate.swift in Sources */,
 				B7172FDB27E7E44B009DFA6B /* FirstScreenVC.swift in Sources */,
+				B7B53C58280F31EF00B3AF55 /* MeditateQuestVC.swift in Sources */,
 				B7C917CD27F78B1B00371D1E /* FifthScreenVC.swift in Sources */,
 				B79C15F627B83CC7000153DB /* SceneDelegate.swift in Sources */,
 				B7172FE227E7E5AE009DFA6B /* MystertyForestVC.swift in Sources */,

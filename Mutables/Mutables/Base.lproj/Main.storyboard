@@ -1802,6 +1802,9 @@ You get Confused and try to think over it</string>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="nextBtn"/>
+                                <connections>
+                                    <segue destination="S12-GU-ERb" kind="show" id="7iY-I8-5x2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4jW-Sw-7Zl"/>
@@ -1826,6 +1829,209 @@ You get Confused and try to think over it</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7P-g2-39n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="19402.89855072464" y="-365.625"/>
+        </scene>
+        <!--Fifteenth ScreenVC-->
+        <scene sceneID="jn7-81-K6p">
+            <objects>
+                <viewController storyboardIdentifier="FifteenthScreenVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="S12-GU-ERb" customClass="FifteenthScreenVC" customModule="Mutables" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EcZ-A1-Ixr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screen15Bg" translatesAutoresizingMaskIntoConstraints="NO" id="Jzh-nC-Trw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blur_imgae" translatesAutoresizingMaskIntoConstraints="NO" id="qze-FO-gch">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkX-4S-70Q">
+                                <rect key="frame" x="38" y="262.5" width="338" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="338" id="iSu-qg-yNc"/>
+                                    <constraint firstAttribute="height" constant="171" id="wPk-7h-Ge2"/>
+                                </constraints>
+                                <string key="text">After giving it a thought, a voice in your head speaks to you, "You must meditate for your inner eye to be strengthened and focused"
+</string>
+                                <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xzg-cH-9Ub">
+                                <rect key="frame" x="125" y="691" width="164" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="5uV-IG-Teo"/>
+                                    <constraint firstAttribute="width" constant="164" id="Uv0-Vv-hCW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="meditateBtn"/>
+                                <connections>
+                                    <segue destination="Wrm-1b-STA" kind="show" id="0Qf-Ym-D8a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="njA-gX-Mlz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jzh-nC-Trw" firstAttribute="trailing" secondItem="njA-gX-Mlz" secondAttribute="trailing" id="Ajd-sK-lpQ"/>
+                            <constraint firstItem="qze-FO-gch" firstAttribute="top" secondItem="EcZ-A1-Ixr" secondAttribute="top" id="BWp-PM-Bn7"/>
+                            <constraint firstItem="Jzh-nC-Trw" firstAttribute="leading" secondItem="njA-gX-Mlz" secondAttribute="leading" id="Hj4-Cm-PJX"/>
+                            <constraint firstAttribute="bottom" secondItem="Jzh-nC-Trw" secondAttribute="bottom" id="UjA-kV-9xe"/>
+                            <constraint firstAttribute="bottom" secondItem="qze-FO-gch" secondAttribute="bottom" id="ZMx-hj-QMU"/>
+                            <constraint firstItem="Jzh-nC-Trw" firstAttribute="top" secondItem="EcZ-A1-Ixr" secondAttribute="top" id="dcj-cN-lRA"/>
+                            <constraint firstItem="DkX-4S-70Q" firstAttribute="centerX" secondItem="EcZ-A1-Ixr" secondAttribute="centerX" id="dxS-2S-bOp"/>
+                            <constraint firstItem="Xzg-cH-9Ub" firstAttribute="centerX" secondItem="EcZ-A1-Ixr" secondAttribute="centerX" id="gNJ-2Z-ROw"/>
+                            <constraint firstItem="njA-gX-Mlz" firstAttribute="bottom" secondItem="Xzg-cH-9Ub" secondAttribute="bottom" constant="100" id="grM-rk-ZVQ"/>
+                            <constraint firstItem="qze-FO-gch" firstAttribute="trailing" secondItem="njA-gX-Mlz" secondAttribute="trailing" id="paa-cQ-3y3"/>
+                            <constraint firstItem="qze-FO-gch" firstAttribute="leading" secondItem="njA-gX-Mlz" secondAttribute="leading" id="r5o-2U-leg"/>
+                            <constraint firstItem="DkX-4S-70Q" firstAttribute="centerY" secondItem="EcZ-A1-Ixr" secondAttribute="centerY" constant="-100" id="tAU-UB-PZ2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zau-GR-amE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bct-Na-FwI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20208.695652173916" y="-358.25892857142856"/>
+        </scene>
+        <!--Sixteenth ScreenVC-->
+        <scene sceneID="cER-fN-YC0">
+            <objects>
+                <viewController storyboardIdentifier="SixteenthScreenVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wrm-1b-STA" customClass="SixteenthScreenVC" customModule="Mutables" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RBm-od-y14">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screen16Bg" translatesAutoresizingMaskIntoConstraints="NO" id="AS3-TS-XKu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blur_imgae" translatesAutoresizingMaskIntoConstraints="NO" id="9mp-aQ-p1L">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take 4-5 deep breathes, then close your eyes and focus on slow breathing for 1 minute." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vvj-U2-UVt">
+                                <rect key="frame" x="38" y="262.5" width="338" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="338" id="aQn-aG-Pvw"/>
+                                    <constraint firstAttribute="height" constant="171" id="mO8-Wj-k2c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIc-Jd-ceV">
+                                <rect key="frame" x="125" y="691" width="164" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="REi-xr-ILh"/>
+                                    <constraint firstAttribute="width" constant="164" id="vF8-Q6-Xbi"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="startBtn"/>
+                                <connections>
+                                    <segue destination="VGj-aj-Y7h" kind="show" id="Wvz-ue-f2Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9gH-qM-ZUp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="AS3-TS-XKu" secondAttribute="bottom" id="5xx-V0-dFj"/>
+                            <constraint firstItem="AS3-TS-XKu" firstAttribute="trailing" secondItem="9gH-qM-ZUp" secondAttribute="trailing" id="7wj-iP-Tkl"/>
+                            <constraint firstItem="NIc-Jd-ceV" firstAttribute="centerX" secondItem="RBm-od-y14" secondAttribute="centerX" id="8DN-Os-14X"/>
+                            <constraint firstItem="9gH-qM-ZUp" firstAttribute="bottom" secondItem="NIc-Jd-ceV" secondAttribute="bottom" constant="100" id="EJq-ez-Vdx"/>
+                            <constraint firstItem="9mp-aQ-p1L" firstAttribute="top" secondItem="RBm-od-y14" secondAttribute="top" id="ErU-qH-VkT"/>
+                            <constraint firstAttribute="bottom" secondItem="9mp-aQ-p1L" secondAttribute="bottom" id="PZm-K1-eeI"/>
+                            <constraint firstItem="9mp-aQ-p1L" firstAttribute="trailing" secondItem="9gH-qM-ZUp" secondAttribute="trailing" id="WLN-NQ-vGx"/>
+                            <constraint firstItem="Vvj-U2-UVt" firstAttribute="centerY" secondItem="RBm-od-y14" secondAttribute="centerY" constant="-100" id="e6M-bg-UDs"/>
+                            <constraint firstItem="Vvj-U2-UVt" firstAttribute="centerX" secondItem="RBm-od-y14" secondAttribute="centerX" id="gOT-6G-aD4"/>
+                            <constraint firstItem="AS3-TS-XKu" firstAttribute="leading" secondItem="9gH-qM-ZUp" secondAttribute="leading" id="pff-ln-Vc1"/>
+                            <constraint firstItem="9mp-aQ-p1L" firstAttribute="leading" secondItem="9gH-qM-ZUp" secondAttribute="leading" id="r6g-fX-4dx"/>
+                            <constraint firstItem="AS3-TS-XKu" firstAttribute="top" secondItem="RBm-od-y14" secondAttribute="top" id="uB7-vK-HEP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gwd-GM-OGU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zND-TH-aDq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21269.565217391308" y="-130.58035714285714"/>
+        </scene>
+        <!--Seventeenth ScreenVC-->
+        <scene sceneID="6RU-Cb-1OL">
+            <objects>
+                <viewController storyboardIdentifier="SeventeenthScreenVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JgV-VB-CzP" customClass="SeventeenthScreenVC" customModule="Mutables" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f6e-gb-scI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cDz-BN-eZU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nUN-fp-DF4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r8W-mg-7Lm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="22226" y="54"/>
+        </scene>
+        <!--Meditate QuestVC-->
+        <scene sceneID="avZ-In-H1C">
+            <objects>
+                <viewController storyboardIdentifier="MeditateQuestVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VGj-aj-Y7h" customClass="MeditateQuestVC" customModule="Mutables" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cPR-Mr-vpC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meditateBg" translatesAutoresizingMaskIntoConstraints="NO" id="Dpu-05-aWm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVc-Ce-698">
+                                <rect key="frame" x="177" y="425.5" width="60" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="ISb-LL-csB"/>
+                                    <constraint firstAttribute="height" constant="45" id="eIf-is-lNl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbU-v9-JKE" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="0.0" y="44" width="414" height="250"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="w91-FA-jKO"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UM0-Yj-wRK" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="0.0" y="496" width="414" height="400"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="ZWo-VH-cFK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="82j-Pz-xPL"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HVc-Ce-698" firstAttribute="centerY" secondItem="cPR-Mr-vpC" secondAttribute="centerY" id="A8K-DW-EMl"/>
+                            <constraint firstAttribute="bottom" secondItem="Dpu-05-aWm" secondAttribute="bottom" id="ESW-YS-ldG"/>
+                            <constraint firstItem="UM0-Yj-wRK" firstAttribute="leading" secondItem="82j-Pz-xPL" secondAttribute="leading" id="Q3f-IV-8bl"/>
+                            <constraint firstItem="bbU-v9-JKE" firstAttribute="leading" secondItem="82j-Pz-xPL" secondAttribute="leading" id="RfN-GC-Xcf"/>
+                            <constraint firstAttribute="trailing" secondItem="Dpu-05-aWm" secondAttribute="trailing" id="WpL-n3-Ihf"/>
+                            <constraint firstItem="Dpu-05-aWm" firstAttribute="top" secondItem="cPR-Mr-vpC" secondAttribute="top" id="ZGy-XJ-GeD"/>
+                            <constraint firstItem="82j-Pz-xPL" firstAttribute="trailing" secondItem="bbU-v9-JKE" secondAttribute="trailing" id="btx-6a-RfK"/>
+                            <constraint firstAttribute="bottom" secondItem="UM0-Yj-wRK" secondAttribute="bottom" id="g9O-Yz-Uqu"/>
+                            <constraint firstItem="Dpu-05-aWm" firstAttribute="leading" secondItem="82j-Pz-xPL" secondAttribute="leading" id="hhh-IX-etu"/>
+                            <constraint firstItem="UM0-Yj-wRK" firstAttribute="trailing" secondItem="82j-Pz-xPL" secondAttribute="trailing" id="iIf-82-kS7"/>
+                            <constraint firstItem="bbU-v9-JKE" firstAttribute="top" secondItem="82j-Pz-xPL" secondAttribute="top" id="oNq-eI-kMP"/>
+                            <constraint firstItem="HVc-Ce-698" firstAttribute="centerX" secondItem="cPR-Mr-vpC" secondAttribute="centerX" id="xI3-YQ-t0B"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZI7-Ri-obo"/>
+                    <connections>
+                        <outlet property="animationViewMan" destination="UM0-Yj-wRK" id="459-wi-o3A"/>
+                        <outlet property="animationViewSun" destination="bbU-v9-JKE" id="G0e-eL-Vkp"/>
+                        <outlet property="timerLabel" destination="HVc-Ce-698" id="vus-DY-7A6"/>
+                        <segue destination="JgV-VB-CzP" kind="show" identifier="goToSeventeenthScreenVC" id="YCk-OD-VN6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="igR-Fn-nIe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20184.057971014496" y="394.41964285714283"/>
         </scene>
         <!--Oasis QuestVC-->
         <scene sceneID="dPI-qm-Agb">
@@ -2421,6 +2627,8 @@ You get Confused and try to think over it</string>
         <image name="homePgBg" width="390" height="844"/>
         <image name="kingdom" width="3277" height="4096"/>
         <image name="logo" width="148" height="185"/>
+        <image name="meditateBg" width="1920" height="1502"/>
+        <image name="meditateBtn" width="140" height="57"/>
         <image name="mystery forest 1" width="390" height="844"/>
         <image name="mystery-shack" width="390" height="844"/>
         <image name="nextBtn" width="140" height="57"/>
@@ -2436,12 +2644,15 @@ You get Confused and try to think over it</string>
         <image name="screen12Bg" width="390" height="844"/>
         <image name="screen13Bg" width="390" height="844"/>
         <image name="screen14Bg" width="390" height="844"/>
+        <image name="screen15Bg" width="390" height="844"/>
+        <image name="screen16Bg" width="390" height="844"/>
         <image name="selectNameBtn" width="225" height="84"/>
         <image name="signUpBg" width="390" height="693"/>
         <image name="signUpBtn" width="147" height="52"/>
         <image name="sinister-shack" width="390" height="844"/>
         <image name="snowy_forest" width="390" height="844"/>
         <image name="sovaCry" width="246" height="262"/>
+        <image name="startBtn" width="140" height="57"/>
         <image name="startJourneyBtn" width="193" height="74"/>
         <image name="stoneImg" width="400" height="220"/>
         <image name="swordImg" width="290" height="253"/>

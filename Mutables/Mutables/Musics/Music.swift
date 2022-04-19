@@ -30,5 +30,9 @@ class Music{
         }
     }
     
+    func stopMusicPlayer(){
+        player?.stop()
+    }
+    
     
 }
