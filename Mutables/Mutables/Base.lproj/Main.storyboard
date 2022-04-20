@@ -1959,14 +1959,118 @@ You get Confused and try to think over it</string>
                     <view key="view" contentMode="scaleToFill" id="f6e-gb-scI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screen17Bg" translatesAutoresizingMaskIntoConstraints="NO" id="YV4-Si-5ot">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blur_imgae" translatesAutoresizingMaskIntoConstraints="NO" id="Oz8-eH-im2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="602-1W-deX">
+                                <rect key="frame" x="38" y="262.5" width="338" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="338" id="IUE-P2-r93"/>
+                                    <constraint firstAttribute="height" constant="171" id="bfx-ch-M46"/>
+                                </constraints>
+                                <string key="text">The prince finds that the herb is present right in front of him and the moment he touches it, the herb not only becomes visible but also starts to glow in it's true brilliance. The prince carries it back to his kingdom and presents it to his father.</string>
+                                <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vn1-ig-VNH">
+                                <rect key="frame" x="125" y="691" width="164" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="LYQ-y7-Lkr"/>
+                                    <constraint firstAttribute="height" constant="71" id="fDL-Tt-pa8"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="nextBtn"/>
+                                <connections>
+                                    <segue destination="bwY-y4-3Yv" kind="show" id="mSi-kA-Kjz"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="cDz-BN-eZU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YV4-Si-5ot" firstAttribute="top" secondItem="f6e-gb-scI" secondAttribute="top" id="9j7-D2-26K"/>
+                            <constraint firstItem="YV4-Si-5ot" firstAttribute="trailing" secondItem="cDz-BN-eZU" secondAttribute="trailing" id="Ac8-L7-F1t"/>
+                            <constraint firstItem="Oz8-eH-im2" firstAttribute="leading" secondItem="cDz-BN-eZU" secondAttribute="leading" id="DH8-hG-Vm0"/>
+                            <constraint firstItem="Oz8-eH-im2" firstAttribute="top" secondItem="f6e-gb-scI" secondAttribute="top" id="GJ9-kA-fS1"/>
+                            <constraint firstItem="cDz-BN-eZU" firstAttribute="bottom" secondItem="Vn1-ig-VNH" secondAttribute="bottom" constant="100" id="LNl-SG-5uX"/>
+                            <constraint firstItem="602-1W-deX" firstAttribute="centerY" secondItem="f6e-gb-scI" secondAttribute="centerY" constant="-100" id="ZBP-x8-5GB"/>
+                            <constraint firstAttribute="bottom" secondItem="Oz8-eH-im2" secondAttribute="bottom" id="cUI-WL-MbJ"/>
+                            <constraint firstAttribute="bottom" secondItem="YV4-Si-5ot" secondAttribute="bottom" id="eKn-Iq-5qa"/>
+                            <constraint firstItem="Vn1-ig-VNH" firstAttribute="centerX" secondItem="f6e-gb-scI" secondAttribute="centerX" id="iM5-R4-Ig2"/>
+                            <constraint firstItem="Oz8-eH-im2" firstAttribute="trailing" secondItem="cDz-BN-eZU" secondAttribute="trailing" id="ls4-Dj-Nz9"/>
+                            <constraint firstItem="YV4-Si-5ot" firstAttribute="leading" secondItem="cDz-BN-eZU" secondAttribute="leading" id="o9s-Le-TUf"/>
+                            <constraint firstItem="602-1W-deX" firstAttribute="centerX" secondItem="f6e-gb-scI" secondAttribute="centerX" id="p0F-Ni-Dbo"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nUN-fp-DF4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r8W-mg-7Lm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="22226" y="54"/>
+            <point key="canvasLocation" x="22224.637681159424" y="53.571428571428569"/>
+        </scene>
+        <!--Eighteenth ScreenVC-->
+        <scene sceneID="SyZ-tt-NUW">
+            <objects>
+                <viewController storyboardIdentifier="EighteenthScreenVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bwY-y4-3Yv" customClass="EighteenthScreenVC" customModule="Mutables" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1AK-at-ef5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screen18Bg" translatesAutoresizingMaskIntoConstraints="NO" id="Tey-oV-Vq3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blur_imgae" translatesAutoresizingMaskIntoConstraints="NO" id="ucO-qj-MUU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1A-aN-etW">
+                                <rect key="frame" x="38" y="262.5" width="338" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="3yX-Wu-MyS"/>
+                                    <constraint firstAttribute="width" constant="338" id="9jb-fD-aBp"/>
+                                </constraints>
+                                <string key="text"> The king, on finding his son's achievement becomes very proud and tells the prince how it was a test and that the herb wasn't to cure the king's illness but a magical plant, known for creating an aura of peace and wellness in the place where it was planted and grown.
+</string>
+                                <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTI-nl-AkG">
+                                <rect key="frame" x="125" y="691" width="164" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="HFR-Il-5DB"/>
+                                    <constraint firstAttribute="width" constant="164" id="PAO-yC-GB8"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="nextBtn"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oxG-YI-FQv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="o1A-aN-etW" firstAttribute="centerX" secondItem="1AK-at-ef5" secondAttribute="centerX" id="2tK-tO-gbs"/>
+                            <constraint firstItem="Tey-oV-Vq3" firstAttribute="leading" secondItem="oxG-YI-FQv" secondAttribute="leading" id="7Ga-dO-Ao2"/>
+                            <constraint firstItem="Tey-oV-Vq3" firstAttribute="top" secondItem="1AK-at-ef5" secondAttribute="top" id="Cwn-GX-CVF"/>
+                            <constraint firstItem="oxG-YI-FQv" firstAttribute="bottom" secondItem="DTI-nl-AkG" secondAttribute="bottom" constant="100" id="PTe-aj-2pV"/>
+                            <constraint firstAttribute="bottom" secondItem="Tey-oV-Vq3" secondAttribute="bottom" id="TKQ-iO-QF1"/>
+                            <constraint firstItem="ucO-qj-MUU" firstAttribute="top" secondItem="1AK-at-ef5" secondAttribute="top" id="Upd-eu-nYB"/>
+                            <constraint firstItem="ucO-qj-MUU" firstAttribute="trailing" secondItem="oxG-YI-FQv" secondAttribute="trailing" id="Vxy-xI-Jtc"/>
+                            <constraint firstAttribute="bottom" secondItem="ucO-qj-MUU" secondAttribute="bottom" id="dSN-Xu-yag"/>
+                            <constraint firstItem="Tey-oV-Vq3" firstAttribute="trailing" secondItem="oxG-YI-FQv" secondAttribute="trailing" id="htg-3C-n6g"/>
+                            <constraint firstItem="DTI-nl-AkG" firstAttribute="centerX" secondItem="1AK-at-ef5" secondAttribute="centerX" id="o6s-Ob-yiR"/>
+                            <constraint firstItem="o1A-aN-etW" firstAttribute="centerY" secondItem="1AK-at-ef5" secondAttribute="centerY" constant="-100" id="pg0-3o-P7g"/>
+                            <constraint firstItem="ucO-qj-MUU" firstAttribute="leading" secondItem="oxG-YI-FQv" secondAttribute="leading" id="rXV-x0-QQp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="plB-g6-0Bz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7A3-hW-rbo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="23369.565217391308" y="83.705357142857139"/>
         </scene>
         <!--Meditate QuestVC-->
         <scene sceneID="avZ-In-H1C">
@@ -2646,6 +2750,8 @@ You get Confused and try to think over it</string>
         <image name="screen14Bg" width="390" height="844"/>
         <image name="screen15Bg" width="390" height="844"/>
         <image name="screen16Bg" width="390" height="844"/>
+        <image name="screen17Bg" width="390" height="844"/>
+        <image name="screen18Bg" width="390" height="844"/>
         <image name="selectNameBtn" width="225" height="84"/>
         <image name="signUpBg" width="390" height="693"/>
         <image name="signUpBtn" width="147" height="52"/>

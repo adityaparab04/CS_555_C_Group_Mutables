@@ -60,6 +60,7 @@
 		B7B53C56280F314E00B3AF55 /* meditating_sun.json in Resources */ = {isa = PBXBuildFile; fileRef = B7B53C55280F314E00B3AF55 /* meditating_sun.json */; };
 		B7B53C58280F31EF00B3AF55 /* MeditateQuestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B53C57280F31EF00B3AF55 /* MeditateQuestVC.swift */; };
 		B7B53C5A280F40E500B3AF55 /* birds_forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B7B53C59280F40E500B3AF55 /* birds_forest.mp3 */; };
+		B7B53C5C280FA88B00B3AF55 /* thankYou.json in Resources */ = {isa = PBXBuildFile; fileRef = B7B53C5B280FA88B00B3AF55 /* thankYou.json */; };
 		B7C917CB27F7899600371D1E /* FourthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C917CA27F7899600371D1E /* FourthScreenVC.swift */; };
 		B7C917CD27F78B1B00371D1E /* FifthScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C917CC27F78B1B00371D1E /* FifthScreenVC.swift */; };
 /* End PBXBuildFile section */
@@ -134,6 +135,7 @@
 		B7B53C55280F314E00B3AF55 /* meditating_sun.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = meditating_sun.json; sourceTree = "<group>"; };
 		B7B53C57280F31EF00B3AF55 /* MeditateQuestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditateQuestVC.swift; sourceTree = "<group>"; };
 		B7B53C59280F40E500B3AF55 /* birds_forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = birds_forest.mp3; sourceTree = "<group>"; };
+		B7B53C5B280FA88B00B3AF55 /* thankYou.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = thankYou.json; sourceTree = "<group>"; };
 		B7C917CA27F7899600371D1E /* FourthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthScreenVC.swift; sourceTree = "<group>"; };
 		B7C917CC27F78B1B00371D1E /* FifthScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthScreenVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -341,6 +343,7 @@
 			children = (
 				B7B53C55280F314E00B3AF55 /* meditating_sun.json */,
 				B7B53C53280F314700B3AF55 /* meditate_man.json */,
+				B7B53C5B280FA88B00B3AF55 /* thankYou.json */,
 			);
 			path = Lottie_Animations;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				B79D4AEB27CB123900AFA341 /* LobsterTwo-Regular.ttf in Resources */,
 				B7172FE727E802AB009DFA6B /* victory.mp3 in Resources */,
 				B79D4AE827CB11D100AFA341 /* Lobster-Regular.ttf in Resources */,
+				B7B53C5C280FA88B00B3AF55 /* thankYou.json in Resources */,
 				B79C160027B83CC9000153DB /* LaunchScreen.storyboard in Resources */,
 				B79D4AEC27CB123900AFA341 /* LobsterTwo-Bold.ttf in Resources */,
 				B7172FEB27E80807009DFA6B /* lost.wav in Resources */,
