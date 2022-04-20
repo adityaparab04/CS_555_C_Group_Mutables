@@ -9,12 +9,14 @@ import UIKit
 import FirebaseAuth
 
 class HomeVC: UIViewController {
+    let music = Music()
 
     @IBOutlet weak var volumeBtn: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        music.startMusic(fileName: "homescreen", format: "mp3", volume: 0.5, loop: -1)
         
     }
     override func viewWillAppear(_ animated: Bool) {
