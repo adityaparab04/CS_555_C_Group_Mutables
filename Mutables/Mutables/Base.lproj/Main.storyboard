@@ -62,13 +62,13 @@
                                         <rect key="frame" x="137.5" y="807.5" width="139" height="58.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqD-na-50C">
-                                                <rect key="frame" x="49.5" y="0.0" width="40" height="25"/>
+                                                <rect key="frame" x="46.5" y="0.0" width="46.5" height="27"/>
                                                 <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Mutables" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOi-fl-MdK">
-                                                <rect key="frame" x="0.0" y="27" width="139" height="31.5"/>
+                                                <rect key="frame" x="0.0" y="29" width="139" height="29.5"/>
                                                 <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -138,14 +138,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="inZ-nK-Fvp">
                                 <rect key="frame" x="69.5" y="281" width="275" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2O4-m3-n0K">
-                                        <rect key="frame" x="0.0" y="0.0" width="190" height="50"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2O4-m3-n0K">
+                                        <rect key="frame" x="0.0" y="0.0" width="192.5" height="50"/>
                                         <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="20"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phr-kQ-Tno">
-                                        <rect key="frame" x="180" y="0.0" width="95" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phr-kQ-Tno">
+                                        <rect key="frame" x="182.5" y="0.0" width="92.5" height="50"/>
                                         <color key="tintColor" name="GreenC"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Sign In">
@@ -551,7 +551,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jvf-2e-DIL">
-                                        <rect key="frame" x="130" y="141" width="170" height="39"/>
+                                        <rect key="frame" x="130" y="141" width="170" height="61"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="170" id="3fn-5M-6Ff"/>
                                         </constraints>
@@ -2418,7 +2418,7 @@ You get Confused and try to think over it</string>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You lost!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l46-RA-jRb">
-                                        <rect key="frame" x="170" y="100" width="194" height="31.5"/>
+                                        <rect key="frame" x="170" y="100" width="194" height="29.5"/>
                                         <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -2537,7 +2537,7 @@ You get Confused and try to think over it</string>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sword Found!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFf-KM-9ps">
-                                        <rect key="frame" x="170" y="100" width="194" height="31.5"/>
+                                        <rect key="frame" x="170" y="100" width="194" height="29.5"/>
                                         <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="25"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -2664,7 +2664,7 @@ You get Confused and try to think over it</string>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Talk to the old lady" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pES-Pu-ITR">
-                                        <rect key="frame" x="170" y="100" width="171" height="57.5"/>
+                                        <rect key="frame" x="170" y="100" width="171" height="54"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="171" id="XX0-fN-4cw"/>
                                         </constraints>
@@ -2769,7 +2769,7 @@ You get Confused and try to think over it</string>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You found the Oasis..." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J29-JO-qNY">
-                                        <rect key="frame" x="170" y="100" width="171" height="57.5"/>
+                                        <rect key="frame" x="170" y="100" width="171" height="54"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="171" id="8bv-Pe-eox"/>
                                         </constraints>
@@ -2813,7 +2813,6 @@ You get Confused and try to think over it</string>
         <designable name="myu-UQ-Mdy"/>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="bJR-3m-13K"/>
         <segue reference="Kkz-mT-G7F"/>
     </inferredMetricsTieBreakers>
     <resources>

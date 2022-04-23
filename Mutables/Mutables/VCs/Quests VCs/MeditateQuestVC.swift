@@ -12,6 +12,8 @@ class MeditateQuestVC: UIViewController {
     
     let music = Music()
     
+    let animation = Animations()
+    
     var timer = Timer()
     
     var seconds = 60
@@ -28,8 +30,8 @@ class MeditateQuestVC: UIViewController {
 
         // Do any additional setup after loading the view.
         music.startMusic(fileName: "birds_forest", format: "mp3", volume: 0.3, loop: -1)
-        setupSunAnimation()
-        setupManAnimation()
+        sunBehavior()
+        manBehavior()
         timer.invalidate()
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(MeditateQuestVC.timerClass), userInfo: nil, repeats: true)
     }
@@ -44,25 +46,14 @@ class MeditateQuestVC: UIViewController {
         navigationController?.hidesBarsOnSwipe = false
     }
     
-    func setupSunAnimation(){
-        animationViewSun.animation = Animation.named("meditating_sun")
-        animationViewSun.frame = animationViewSun.bounds
-       // animationViewSun.backgroundColor = .clear
-        animationViewSun.contentMode = .scaleAspectFit
-        animationViewSun.loopMode = .loop
-        animationViewSun.play()
-        view.addSubview(animationViewSun)
+    func sunBehavior(){
+        animation.setupAnimation(animationView: animationViewSun, animationName: "meditating_sun", view: view)
+        
         print("Sun animation")
     }
     
-    func setupManAnimation(){
-        animationViewMan.animation = Animation.named("meditate_man")
-        animationViewMan.frame = animationViewMan.bounds
-       // animationViewMan.backgroundColor = .clear
-        animationViewMan.contentMode = .scaleAspectFit
-        animationViewMan.loopMode = .loop
-        animationViewMan.play()
-        view.addSubview(animationViewMan)
+    func manBehavior(){
+        animation.setupAnimation(animationView: animationViewMan, animationName: "meditate_man", view: view)
         print("Man animation")
     }
     

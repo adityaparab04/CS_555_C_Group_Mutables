@@ -11,13 +11,14 @@ import Lottie
 class ThankYouVC: UIViewController {
     
     let music = Music()
+    let animation  = Animations()
 
     @IBOutlet weak var thankYouView: AnimationView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        setupAnimation()
+        setupBehavior()
         music.startMusic(fileName: "thank_you", format: "wav", volume: 0.5, loop: -1)
     }
     
@@ -30,14 +31,8 @@ class ThankYouVC: UIViewController {
     }
     
     
-    func setupAnimation(){
-        thankYouView.animation = Animation.named("thankYou")
-        thankYouView.frame = thankYouView.bounds
-        thankYouView.contentMode = .scaleAspectFit
-        thankYouView.loopMode = .loop
-        thankYouView.play()
-        view.addSubview(thankYouView)
-        print("Thank you animation")
+    func setupBehavior(){
+        animation.setupAnimation(animationView: thankYouView, animationName: "thankYou", view: view)
         DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
             self.performSegue(withIdentifier: "goToHomeVC", sender: self)
             self.music.stopMusicPlayer()
