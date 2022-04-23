@@ -18,6 +18,7 @@ class MeditateQuestVC: UIViewController {
     
     var seconds = 60
   
+    @IBOutlet weak var skipBtn: UIButton!
     @IBOutlet weak var timerLabel: UILabel!
     
     @IBOutlet weak var animationViewSun: AnimationView!
@@ -32,8 +33,10 @@ class MeditateQuestVC: UIViewController {
         music.startMusic(fileName: "birds_forest", format: "mp3", volume: 0.3, loop: -1)
         sunBehavior()
         manBehavior()
-        timer.invalidate()
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(MeditateQuestVC.timerClass), userInfo: nil, repeats: true)
+        
+        skipBtnBehavior()
+        
+       
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,7 +48,13 @@ class MeditateQuestVC: UIViewController {
         navigationController?.navigationBar.isHidden = false
         navigationController?.hidesBarsOnSwipe = false
     }
-    
+    func skipBtnBehavior(){
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 30.00) {
+            self.skipBtn.alpha = 1
+            
+        }
+    }
     func sunBehavior(){
         animation.setupAnimation(animationView: animationViewSun, animationName: "meditating_sun", view: view)
         
@@ -57,16 +66,8 @@ class MeditateQuestVC: UIViewController {
         print("Man animation")
     }
     
-    @objc func timerClass(){
-        seconds -= 1
-        timerLabel.text = String(seconds)
-        
-        if (seconds == 1){
-            timer.invalidate()
-            DispatchQueue.main.asyncAfter(deadline: .now()+1.0) { [self] in
-                self.performSegue(withIdentifier: "goToSeventeenthScreenVC", sender: self)
-                self.music.stopMusicPlayer()
-            }
-        }
+
+    @IBAction func skipBtnPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToSeventeenthScreenVC", sender: self)
     }
 }
